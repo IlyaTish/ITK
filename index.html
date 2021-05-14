@@ -12,7 +12,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__cont"><a class="logo" href="#"><img class="logo__img" src="assets/img/header/logo.png"></a>
+          <div class="header__cont"><a class="logo" href="#"><svg class='logo-svg' version='1.1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 243 110' xml:space='preserve'><path class='logo-svg__elem-2' d='M0 40h29v69.7H0zM0 0h29v30H0zM70 40h29v70H70z' fill='#2D4345' /><path class='logo-svg__elem-1' fill='#67AE3e' d='M40 0h89v30H40z'/><path class='logo-svg__elem-2' fill='#2D4345' d='M243 0h-35l-28 40h-10V0h-30v110h30V70h10l28 40h35l-39-55z'/></svg></a>
             <div class="header__content">
               <div class="header-top"><a class="header-top__link header__email" href="#"><span>Написать письмо</span><svg class='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/></svg></a><a class="header-top__link header__phone" href="#">+7 (495) 542-22-24</a></div>
               <nav class="header-nav">
@@ -27,19 +27,31 @@
             </div>
           </div>
         </div>
-      </header>
-      <div class="header-bottom">
-        <div class="container">
-          <div class="header-bottom__cont">
-            <button class="catalog-btn">
-              <div class="burger-btn"><span class="bar-line"></span></div><span class="catalog-btn__txt">Продукция</span>
-            </button>
-            <div class="search">
-              <input class="search__input" type="search" placeholder="Поиск по сайту">
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header-bottom__cont">
+              <button class="search-btn"><svg class='icon' width='57' height='57' viewBox='0 0 57 57' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<g clip-path='url(#clip0)'>
+<path d='M55.1464 51.887L41.5884 37.786C45.0744 33.642 46.9844 28.428 46.9844 23C46.9844 10.318 36.6664 0 23.9844 0C11.3024 0 0.984375 10.318 0.984375 23C0.984375 35.682 11.3024 46 23.9844 46C28.7454 46 33.2824 44.564 37.1614 41.838L50.8224 56.046C51.3934 56.639 52.1614 56.966 52.9844 56.966C53.7634 56.966 54.5024 56.669 55.0634 56.129C56.2554 54.982 56.2934 53.08 55.1464 51.887ZM23.9844 6C33.3584 6 40.9844 13.626 40.9844 23C40.9844 32.374 33.3584 40 23.9844 40C14.6104 40 6.98438 32.374 6.98438 23C6.98438 13.626 14.6104 6 23.9844 6Z' fill='#B5B8B9'/>
+</g>
+<defs>
+<clipPath id='clip0'>
+<rect width='56.966' height='56.966' fill='white'/>
+</clipPath>
+</defs>
+</svg>
+
+              </button>
+              <button class="catalog-btn">
+                <div class="burger-btn"><span class="bar-line"></span></div><span class="catalog-btn__txt">Продукция</span>
+              </button>
+              <div class="search">
+                <input class="search__input" type="search" placeholder="Поиск по сайту">
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </header>
       <main class="content index">
         <section class="main">
           <div class="main__cont">
@@ -114,7 +126,12 @@
         </section>
         <section class="news">
           <div class="container">
-            <div class="tabs"><span class="tabs__btn tabs__btn active">Новости ITK</span><span class="tabs__btn">Новости отрасли</span></div>
+            <div class="tabs-swiper tabs swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><span class="tabs__btn active">Новости ITK</span></div>
+                <div class="swiper-slide"><span class="tabs__btn">Новости отрасли</span></div>
+              </div>
+            </div>
             <div class="news-swiper swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
