@@ -13,9 +13,23 @@ const ready = callback => {
   else document.addEventListener('DOMContentLoaded', callback)
 }
 
+const initSwiper = () => {
+  const tabsSwiper = new Swiper('.tabs-swiper', {
+    slidesPerView: 'auto',
+    autoplay: false,
+    watchOverflow: true,
+  })
+}
+
 
 /* Teleport function */
 
 const appendElem = (elem, cont) => {
   if (cont) cont.appendChild(elem)
 }
+
+
+
+// -------- Functions execution --------
+
+initSwiper();

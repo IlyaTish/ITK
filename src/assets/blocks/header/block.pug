@@ -2,7 +2,7 @@ header.header
   .container
     .header__cont
       a.logo(href='#')
-        img.logo__img(src='assets/img/header/logo.png')
+        include ./img/logo.svg
 
       .header__content
         .header-top
@@ -25,13 +25,16 @@ header.header
             li.header-nav__item
               a.header-nav__link(href='#') Контакты
 
-.header-bottom
-  .container
-    .header-bottom__cont
-      button.catalog-btn
-        .burger-btn
-          span.bar-line
-        span.catalog-btn__txt Продукция
+  .header-bottom
+    .container
+      .header-bottom__cont
+        button.search-btn
+          include /common/icons/search.svg
 
-      .search
-        input.search__input(type='search' placeholder='Поиск по сайту')
+        button.catalog-btn
+          .burger-btn
+            span.bar-line
+          span.catalog-btn__txt Продукция
+
+        .search
+          input.search__input(type='search' placeholder='Поиск по сайту')
