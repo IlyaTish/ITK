@@ -43,6 +43,24 @@
   &__nav-cont
     background: $main
 
+  &__video-link
+    padding: 22px 0 22px 56px
+    position: relative
+    background: $main
+
+    &:after
+      width: 100vw
+      height: 100%
+      content: ''
+      display: block
+      top: 0
+      right: -100vw
+      position: absolute
+      background: $main
+
+    .btn
+      padding: 11px 20px
+
 .main-list
   margin: 0 0 44px
   padding: 0
@@ -77,18 +95,13 @@
   bottom: 0
   position: absolute
 
+  &__cont
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+
   .container
     position: relative
-
-    &:before
-      width: 100%
-      height: 100%
-      content: ''
-      display: block
-      top: 0
-      left: calc(-100% + 20px)
-      position: absolute
-      background: $main
 
   .swiper__nav-cont
     width: intrinsic
@@ -96,6 +109,16 @@
     width: -webkit-max-content
     padding: 15px 0
     background: $main
+
+    &:before
+      width: 100vw
+      height: 100%
+      content: ''
+      display: block
+      top: 0
+      left: -100vw
+      position: absolute
+      background: $main
 
     .swiper-button-prev,
     .swiper-button-next
