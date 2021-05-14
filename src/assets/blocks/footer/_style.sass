@@ -1,4 +1,104 @@
 .footer
   flex: 0 0 auto
-  height: 200px
-  background: $gray
+  margin: 40px 0 0
+  padding: 96px 0
+  background: #2D4345
+
+  &__cont
+    display: grid
+    grid-template-columns: 1.5fr 2fr 1fr
+
+  &__txt
+    display: block
+    margin: 0 0 16px
+    color: #FFFFFF
+    font-size: 12px
+
+  &__phone
+    display: inline-block
+    color: #FFFFFF
+    font-size: 16px
+    font-weight: 500
+
+.footer-social
+  &__cont
+    display: flex
+
+  &__link
+    width: 30px
+    height: 30px
+    margin: 0 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    background: #415557
+    transition: .2s
+
+    .icon
+      path
+        transition: .2s
+
+    &:hover
+      background: #FFFFFF
+
+      .icon
+        path
+          fill: #415557
+
+.footer-logo
+  width: 70px
+  margin: 0 30px 0 0
+
+.footer-note
+  margin: 100px 0 0
+  display: flex
+
+  &__txt
+    color: #D1D3D4
+    font-size: 12px
+    line-height: 18px
+
+.footer-nav
+  display: grid
+  grid-gap: 40px
+  grid-template-columns: 1fr 1fr
+
+  &__list
+    margin: -8px 0 0
+    padding: 0
+
+  &__item
+    list-style: none
+    page-break-inside: avoid
+    -moz-column-break-inside: avoid
+    break-inside: avoid
+
+  &__link
+    display: inline-block
+    padding: 8px 0
+    color: #FFFFFF
+    font-size: 12px
+    text-decoration: none
+
+.footer-info
+  &__item
+    width: 100%
+    text-align: right
+
+    &--item-2
+      margin: 66px 0 0
+
+  &__link
+    display: inline-block
+    margin: 0 0 0 auto
+    color: $main
+    font-size: 12px
+    text-decoration: underline
+
+  .footer__phone
+    display: inline-block
+    margin: 0 0 6px
+
+  .footer__txt
+    margin: 0 0 12px

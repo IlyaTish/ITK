@@ -6,8 +6,8 @@
 ready(() => {
   // -------- Exports --------
 
-  //= require header/script.js
+  //= require news/script.js
 
-  window.onresize = () =>
-    headerScript.headerTeleport()
+  // window.onresize = () =>
+  //   headerScript.headerTeleport()
 })

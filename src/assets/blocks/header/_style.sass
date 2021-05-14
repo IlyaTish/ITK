@@ -1,118 +1,115 @@
 .header
-  background: $gray
-  position: relative
+  box-shadow: 0px 10px 30px 0px rgba(23, 34, 35, 0.25)
 
   &__cont
-    height: 100%
-    padding: 14px 16px
     display: flex
+
+  &__content
+    width: 100%
+
+  &__email
+    margin: 0 30px 0 0
+    color: $main
+
+  &__phone
+    color: $black
+    font-weight: 500
+
+.header-top
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  position: relative
+  padding: 9px 0
+  background: #F5F5F5
+
+  &:after
+    width: 100%
+    height: 100%
+    content: ''
+    display: block
+    top: 0
+    right: -100%
+    position: absolute
+    background: #F5F5F5
+
+  &__link
+    display: inline-flex
     align-items: center
-    box-sizing: border-box
+    font-size: 12px
+
+    .icon
+      width: 14px
+      margin: 0 0 0 6px
+      top: 1px
+      position: relative
+
+      path
+        fill: $main
+        transition: .2s
+
+    &:hover
+      color: darken($main, 10%)
+
+      path
+        fill: darken($main, 10%)
 
 .header-nav
-  margin: 0 0 0 20px
-  position: relative
-  z-index: 6
-
   &__list
     margin: 0
-    padding: 0
+    padding: 22px 0
     display: flex
-    flex-wrap: wrap
-    align-items: center
-    grid-gap: 16px
+    justify-content: space-between
 
   &__item
     list-style: none
 
-    &:last-of-type
-      margin: 0
-
   &__link
-    display: inline-block
-    color: #000000
-    font-size: 16px
-    text-decoration: none
-    transition: .2s
+    color: $black
+    font-size: 14px
 
-.burger-btn
-  width: 28px
-  height: 28px
-  margin: 0 16px 0 0
-  display: none
-  flex-direction: column
-  justify-content: space-between
-  position: relative
-  cursor: pointer
-  z-index: 999999
+.logo
+  display: flex
+  align-items: center
+  flex: 190px 0 0
 
-  &:before, &:after, &__elem
-    width: 24px
-    min-height: 4px
-    margin: 0 auto
-    content: ''
-    display: block
+.header-bottom
+  min-height: 50px
+  color: #FFFFFF
+  background: $main
+
+.catalog-btn
+  padding: 18px 40px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #FFFFFF
+  border: none
+  background: #5EA038
+
+  &__txt
+    font-size: 14px
+
+  .burger-btn
+    width: 14px
+    height: 11px
+    margin: 0 16px 0 0
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     position: relative
-    background: #000000
-    transition: .2s
+    cursor: pointer
+    z-index: 99
 
-  &:before
-    top: 4px
-
-  &:after
-    bottom: 4px
-
-.burger-btn.active
-  .burger-btn__elem
-    opacity: 0
-    background: $main
-
-  &:before
-    top: 12px
-    transform: rotate(-135deg)
-    background: $main
-
-  &:after
-    bottom: 12px
-    transform: rotate(135deg)
-    background: $main
-
-.burger-menu
-  width: 100vw
-  display: none
-  top: -400px
-  left: 0
-  position: absolute
-  background: #FFFFFF
-  box-shadow: 0 8px 6px 1px #00000014
-  transition: top .2s
-  transition: opacity .2s
-  z-index: 3
-
-  .header-nav
-    &__list
-      display: block
-      border-top: 1px solid $gray
-
-    &__item
-      width: 100%
+    &:before,
+    &:after,
+    .bar-line
+      width: 14px
+      min-height: 1px
       margin: 0
-
-      &:first-of-type
-        .header-nav__link
-          border: none
-
-    &__link
-      width: 100%
-      padding: 10px 12px
+      content: ''
       display: block
-      color: $black
-      font-size: 14px
-      border-top: 1px solid $gray
-      box-sizing: border-box
-
-      &:hover
-        color: $main
-
-.burger-menu.active
-  top: 0
+      position: relative
+      background:#FFFFFF
+      border-radius: 10px
+      transition: .2s

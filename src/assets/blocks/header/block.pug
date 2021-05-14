@@ -1,17 +1,33 @@
 header.header
-  .header__cont
-    .burger-btn
-      span.burger-btn__elem
+  .container
+    .header__cont
+      a.logo(href='#')
+        img.logo__img(src='assets/img/header/logo.png')
 
-    .burger-menu.hidden
+      .header__content
+        .header-top
+          a.header-top__link.header__email(href='#')
+            span Написать письмо
+            include /common/icons/email.svg
 
-    nav.header-nav
-      ul.header-nav__list
-        li.header-nav__item
-          a.header-nav__link(href='#') Item 1
-        li.header-nav__item
-          a.header-nav__link(href='#') Item 2
-        li.header-nav__item
-          a.header-nav__link(href='#') Item 3
-        li.header-nav__item
-          a.header-nav__link(href='#') Item 4
+          a.header-top__link.header__phone(href='#') +7 (495) 542-22-24
+
+        nav.header-nav
+          ul.header-nav__list
+            li.header-nav__item
+              a.header-nav__link(href='#') О торговой марке
+            li.header-nav__item
+              a.header-nav__link(href='#') Релизованные проекты
+            li.header-nav__item
+              a.header-nav__link(href='#') Пресс центр
+            li.header-nav__item
+              a.header-nav__link(href='#') Где купить
+            li.header-nav__item
+              a.header-nav__link(href='#') Контакты
+
+.header-bottom
+  .container
+    button.catalog-btn
+      .burger-btn
+        span.bar-line
+      span.catalog-btn__txt Продукция
