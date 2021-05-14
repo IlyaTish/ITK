@@ -78,7 +78,26 @@
   color: #FFFFFF
   background: $main
 
+  &__cont
+    display: flex
+
+  .search
+    height: auto
+
+    &__input
+      height: 100%
+      padding: 10px 16px 10px 40px
+      color: #FFFFFF
+      background: transparent
+      border: none
+
+    &:after
+      left: 0
+      right: unset
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTciIGhlaWdodD0iNTciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+PHBhdGggZD0iTTU1LjE0NiA1MS44ODdMNDEuNTg4IDM3Ljc4NkEyMi45MjYgMjIuOTI2IDAgMDA0Ni45ODQgMjNjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMyAxMC4zMTgtMjMgMjMgMTAuMzE4IDIzIDIzIDIzYzQuNzYxIDAgOS4yOTgtMS40MzYgMTMuMTc3LTQuMTYybDEzLjY2MSAxNC4yMDhjLjU3MS41OTMgMS4zNC45MiAyLjE2Mi45Mi43OCAwIDEuNTE4LS4yOTcgMi4wOC0uODM3YTMuMDA0IDMuMDA0IDAgMDAuMDgyLTQuMjQyek0yMy45ODQgNmM5LjM3NCAwIDE3IDcuNjI2IDE3IDE3IDAgOS4zNzQtNy42MjYgMTctMTcgMTctOS4zNzQgMC0xNy03LjYyNi0xNy0xNyAwLTkuMzc0IDcuNjI2LTE3IDE3LTE3eiIgZmlsbD0iI2ZmZiIvPjwvZz48ZGVmcz48Y2xpcFBhdGggaWQ9ImNsaXAwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDU2Ljk2NnY1Ni45NjZIMHoiLz48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4=')
+
 .catalog-btn
+  margin: 0 20px 0 0
   padding: 18px 40px
   display: flex
   align-items: center

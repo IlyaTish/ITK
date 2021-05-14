@@ -40,30 +40,56 @@
   &__item
     height: 285px
     display: flex
+    position: relative
+    overflow: hidden
+
+    &:hover
+      .production-grid__item-bg
+        transform: scale(1.1)
+
+  &__item-bg
+    width: 100%
+    height: 100%
+    display: block
+    top: 0
+    left: 0
+    position: absolute
     background-size: cover
     background-repeat: no-repeat
     background-position: center center
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)
+    z-index: 1
 
   &__item.item-1
     grid-area: item-1
-    background-image: url('../img/production/bg-01.jpg')
+
+    .production-grid__item-bg
+      background-image: url('../img/production/bg-01.jpg')
 
   &__item.item-2
     grid-area: item-2
-    background-image: url('../img/production/bg-02.jpg')
+
+    .production-grid__item-bg
+      background-image: url('../img/production/bg-02.jpg')
 
   &__item.item-3
     height: 100%
     grid-area: item-3
-    background-image: url('../img/production/bg-03.jpg')
+
+    .production-grid__item-bg
+      background-image: url('../img/production/bg-03.jpg')
 
   &__item.item-4
     grid-area: item-4
-    background-image: url('../img/production/bg-04.jpg')
+
+    .production-grid__item-bg
+      background-image: url('../img/production/bg-04.jpg')
 
   &__item.item-5
     grid-area: item-5
-    background-image: url('../img/production/bg-05.jpg')
+
+    .production-grid__item-bg
+      background-image: url('../img/production/bg-05.jpg')
 
   &__list
     width: intrinsic
@@ -72,6 +98,8 @@
     margin-top: auto
     color: #FFFFFF
     background: $main
+    position: relative
+    z-index: 3
 
   &__name
     display: block

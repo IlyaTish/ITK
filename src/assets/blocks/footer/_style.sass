@@ -90,11 +90,26 @@
       margin: 66px 0 0
 
   &__link
-    display: inline-block
     margin: 0 0 0 auto
+    display: inline-flex
+    align-items: center
     color: $main
     font-size: 12px
     text-decoration: underline
+
+    .icon
+      width: 14px
+      margin: 0 0 0 8px
+
+      path
+        fill: $main
+        transition: .2s
+
+    &:hover
+      color: darken($main, 10%)
+
+      path
+        fill: darken($main, 10%)
 
   .footer__phone
     display: inline-block
