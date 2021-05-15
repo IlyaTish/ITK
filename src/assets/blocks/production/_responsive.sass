@@ -1,0 +1,47 @@
+@media (max-width: 991px)
+  .production
+    &__title
+      margin: 0 30px 0 0
+
+  .production-grid
+    grid-template-areas: 'item-1 item-1 item-1 item-1 item-2 item-2' 'item-4 item-4 item-5 item-5 item-5 item-5' 'item-3 item-3 item-3 item-3 item-3 item-3'
+
+    &__item.item-3
+      height: 285px
+
+
+@media (max-width: 820px)
+  .production-head
+    .btn,
+    .search
+      display: none
+
+
+@media (max-width: 767px)
+  .production
+    padding: 40px 0
+
+    &__title
+      margin: 0
+
+  .production-head
+    margin: 0 0 30px
+
+  .production-grid
+    grid-template-columns: 1fr
+    grid-template-areas: unset
+
+    &__item.item-1
+      grid-area: unset
+
+    &__item.item-2
+      grid-area: unset
+
+    &__item.item-3
+      grid-area: unset
+
+    &__item.item-4
+      grid-area: unset
+
+    &__item.item-5
+      grid-area: unset

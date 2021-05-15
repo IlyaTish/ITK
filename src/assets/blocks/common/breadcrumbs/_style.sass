@@ -1,0 +1,34 @@
+.breadcrumbs
+  margin: 0 0 16px
+
+  .icon
+    width: 4px
+    height: auto
+    margin: 0 15px
+    transform: rotate(180deg)
+
+    path
+      stroke: #BEBDBD
+
+  &__list
+    margin: 0
+    padding: 0
+    display: flex
+    flex-wrap: wrap
+
+  &__link
+    color: #BEBDBD
+    font-size: 12px
+
+    &:hover
+      color: $main
+
+  &__link.active
+    color: $dark
+
+  &__item
+    list-style: none
+
+    &:last-of-type
+      .icon
+        display: none

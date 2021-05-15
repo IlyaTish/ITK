@@ -1,0 +1,22 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /header/block
+
+
+  - const page = 'solutions'
+
+  main(class='content '+ page +'')
+    //- Description block ('.sol-description')
+    include /@solutions/description/block
+
+    //- Production-swiper block ('.production-swiper')
+    include /@solutions/production-swiper/block
+
+    //- Realized-swiper block ('.realized-swiper')
+    include /@solutions/realized-swiper/block
+
+
+  //- Popup block ('.footer')
+  include /footer/block

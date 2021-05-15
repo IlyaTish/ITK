@@ -1,8 +1,14 @@
 (() => {
+  // -------- Variables --------
+
+  const mainSwiperEl = document.querySelector('.main-swiper');
+
+
+
   // -------- Functions --------
 
   const initSwiper = () => {
-    const mainSwiper = new Swiper('.main-swiper', {
+    const mainSwiper = new Swiper(mainSwiperEl, {
       autoHeight: true,
       slidesPerView: 1,
       autoplay: false,
@@ -30,7 +36,13 @@
           autoHeight: false
         }
       }
-    })
+    });
+
+    if (document.querySelector('.main-swiper')) {
+      setTimeout(() => {
+        mainSwiper.update();
+      }, 100)
+    }
   }
 
 

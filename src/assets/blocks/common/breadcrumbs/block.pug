@@ -1,0 +1,8 @@
+mixin breadcrumbs(LINKS)
+  .container
+    .breadcrumbs
+      ul.breadcrumbs__list
+        for link in LINKS
+          li.breadcrumbs__item
+            a(href='#' class='breadcrumbs__link '+ link.class +'')= link.txt
+            include /common/icons/arrow.svg

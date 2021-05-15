@@ -1,0 +1,62 @@
+.production-swiper
+  padding: 50px 0
+  background: #FAFAFA
+
+  &__head
+    margin: 0 0 30px
+    display: flex
+    align-items: center
+
+  &__wrapper
+    display: grid
+    grid-gap: 30px
+    grid-template-columns: 1fr 1fr 1fr
+
+  .swiper__nav-cont
+    width: 70px
+    margin: 0 0 0 auto
+
+.production-swiper-item
+  &__img-cont
+    width: 100%
+    height: 200px
+    margin: 0 0 20px
+    position: relative
+    overflow: hidden
+
+  &__bg-img
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+
+  &__title
+    padding: 19px
+    display: inline-block
+    color: #FFFFFF
+    font-size: 16px
+    font-weight: 550
+    line-height: 22px
+    left: 0
+    bottom: 0
+    position: absolute
+    background: $main
+    box-sizing: border-box
+
+  &__list
+    margin: 0
+    padding: 0
+
+  &__list-item
+    margin: 0 0 12px
+    display: flex
+    align-items: baseline
+    font-weight: 500
+
+    .icon
+      width: 11px
+      height: auto
+      margin: 0 6px 0 0
+
+      path
+        stroke: $main
