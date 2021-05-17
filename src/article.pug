@@ -1,0 +1,16 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /header/block
+
+
+  - const page = 'article-page'
+
+  main(class='content '+ page +'')
+    //- Article block ('.article')
+    include /@article/block
+
+
+  //- Popup block ('.footer')
+  include /footer/block

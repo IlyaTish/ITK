@@ -1,0 +1,35 @@
+@media (max-width: 991px)
+  .article
+    &__title
+      margin: 0 0 20px
+      font-size: 26px
+
+
+@media (max-width: 680px)
+  .article
+    &__img-cont
+      width: 100%
+      max-width: 100%
+      margin: 0 0 20px
+      float: unset
+      order: 2
+
+    &__content
+      display: flex
+      flex-wrap: wrap
+
+      p
+        order: 3
+
+        &:first-of-type
+          padding: 0
+
+      p,
+      .list,
+      .btn
+        order: 3
+
+    &__date
+      margin: 0 0 20px
+      text-align: left
+      order: 1

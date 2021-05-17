@@ -65,10 +65,14 @@ h6
 
 p
   margin: 0
-  color: #919191
+  color: $txt-gray
   font-size: 14px
   font-weight: 500
   line-height: 22px
+
+  a
+    color: $txt-gray
+    text-decoration: underline
 
 a
   text-decoration: none
@@ -76,6 +80,28 @@ a
 
   &:hover
     color: $main
+
+ul.list
+  margin: 0
+  padding: 0
+
+  li
+    display: flex
+    align-items: baseline
+    margin: 0 0 10px
+    color: $txt-gray
+    font-size: 14px
+    font-weight: 500
+    list-style: none
+
+    &:before
+      width: 8px
+      height: 8px
+      flex: 8px 0 0
+      margin: 0 10px 0 0
+      content: ''
+      display: block
+      background: $main
 
 path
   transition: .2s
@@ -235,6 +261,15 @@ path
 
     .icon
       margin: 0 0 0 auto
+
+  &--back
+    .icon
+      margin: 0 10px 0 0
+      transform: rotate(180deg)
+
+    @media (max-width: 590px)
+      .icon
+        margin: 0 auto 0 0
 
 
 .search-btn

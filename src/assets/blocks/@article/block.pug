@@ -1,0 +1,56 @@
+section.article
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Пресс-центр'
+    },
+    {
+      txt: 'Новости ITK'
+    },
+    {
+      txt: 'Новая акция ITK «Яблочное лето» – выиграйте iPhone XR!',
+      class: 'active'
+    }
+  ])
+
+  .article__head
+    .container
+      h1.article__title Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;- выиг райте iPhone&nbsp;XR!
+
+  .container
+    .article__content
+      .article__img-cont
+        img.article__img(src='assets/img/@article/pic.jpg')
+
+      span.article__date 1 июня 2020
+
+      p Летом зреют не&nbsp;только яблоки. В&nbsp;урожайном сезоне ITK более весомые &laquo;плоды&raquo;&nbsp;&mdash; отличные смартфоны iPhone XR! Хотите получить такой вкусный приз? Нет ничего проще: участвуйте в&nbsp;новой акции ITK &laquo;Яблочное лето&raquo;, копите баллы&nbsp;&mdash; и&nbsp;один из&nbsp;смартфонов может стать вашим.<br><br><b>С&nbsp;1&nbsp;июня по&nbsp;30&nbsp;сентября 2020 года реализуйте продукцию ITK<sup class="reg">&reg;</sup>, регистрируйте или защищайте проекты с&nbsp;ее&nbsp;использованием.</b><br><br>Получайте баллы в&nbsp;соответствии с&nbsp;условиями акции&nbsp;&mdash; и&nbsp;при достижении порогового значения в&nbsp;50&nbsp;баллов вы&nbsp;станете участником розыгрыша смартфонов iPhone&nbsp;XR!.<br><br><br>Чем больше у&nbsp;вас баллов, тем выше шанс стать обладателем приза от&nbsp;ТМ&nbsp;ITK!<br><br><b>Кто может участвовать в&nbsp;акции?</b><br><br>Сотрудники партнеров ITK<sup class="reg">&reg;</sup> второго уровня (IT-инсталлятор, системный интегратор, оператор ЦОД, провайдер) из&nbsp;пяти регионов&nbsp;РФ:
+
+      ul.list
+        li Москва и&nbsp;Московская область (ЦФО).
+        li Санкт-Петербург и&nbsp;Ленинградская область (СЗФО).
+        li Поволжье (ПФО).
+        li Юг&nbsp;и&nbsp;Черноземье (ЮФО).
+        li Урал (УрФО).
+
+      p Розыгрыш призов будет проведен 20 октября 2020 года в онлайн-режиме на канале ITK в Youtube. О времени розыгрыша мы сообщим дополнительно.<br><br><b>Участвуйте в акции и выигрывайте IPhone XR!</b><br><br>Подробная информация — на сайте акции <a href='https://xn--90aiawbkgbd3bzcwf.xn--p1ai/'>яблочноелето.рф</a>
+
+      a.btn.btn--back(href='#')
+        svg.icon(
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='#000'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        )
+          path(d='M4 12h16M14 6l6 6-6 6')
+        span.btn__txt Назад к&nbsp;новостям
