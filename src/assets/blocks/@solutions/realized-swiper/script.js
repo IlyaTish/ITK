@@ -4,6 +4,7 @@
   const initSwiper = () => {
     const realizedSwiper = new Swiper('.realized-swiper .swiper-container', {
       slidesPerView: 1,
+      spaceBetween: 30,
       autoplay: false,
       watchOverflow: true,
       navigation: {
@@ -12,6 +13,11 @@
       },
       mousewheel: {
         forceToAxis: true
+      },
+      breakpoints: {
+        680: {
+          slidesPerView: 2
+        }
       }
     })
   }

@@ -1,0 +1,19 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /header/block
+
+
+  - const page = 'solutions'
+
+  main(class='content '+ page +'')
+    //- News-list block ('.news-list')
+    include /@presscenter/news-list/block
+
+    //- News-list block ('.news-list')
+    include /@presscenter/news-list-industry/block
+
+
+  //- Popup block ('.footer')
+  include /footer/block
