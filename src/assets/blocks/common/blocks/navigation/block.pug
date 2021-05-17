@@ -1,0 +1,32 @@
+.navigation
+  .container
+    .navigation__cont
+      .navigation-items
+        .navigation-items__item
+          span.navigation__txt <span>Показано:</span> <b>1-5</b> (всего <b>215</b>)
+        .navigation-items__item
+          span.navigation__txt Показывать по:
+          .select-box.selectable
+            span.select-box__cont 5
+            ul.select-box__dropdown(style='display: none')
+              li.active
+                span.checkbox__txt 5
+              li
+                span.checkbox__txt 10
+              li
+                span.checkbox__txt 15
+              li
+                span.checkbox__txt 20
+              li
+                span.checkbox__txt 25
+
+      .navigation-btns
+        button.navigation-btns__btn.navigation-btns__btn--prev
+          include /common/icons/arrow.svg
+        button.navigation-btns__btn 1
+        button.navigation-btns__btn.active 2
+        button.navigation-btns__btn 3
+        button.navigation-btns__btn ...
+        button.navigation-btns__btn 15
+        button.navigation-btns__btn.navigation-btns__btn--next
+          include /common/icons/arrow.svg

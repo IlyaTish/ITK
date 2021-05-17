@@ -1,6 +1,6 @@
 .presscenter-head
   //- Include Breadcrumbs ('.breadcrumbs')
-  include /common/breadcrumbs/block
+  include /common/blocks/breadcrumbs/block
 
   +breadcrumbs([
     {
@@ -17,6 +17,9 @@
 
 section.news-list
   .container
+    //- News-filters block ('.news-filters')
+    include /@presscenter/news-filters/block
+
     h2.news-list__title Новости ITK
 
     .news-list__items

@@ -1,0 +1,38 @@
+@media (max-width: 991px)
+  .navigation
+    &__cont
+      display: block
+
+  .navigation-items
+    width: 100%
+    margin: 0 0 30px
+    display: flex
+    justify-content: space-between
+
+    &__item
+      width: 100%
+      display: flex
+      align-items: center
+      white-space: nowrap
+
+      &:last-of-type
+        justify-content: flex-end
+
+  .navigation-btns
+    width: 100%
+    justify-content: center
+
+    &__btn
+      &--prev,
+      &--next
+        width: 100%
+        max-width: 230px
+        display: block
+        flex: unset
+
+
+@media (max-width: 767px)
+  .navigation
+    &__txt
+      span
+        display: none

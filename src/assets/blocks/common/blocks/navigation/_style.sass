@@ -1,0 +1,80 @@
+.navigation
+  margin: 20px 0 0
+
+  &__cont
+    display: flex
+    align-items: center
+
+  &__txt
+    color: #444642
+    font-size: 12px
+
+.navigation-items
+  margin: 0 auto 0 0
+
+  &__item
+    display: inline-block
+    margin: 0 20px 0 0
+
+    &:last-of-type
+      margin: 0
+
+  .select-box
+    margin: 0 0 0 10px
+
+    &__cont
+      border: 1px solid #F6F6F6
+
+      &:after
+        margin: 0 0 0 10px
+
+.navigation-btns
+  display: flex
+  align-items: center
+
+  &__btn
+    width: 40px
+    height: 40px
+    flex: 40px 0 0
+    margin: 0 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $dark
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+    transition: .2s
+    cursor: pointer
+
+    &--prev,
+    &--next
+      width: 140px
+      flex: 140px 0 0
+
+      .icon
+        width: 6px
+        height: auto
+
+        path
+          stroke: $dark
+
+    &--next
+      .icon
+        transform: rotate(180deg)
+
+    &:hover,
+    &:focus,
+    &:active
+      background: darken(#FFFFFF, 4%)
+
+    &:last-of-type
+      margin: 0
+
+  &__btn.active
+    color: #FFFFFF
+    background: $main
+    border: 1px solid $main
+
+    .icon
+      path
+        stroke: #FFFFFF

@@ -5,7 +5,7 @@ block content
   include /header/block
 
 
-  - const page = 'solutions'
+  - const page = 'presscenter'
 
   main(class='content '+ page +'')
     //- News-list block ('.news-list')
@@ -13,6 +13,9 @@ block content
 
     //- News-list block ('.news-list')
     include /@presscenter/news-list-industry/block
+
+    //- Navigation block ('.nav')
+    include /common/blocks/navigation/block
 
 
   //- Popup block ('.footer')
