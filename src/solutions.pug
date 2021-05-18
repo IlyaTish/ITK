@@ -5,9 +5,9 @@ block content
   include /header/block
 
 
-  - const page = 'solutions'
+  - const page = 'solutions-page'
 
-  main(class='content '+ page +'')
+  main(class='content '+ page +' inner-page')
     //- Description block ('.sol-description')
     include /@solutions/description/block
 
@@ -18,5 +18,5 @@ block content
     include /@solutions/realized-swiper/block
 
 
-  //- Popup block ('.footer')
+  //- Footer block ('.footer')
   include /footer/block

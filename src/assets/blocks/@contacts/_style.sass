@@ -1,0 +1,126 @@
+.contacts-page
+  background: #FAFAFA
+
+.contacts
+  &__title
+    margin: 0 0 20px
+
+  &__grid
+    display: grid
+    grid-gap: 0 30px
+    grid-auto-columns: .9fr .9fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-areas: 'tabs tabs content content content content content' 'feedback feedback content content content content content'
+
+  &__content
+    display: flex
+    grid-area: content
+
+  &__col-1
+    width: 100%
+
+  &__col-2
+    width: 100%
+    max-width: 364px
+    flex: 364px 0 0
+
+  &__txt
+    margin: 0 0 20px
+
+  &__link
+    margin: 0 0 20px
+
+    a
+      color: $main
+      font-size: 14px
+      font-weight: 500
+      text-decoration: underline
+
+      &:hover,
+      &:focus
+        color: darken($main, 10%)
+
+.contacts-info
+  margin: 30px 0 0
+
+  &__item
+    margin: 0 0 20px
+    display: flex
+    align-items: baseline
+    color: $txt-gray
+    font-size: 14px
+    font-weight: 500
+
+  &__item-txt
+    color: $txt-gray
+
+  &__txt-sub
+    display: block
+    margin: 6px 0 0
+    color: #000000
+    font-size: 12px
+    font-weight: 400
+    line-height: 22px
+
+  &__icon-cont
+    width: 14px
+    height: auto
+    flex: 14px 0 0
+    margin: 0 16px 0 0
+
+.contacts-tabs
+  grid-area: tabs
+  margin: 0 0 30px
+
+  &__item
+    display: flex
+    align-items: center
+    padding: 12px 0
+    font-size: 14px
+    font-weight: 500
+    border-bottom: 1px solid #E5E5E5
+    transition: .2s
+    cursor: pointer
+
+    .icon
+      width: 6px
+      height: auto
+      display: block
+      margin: 0 0 0 auto
+      transform: rotate(180deg)
+
+  &__item.active
+    color: $main
+    border-bottom: 2px solid $main
+
+    .icon
+      path
+        stroke: $main
+
+.contacts-feedback
+  padding: 30px
+  background: #FFFFFF
+  grid-area: feedback
+  box-sizing: border-box
+  border: 1px solid rgb(246, 246, 246)
+
+
+  &__title
+    display: block
+    margin: 0 0 10px
+    font-size: 16px
+    font-weight: 550
+
+  .input-wrapper
+    margin: 0 0 16px
+
+  input,
+  textarea
+    &::placeholder
+      color: #CAC9C9
+
+  .btn
+    justify-content: center
+    color: #FFFFFF
+    font-weight: 500
+    text-align: center
+    background: $main
