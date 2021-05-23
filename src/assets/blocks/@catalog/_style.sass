@@ -1,0 +1,251 @@
+@import './product-item/style'
+
+.catalog-page
+  padding: 30px 0 0
+  background: #FAFAFA
+
+.catalog
+  &__title
+    margin: 0 0 30px
+
+  &__cont
+    display: flex
+
+  &__grid
+    display: grid
+    grid-gap: 30px
+    grid-template-columns: 1fr 1fr
+
+  .navigation
+    .container
+      padding: 0
+
+  .navigation-btns
+    width: 100%
+
+    &__btn
+      &--prev,
+      &--next
+        width: 100%
+        display: block
+        flex: unset
+
+.catalog-head
+  display: flex
+  align-items: center
+  margin: 0 0 30px
+
+  .btn
+    width: 100%
+    max-width: 270px
+    padding: 12px
+
+.catalog-nav
+  width: 100%
+  display: flex
+  justify-content: flex-end
+
+  &__btn
+    width: 40px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex: 40px 0 0
+    box-sizing: border-box
+    cursor: pointer
+    transition: .2s
+    opacity: .5
+
+    &:hover,
+    &:focus
+      background: #FFFFFF
+      opacity: .9
+
+  &__btn.active
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+    opacity: 1
+
+  .select-box
+    width: 100%
+    max-width: 254px
+    margin: 0 30px 0 0
+
+    &__cont
+      padding: 13px 16px
+      border: 1px solid #F6F6F6
+
+      &:before
+        width: 10px
+        height: 10px
+        margin: 0 12px 0 0
+        content: ''
+        display: block
+        bottom: 1px
+        position: relative
+        background-size: 10px
+        background-position: center center
+        background-repeat: no-repeat
+        background-image: url('data:image/svg+xml;base64,PHN2ZyBjbGFzcz0naWNvbicgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB3aWR0aD0nMTAnIGhlaWdodD0nMTAnPjxwYXRoIGQ9J00wIDBoMTB2MkgwVjB6bTAgNGg4djJIMFY0em0wIDRoNnYySDBWOHonIGZpbGw9JyM0NDQ2NDInIGZpbGwtcnVsZT0nZXZlbm9kZCcvPjwvc3ZnPg==')
+        transition: .1s
+
+.catalog-sidebar
+  &__title
+    display: block
+    margin: 0 0 10px
+    font-size: 16px
+    font-weight: 550
+
+  .tabs
+    &__item
+      .icon
+        right: 2px
+        position: relative
+        transform: rotate(-90deg)
+
+  .btn
+    min-width: auto
+
+  .search
+    margin: 0 0 20px
+
+    &__input
+      padding: 8px 40px 8px 16px
+
+      &::placeholder
+        color: #C1C2C2
+
+.catalog-menu
+  &__item
+    list-style: none
+    overflow: hidden
+
+  &__item.active
+    .tabs__item
+      color: $main
+
+      &:before
+        height: 2px
+        background: $main
+
+      .icon
+        transform: rotate(90deg)
+
+        path
+          stroke: $main
+
+.catalog-menu-inner
+  &__list
+    margin: 0
+    padding: 4px 0
+
+  &__item
+    margin: 0 0 4px
+    font-size: 12px
+    font-weight: 500
+    line-height: 21px
+    list-style: none
+
+    .head
+      display: block
+      padding: 8px 20px
+      background: #FFFFFF
+      border: 1px solid #F6F6F6
+      cursor: pointer
+
+    ul
+      margin: 0
+      padding: 0
+
+      li
+        padding: 10px 20px 10px 34px
+        background: none
+        list-style: none
+
+  a
+    color: #000000
+
+    &:hover
+      color: $main
+
+.catalog-sidebar,
+.catalog-filters
+  width: 100%
+  max-width: 270px
+  flex: 270px 0 0
+  margin: 0 30px 0 0
+
+.catalog-filters
+  margin: 0 0 0 30px
+
+  &__title
+    display: block
+    margin: 0 0 12px
+    font-size: 16px
+    font-weight: 550
+
+  .btn
+    width: 100%
+    padding: 11px 20px
+
+    &--filled
+      margin: 0 0 24px
+      text-align: left
+      line-height: 18px
+      white-space: break-spaces
+
+.catalog-filter
+  margin: 0 0 20px
+  padding: 30px
+  background: #FFFFFF
+  border: 1px solid #F6F6F6
+  box-sizing: border-box
+  overflow: hidden
+
+  &__title
+    display: flex
+    align-items: baseline
+    font-size: 14px
+    font-weight: 500
+    line-height: 22px
+    cursor: pointer
+
+    &:after
+      width: 12px
+      height: 12px
+      margin: 0 0 0 auto
+      content: ''
+      display: block
+      top: 1px
+      position: relative
+      background-size: 12px
+      background-position: center center
+      background-repeat: no-repeat
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTYwIj48cGF0aCBkPSJNNDgwIDM0NC4xODFMMjY4Ljg2OSAxMzEuODg5Yy0xNS43NTYtMTUuODU5LTQxLjMtMTUuODU5LTU3LjA1NCAwLTE1Ljc1NCAxNS44NTctMTUuNzU0IDQxLjU3IDAgNTcuNDMxbDIzNy42MzIgMjM4LjkzN2M4LjM5NSA4LjQ1MSAxOS41NjIgMTIuMjU0IDMwLjU1MyAxMS42OTggMTAuOTkzLjU1NiAyMi4xNTktMy4yNDcgMzAuNTU1LTExLjY5OEw3NDguMTg2IDE4OS4zMmMxNS43NTYtMTUuODYgMTUuNzU2LTQxLjU3MSAwLTU3LjQzMXMtNDEuMjk5LTE1Ljg1OS01Ny4wNTEgMEw0ODAgMzQ0LjE4MXoiLz48L3N2Zz4=')
+      transition: .1s
+
+  &__content
+    transition: height .35s ease
+    opacity: 1
+
+  &__content.collapsed
+    height: 0
+    display: none
+
+  &__options
+    padding: 20px 0 0
+
+  .txt-gray
+    color: #C0BFBF
+
+  .checkbox
+    margin: 0 0 16px
+
+    &:last-child
+      margin: 0
+
+.catalog-filter.active
+  .catalog-filter__title
+    &:after
+      transform: rotate(180deg)

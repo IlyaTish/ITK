@@ -103,6 +103,7 @@ ul.list
       display: block
       background: $main
 
+svg,
 path
   transition: .2s
 
@@ -141,14 +142,17 @@ path
 
 .hidden
   display: none !important
+  opacity: 0
+  height: 0
 
 .transition.hidden
-  display: flex !important
+  height: 0
+  display: block !important
   opacity: 0 !important
 
 .transition
   opacity: 1 !important
-  transition: .3s ease !important
+  transition: .4s ease !important
 
 
 
@@ -249,7 +253,8 @@ path
       stroke: $main
       transition: .2s
 
-  &:hover
+  &:hover,
+  &:focus
     color: #FFFFFF
     background: $main
     border: 1px solid $main
@@ -274,6 +279,14 @@ path
       .icon
         margin: 0 auto 0 0
 
+  &--filled
+    color: #FFFFFF
+    background: $main
+
+    &:hover
+      background: darken($main, 10%)
+      border: 1px solid darken($main, 10%)
+
 
 .search-btn
   width: 54px
@@ -290,6 +303,82 @@ path
     path
       fill: #FFFFFF
       transition: .2s
+
+
+
+/* Tabs */
+
+.tabs
+  height: intrinsic
+  height: -moz-max-content
+  height: -webkit-max-content
+  margin: 0 0 30px
+  padding: 0
+
+  .swiper-wrapper
+    flex-wrap: wrap
+
+  &__item
+    display: flex
+    align-items: center
+    padding: 12px 0
+    position: relative
+    font-size: 14px
+    font-weight: 500
+    line-height: 20px
+    list-style: none
+    transition: .2s
+    cursor: pointer
+
+    &:before
+      width: 100%
+      height: 1px
+      content: ''
+      display: block
+      background: #E5E5E5
+      left: 0
+      bottom: 0
+      position: absolute
+
+    .icon
+      width: 6px
+      height: auto
+      display: block
+      margin: 0 0 0 auto
+      transform: rotate(180deg)
+
+    &:hover
+      color: $main
+
+      .icon
+        path
+          stroke: $main
+
+  &__item.active
+    color: $main
+
+    &:before
+      height: 2px
+      background: $main
+
+    .icon
+      path
+        stroke: $main
+
+
+
+/* Accordeon */
+
+.item
+  overflow: hidden
+
+  .content
+    transition: height .35s ease
+    opacity: 1
+
+  .content.collapsed
+    height: 0
+    display: none
 
 
 
@@ -375,7 +464,7 @@ path
     background: none
     box-sizing: border-box
     position: relative
-    z-index: 1
+    z-index: 4
 
     &:after
       width: 12px
@@ -416,6 +505,72 @@ path
 
 
 
+/* Checkbox */
+
+.checkbox,
+.radio
+  margin: 0
+  display: flex
+  cursor: pointer
+
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+  &__elem
+    width: 14px
+    height: 14px
+    flex: 14px 0 0
+    margin: 0 10px 0 0
+    top: 2px
+    position: relative
+    background: transparent
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    transition: .2s
+
+    &:after
+      width: 14px
+      height: 14px
+      content: ""
+      position: absolute
+      top: -1px
+      right: -1px
+      background-color: transparent
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSI2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNS43NTYuNTg4YS40MTcuNDE3IDAgMDEuMDczLjU4NEwyLjU4OSA1LjM0YS40MTcuNDE3IDAgMDEtLjYxNS4wNDdMLjIxNCAzLjcxOWEuNDE3LjQxNyAwIDExLjU3Mi0uNjA1bDEuNDI3IDEuMzUxTDUuMTcxLjY2MWEuNDE3LjQxNyAwIDAxLjU4NS0uMDczeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==")
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: 10px
+      box-sizing: border-box
+      opacity: 0
+      transition: .2s
+
+  &__txt
+    display: inline-block
+    color: #000000
+    font-size: 11px
+    line-height: 18px
+    position: relative
+    cursor: pointer
+
+    a
+      color: $main
+      text-decoration: underline
+      transition: .2s
+
+      &:hover
+        color: $main
+
+.checkbox input:checked ~ .checkbox__elem
+  background: $main
+  border: 1px solid $main
+
+.checkbox input:checked ~ .checkbox__elem:after
+  opacity: 1
+
+
+
 
 /* Inputs */
 
@@ -447,7 +602,7 @@ textarea,
   position: relative
 
   input
-    padding: 10px 40px 10px 16px
+    padding: 13px 40px 13px 16px
 
   &:after
     width: 40px

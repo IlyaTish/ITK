@@ -1,0 +1,16 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /common/blocks/header/block
+
+
+  - const page = 'catalog-page'
+
+  main(class='content '+ page +' inner-page')
+    include /@catalog/block
+    include /@catalog/catalog-description/block
+
+
+  //- Footer block ('.footer')
+  include /common/blocks/footer/block

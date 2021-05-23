@@ -2,24 +2,24 @@ extends template
 
 block content
   //- Header block ('.header')
-  include /header/block
+  include /common/blocks/header/block
 
 
   - const page = 'index'
 
   main(class='content '+ page +'')
     //- Main block ('.main')
-    include /main/block
+    include /@index/main/block
 
     //- News block ('.news')
-    include /news/block
+    include /@index/news/block
 
     //- News block ('.news')
-    include /production/block
+    include /@index/production/block
 
     //- About block ('.about')
-    include /about/block
+    include /@index/about/block
 
 
   //- Footer block ('.footer')
-  include /footer/block
+  include /common/blocks/footer/block

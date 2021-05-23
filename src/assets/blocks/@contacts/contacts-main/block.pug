@@ -1,0 +1,42 @@
+.contacts-main
+  .contacts-main__cont
+    .contacts-main__col-1
+      p.contacts__txt Офис ITK расположен на&nbsp;территории логистического комплекса ГК&nbsp;IEK на&nbsp;южной границе Москвы недалеко от&nbsp;станции метро Бульвар Дмитрия Донского, от&nbsp;которой до&nbsp;офиса ГК&nbsp;IEK в&nbsp;течение дня ходит корпоративный транспорт (микроавтобусы FORD с&nbsp;логотипом IEK).
+
+      .contacts__link
+        a(href='#') Расписание трансферов
+      .contacts__link
+        a(href='#') Схема проезда на&nbsp;автомобиле
+
+      .contacts-info
+        .contacts-info__item
+          .contacts-info__icon-cont
+            include ./../icons/map-marker.svg
+          .contacts-info__txt-cont
+            span.contacts-info__item-txt 108803, Москва, Варшавское шоссе 28-й км, влад.&nbsp;3
+            span.contacts-info__txt-sub Для оформления пропуска необходим документ, <br>удостоверяющий личность
+
+        .contacts-info__item
+          .contacts-info__icon-cont
+            include ./../icons/clock.svg
+          span.contacts-info__item-txt пн-пт 09:00-17:30 (сб, вс&nbsp;&mdash; выходные)
+
+        .contacts-info__item
+          .contacts-info__icon-cont
+            include ./../icons/mail.svg
+          a.contacts-info__item-txt(href='mailto:info@itk-group.ru') info@itk-group.ru
+
+        .contacts-info__item
+          .contacts-info__icon-cont
+            include ./../icons/phone.svg
+          a.contacts-info__item-txt(href='tel:+7 (495) 542-22-24') Центральный офис: <span>+7 (495) 542-22-24</span>
+
+        .contacts-info__item
+          .contacts-info__icon-cont
+            include ./../icons/phone.svg
+          a.contacts-info__item-txt(href='tel:+7 (495) 542-22-24') Техподдержка: <span>+7 (495) 542-22-24</span>
+
+    .contacts-main__col-2
+      .contacts-main__img-cont
+        img.contacts-main__img(src='assets/img/@contacts/contacts-main/pic-01.jpg')
+      #map.contacts-map

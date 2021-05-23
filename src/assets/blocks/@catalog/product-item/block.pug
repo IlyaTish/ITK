@@ -1,0 +1,11 @@
+mixin item(item)
+  .product-item
+    .product-item__img-cont
+      img.product-item__img(src=''+ item.image +'')
+    .product-item__content
+      p.product-item__txt= item.description
+      .product-item__parameters
+        .product-item__txt-gray= item.parameter_1
+        .product-item__txt-gray= item.parameter_2
+        .product-item__txt-gray= item.parameter_3
+        .product-item__txt-gray= item.parameter_4

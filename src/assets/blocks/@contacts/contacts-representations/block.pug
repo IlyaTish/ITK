@@ -1,0 +1,12 @@
+include ./data.pug
+
+//- Include Representation-item ('.representation-item')
+include ./representation-item/block
+
+
+.contacts-representations
+  span.contacts-representations__title Представительства в России
+
+  .representations-list
+    for item in ITEMS
+      +item(item)

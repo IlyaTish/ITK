@@ -6,11 +6,15 @@
 ready(() => {
   // -------- Exports --------
 
-  //= require main/script.js
-  //= require news/script.js
+  //= require @index/main/script.js
+  //= require @index/news/script.js
+
+  //= require @catalog/script.js
 
   //= require @solutions/production-swiper/script.js
   //= require @solutions/realized-swiper/script.js
+
+  //= require @contacts/script.js
 
   // window.onresize = () =>
   //   headerScript.headerTeleport()

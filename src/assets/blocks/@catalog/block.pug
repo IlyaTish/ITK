@@ -1,0 +1,316 @@
+section.catalog
+  include ./data.pug
+
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Продукция'
+    },
+    {
+      txt: 'Шкафы монтажные'
+    },
+    {
+      txt: 'Шкафы серверные',
+      class: 'active'
+    }
+  ])
+
+  //- Include Product-item ('.product-item')
+  include ./product-item/block
+
+  //- Navigation block ('.nav')
+  include /common/blocks/navigation/block
+
+
+  .container
+    h1.catalog__title Шкафы серверные
+
+    .catalog-head
+      a.btn.btn--back
+        svg.icon(
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='#000'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        )
+          path(d='M4 12h16M14 6l6 6-6 6')
+        span.btn__txt Шкафы монтажные
+
+      .catalog-nav
+        .select-box.selectable
+          span.select-box__cont Артикул
+
+          ul.select-box__dropdown(style='display: none')
+            li.active
+              span.checkbox__txt Цена &#8593;
+            li
+              span.checkbox__txt Цена &#8595;
+            li
+              span.checkbox__txt Артикул
+
+        span.catalog-nav__btn
+          include ./icons/layout-btn-02.svg
+        span.catalog-nav__btn.active
+          include ./icons/layout-btn-01.svg
+
+
+    .catalog__cont
+      .catalog-sidebar
+        span.catalog-sidebar__title Каталог ITK
+        .search
+          input.search__input(type='search' placeholder='Поиск по каталогу')
+
+        ul.catalog-menu.tabs
+          li.catalog-menu__item.item.active
+            .tabs__item.head
+              span.tabs__txt Шкафы монтажные
+              include /common/icons/arrow.svg
+
+            .catalog-menu-inner.content
+              ul.catalog-menu-inner__list
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы серверные
+                  ul.content.collapsed
+                    li Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Стойки открытые
+                  ul.content.collapsed
+                    li Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы настенные
+                  ul.content.collapsed
+                    li Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы уличные
+                  ul.content.collapsed
+                    li Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Комплектующие и аксессуары для шкафов и стоек
+                  ul.content.collapsed
+                    li Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+          li.catalog-menu__item.item
+            .tabs__item.head
+              span.tabs__txt LAN-кабель и&nbsp;инструменты
+              include /common/icons/arrow.svg
+
+            .catalog-menu-inner.content.collapsed
+              ul.catalog-menu-inner__list
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+          li.catalog-menu__item.item
+            .tabs__item.head
+              span.tabs__txt Компоненты СКС медные
+              include /common/icons/arrow.svg
+            .catalog-menu-inner.content.collapsed
+              ul.catalog-menu-inner__list
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+          li.catalog-menu__item.item
+            .tabs__item.head
+              span.tabs__txt Компоненты СКС оптические
+              include /common/icons/arrow.svg
+            .catalog-menu-inner.content.collapsed
+              ul.catalog-menu-inner__list
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+          li.catalog-menu__item.item
+            .tabs__item.head
+              span.tabs__txt Электропитание и&nbsp;мониторинг
+              include /common/icons/arrow.svg
+
+            .catalog-menu-inner.content.collapsed
+              ul.catalog-menu-inner__list
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+                li.catalog-menu-inner__item.item
+                  span.head Шкафы сетевые напольные
+                  ul.content.collapsed
+                    li
+                      a(href='#') Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)
+
+
+        a.btn(href='#')
+          span.btn__txt Прайс-лист
+          svg.icon(
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='#000'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          )
+            path(d='M4 12h16M14 6l6 6-6 6')
+
+      .catalog__content
+        .catalog__grid
+          for item in ITEMS
+            +item(item)
+
+        +navigation('navigation__cont--column')
+
+
+      .catalog-filters
+        a.btn.btn--filled(href='#')
+          span.btn__txt Конфигуратор <br>и&nbsp;подбор аксессуаров
+
+        .catalog-filters__list
+          span.catalog-filters__title Подбор по&nbsp;параметрам
+
+          .catalog-filter.item
+            span.catalog-filter__title.head Ширина, мм
+
+            .catalog-filter__content.content.collapsed
+              .catalog-filter__options
+                label.checkbox
+                  input(type='checkbox' checked)
+                  .checkbox__elem
+                  span.checkbox__txt 600 <span class='txt-gray'>(3)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 800 <span class='txt-gray'>(27)</span>
+
+          .catalog-filter.item
+            span.catalog-filter__title.head Высота, мм
+
+            .catalog-filter__content.content.collapsed
+              .catalog-filter__options
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 1210 <span class='txt-gray'>(3)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 1610 <span class='txt-gray'>(6)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 2010 <span class='txt-gray'>(3)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 2025 <span class='txt-gray'>(15)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 2290 <span class='txt-gray'>(3)</span>
+
+          .catalog-filter.item
+            span.catalog-filter__title.head Глубина, мм
+
+            .catalog-filter__content.content.collapsed
+              .catalog-filter__options
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 1000 <span class='txt-gray'>(24)</span>
+
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 1200 <span class='txt-gray'>(6)</span>
+
+          .catalog-filter.item
+            span.catalog-filter__title.head Количество модулей в&nbsp;высоту
+
+            .catalog-filter__content.content.collapsed
+              .catalog-filter__options
+                label.checkbox
+                  input(type='checkbox')
+                  .checkbox__elem
+                  span.checkbox__txt 600 <span class='txt-gray'>(3)</span>
+

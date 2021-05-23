@@ -9,19 +9,11 @@
     display: grid
     grid-gap: 0 30px
     grid-auto-columns: .9fr .9fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: minmax(150px, min-content) auto
     grid-template-areas: 'tabs tabs content content content content content' 'feedback feedback content content content content content'
 
   &__content
-    display: flex
     grid-area: content
-
-  &__col-1
-    width: 100%
-
-  &__col-2
-    width: 100%
-    max-width: 364px
-    flex: 364px 0 0
 
   &__txt
     margin: 0 0 20px
@@ -39,6 +31,37 @@
       &:focus
         color: darken($main, 10%)
 
+.contacts-map
+  height: 360px
+
+  .ymaps-2-1-78-copyrights-pane,
+  .ymaps-2-1-78-controls__bottom,
+  .ymaps-2-1-78-controls__toolbar_right
+    display: none !important
+
+  .ymaps-2-1-78-_hidden-text
+    border-radius: 100%
+
+    .ymaps-2-1-78-float-button-icon
+      background-size: 20px
+
+  .ymaps-2-1-78-zoom
+    height: 0px !important
+
+  .ymaps-2-1-78-zoom__plus
+    border-radius: 20px 20px 0 0
+
+    .ymaps-2-1-78-zoom__icon
+      background-size: 12px
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkwIiBoZWlnaHQ9IjI5MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMjcwIDEyNUgxNjVWMjBjMC0xMS05LTIwLTIwLTIwcy0yMCA5LTIwIDIwdjEwNUgyMGMtMTEgMC0yMCA5LTIwIDIwczkgMjAgMjAgMjBoMTA1djEwNWMwIDExIDkgMjAgMjAgMjBzMjAtOSAyMC0yMFYxNjVoMTA1YzExIDAgMjAtOSAyMC0yMHMtOS0yMC0yMC0yMHoiIGZpbGw9IiM2NjYiLz48L3N2Zz4=')
+
+  .ymaps-2-1-78-zoom__minus
+    border-radius: 0 0 20px 20px
+
+    .ymaps-2-1-78-zoom__icon
+      background-size: 12px
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkwIiBoZWlnaHQ9IjQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIyOTAiIGhlaWdodD0iNDAiIHJ4PSIyMCIgZmlsbD0iIzY2NiIvPjwvc3ZnPg==')
+
 .contacts-info
   margin: 30px 0 0
 
@@ -52,6 +75,10 @@
 
   &__item-txt
     color: $txt-gray
+    line-height: 20px
+
+    span
+      white-space: nowrap
 
   &__txt-sub
     display: block
@@ -67,42 +94,22 @@
     flex: 14px 0 0
     margin: 0 16px 0 0
 
-.contacts-tabs
+.tabs
   grid-area: tabs
-  margin: 0 0 30px
-
-  &__item
-    display: flex
-    align-items: center
-    padding: 12px 0
-    font-size: 14px
-    font-weight: 500
-    border-bottom: 1px solid #E5E5E5
-    transition: .2s
-    cursor: pointer
-
-    .icon
-      width: 6px
-      height: auto
-      display: block
-      margin: 0 0 0 auto
-      transform: rotate(180deg)
-
-  &__item.active
-    color: $main
-    border-bottom: 2px solid $main
-
-    .icon
-      path
-        stroke: $main
 
 .contacts-feedback
+  height: intrinsic
+  height: -moz-max-content
+  height: -webkit-max-content
   padding: 30px
   background: #FFFFFF
   grid-area: feedback
   box-sizing: border-box
   border: 1px solid rgb(246, 246, 246)
 
+  &__col-1,
+  &__col-2
+    width: 100%
 
   &__title
     display: block
@@ -117,6 +124,9 @@
   textarea
     &::placeholder
       color: #CAC9C9
+
+  .checkbox
+    margin: 0 0 20px
 
   .btn
     justify-content: center
