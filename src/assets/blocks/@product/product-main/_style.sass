@@ -1,0 +1,81 @@
+.product-head
+  padding: 0 0 40px
+  position: relative
+  background: #FAFAFA
+
+  &:before
+    width: 100%
+    height: calc(100% + 100px)
+    content: ''
+    display: block
+    top: -70px
+    left: 0
+    position: absolute
+    background: #FAFAFA
+    z-index: 1
+
+.product-main
+  &__title
+    position: relative
+    z-index: 3
+
+  &__cont
+    display: grid
+    grid-gap: 30px
+    grid-template-columns: 1fr 1fr
+    position: relative
+    z-index: 3
+
+  &__images
+    overflow: hidden
+
+  &__img-cont
+    display: flex
+    padding: 40px
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+
+  &__img
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+
+  &__txt-cont
+    max-height: 384px
+    overflow: hidden
+
+  &__txt
+    margin: 0
+    padding: 50px 0 0
+    font-weight: 500
+
+  &__link-more
+    display: flex
+    align-items: center
+    margin: 14px 0 0
+    font-size: 12px
+
+    .icon
+      width: 11px
+      height: auto
+      margin: 0 0 0 6px
+      top: 1px
+      position: relative
+
+  &__btn-cont
+    margin: 50px 0 0
+
+  .swiper-slide
+    width: 100% !important
+
+  .btn
+    width: 100%
+    margin: 0 0 14px
+    text-align: center
+    justify-content: center
+
+    &:last-child
+      margin: 0

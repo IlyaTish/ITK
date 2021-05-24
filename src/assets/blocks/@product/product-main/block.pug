@@ -1,0 +1,80 @@
+section.product-main
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Продукция'
+    },
+    {
+      txt: 'Шкафы монтажные'
+    },
+    {
+      txt: 'Шкафы серверные'
+    },
+    {
+      txt: 'Шкафы LINEA S старой модификации (3 местами)',
+      class: 'active'
+    }
+  ])
+
+
+  .product-head
+    .container
+      h1.product-main__title ITK Шкаф серверный 19&Prime; LINEA S&nbsp;24U 600&times;1000мм перфорированные двери черный
+
+  .container
+    .product-main__cont
+      .product-main__images
+        .product-main-swiper.swiper-contaier
+          .swiper-wrapper
+            .swiper-slide
+              .product-main__img-cont
+                img.product-main__img(src='assets/img/@product/product-main/pic.jpg')
+            .swiper-slide
+              .product-main__img-cont
+                img.product-main__img(src='assets/img/@product/product-main/pic.jpg')
+            .swiper-slide
+              .product-main__img-cont
+                img.product-main__img(src='assets/img/@product/product-main/pic.jpg')
+
+      .product-main__content
+        .product-main__txt-cont
+          p.product-main__txt Серверные шкафы ITK применяются для размещения тяжелого телекоммуникационного оборудования и&nbsp;серверов большой глубины в&nbsp;условиях ограниченного монтажного пространства. На&nbsp;выбор доступны шкафы шириной 600&nbsp;мм и&nbsp;800&nbsp;мм, глубиной от&nbsp;1000 до&nbsp;1200&nbsp;мм. <br><br>Конструкция сборно-разборная, в&nbsp;базовой комплектации состоит из&nbsp;цельсварных рам, передней и&nbsp;задней дверей, комплекта боковых стенок, крыши, основания, боковых профилей и&nbsp;двух пар вертикальных монтажных стоек, имеющих маркировку высоты в&nbsp;юнитах. Все токопроводящие элементы конструкции имеют заземление. <br><br>За&nbsp;счет усиленной конструкции статическая нагрузочная способность шкафа составляет 1500&nbsp;кг, а&nbsp;перфорированные двери с&nbsp;процентом перфорации&nbsp;69% гарантируют отличное естественное охлаждение. Доступ в&nbsp;шкаф возможен с&nbsp;четырех сторон. Для ввода кабелей предусмотрены кабельные вводы в&nbsp;крыше и&nbsp;основании. Боковые стенки съемные, имеют замки и&nbsp;защелки для фиксации. Вертикальные монтажные профили могут регулироваться по&nbsp;глубине с&nbsp;шагом 25&nbsp;мм. <br><br>В&nbsp;крыше шкафа предусмотрено посадочное место для установки потолочных вентиляторных панелей для организации высокоэффективного принудительного охлаждения. <br><br>Шкафы поставляются тремя отдельными местами в&nbsp;отдельных коробках. При заказе требуется каждое место заказывать отдельно, каждое под своим артикулом с&nbsp;цифрой 1, 2&nbsp;и&nbsp;3&nbsp;на конце.
+
+        a.product-main__link-more
+          span Подробное описание
+          svg.icon(
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='#000'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          )
+            path(d='M4 12h16M14 6l6 6-6 6')
+
+        .product-main__btn-cont
+          a.btn(href='#')
+            span.btn__txt Конфигуратор и&nbsp;подбор аксессуаров
+            svg.icon(
+              xmlns='http://www.w3.org/2000/svg'
+              width='24'
+              height='24'
+              viewBox='0 0 24 24'
+              fill='none'
+              stroke='#000'
+              stroke-width='2'
+              stroke-linecap='round'
+              stroke-linejoin='round'
+            )
+              path(d='M4 12h16M14 6l6 6-6 6')
+
+          a.btn.btn--filled(href='#')
+            span.btn__txt Где купить?
