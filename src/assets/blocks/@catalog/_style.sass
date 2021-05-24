@@ -27,6 +27,7 @@
       &--prev,
       &--next
         width: 100%
+        max-width: 100%
         display: block
         flex: unset
 
@@ -34,11 +35,57 @@
   display: flex
   align-items: center
   margin: 0 0 30px
+  position: relative
 
   .btn
     width: 100%
     max-width: 270px
+    margin: 0 30px 0 0
     padding: 12px
+
+.settings-menu
+  width: 100%
+  margin: 0 30px 0 0
+  display: none
+
+  &__content
+    width: calc(100% + 40px)
+    margin-left: -20px
+    left: 0
+    top: 100%
+    position: absolute
+    background: #FFFFFF
+    box-shadow: 0 8px 6px 1px #00000014
+    overflow: hidden
+    z-index: 9
+
+  &__cont
+    padding: 20px
+
+  .catalog-filters
+    max-width: 100%
+    margin: 0
+
+  .catalog-filter
+    &__title
+      padding: 16px
+
+    &__options
+      padding: 0 16px 16px
+
+.settings-menu-btn.btn
+  width: auto
+  max-width: none
+  min-width: auto
+  margin: 0
+  padding: 12px 20px
+  display: inline-flex
+  align-items: center
+  box-sizing: border-box
+
+  .icon
+    margin: 0 10px 0 0
+    fill: #FFFFFF
 
 .catalog-nav
   width: 100%
@@ -197,7 +244,6 @@
 
 .catalog-filter
   margin: 0 0 20px
-  padding: 30px
   background: #FFFFFF
   border: 1px solid #F6F6F6
   box-sizing: border-box
@@ -206,6 +252,7 @@
   &__title
     display: flex
     align-items: baseline
+    padding: 20px 30px
     font-size: 14px
     font-weight: 500
     line-height: 22px
@@ -234,7 +281,7 @@
     display: none
 
   &__options
-    padding: 20px 0 0
+    padding: 0 30px 30px
 
   .txt-gray
     color: #C0BFBF
@@ -244,6 +291,9 @@
 
     &:last-child
       margin: 0
+
+  &:last-child
+    margin: 0
 
 .catalog-filter.active
   .catalog-filter__title

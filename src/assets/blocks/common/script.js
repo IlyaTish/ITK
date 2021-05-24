@@ -23,10 +23,20 @@ const initSwiper = () => {
 }
 
 
-/* Teleport function */
+/* Teleport functions */
 
 const appendElem = (elem, cont) => {
   if (cont) cont.appendChild(elem)
+}
+
+const teleportEach = (elements, conts) => {
+  const containers = conts.map(cont => document.querySelector(cont));
+
+  const elems = elements.forEach((item, itemIndex) => {
+    const $item = document.querySelector(item);
+
+    containers[itemIndex].appendChild($item)
+  })
 }
 
 

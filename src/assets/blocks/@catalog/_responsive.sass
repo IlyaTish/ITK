@@ -1,0 +1,71 @@
+@import './product-item/responsive'
+
+@media (max-width: 1199px)
+  .settings-menu
+    display: block
+
+
+@media (max-width: 880px)
+  .catalog-head
+    flex-wrap: wrap
+
+  .settings-menu
+    width: auto
+
+  .catalog-nav
+    margin: 20px 0 0
+    justify-content: flex-start
+
+    .select-box
+      margin: 0 auto 0 0
+
+  .catalog-sidebar
+    display: none
+
+
+@media (max-width: 590px)
+  .catalog
+    &__grid
+      grid-gap: 20px
+
+  .catalog-head
+    .btn
+      width: auto
+      min-width: auto
+      max-width: none
+
+      &__txt
+        display: none
+
+  .settings-menu-btn.btn
+    .btn__txt
+      display: inline-block
+
+  .settings-menu
+    &__content
+      top: calc(100% + 20px)
+
+    .catalog-filters
+      .btn
+        &__txt
+          display: inline-block
+
+
+@media (max-width: 479px)
+  .catalog
+    &__grid
+      grid-template-columns: 1fr
+
+    &__cont
+      display: block
+
+  .catalog-nav
+    width: 100%
+
+    &__btn
+      display: none
+
+    .select-box
+      width: 100%
+      max-width: 100%
+      margin: 0

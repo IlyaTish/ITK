@@ -10,12 +10,13 @@ ready(() => {
   //= require @index/news/script.js
 
   //= require @product/script.js
+  //= require @catalog/script.js
 
   //= require @solutions/production-swiper/script.js
   //= require @solutions/realized-swiper/script.js
 
   //= require @contacts/script.js
 
-  // window.onresize = () =>
-  //   headerScript.headerTeleport()
+  window.onresize = () =>
+    catalogScript.catalogTeleport()
 })
