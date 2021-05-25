@@ -107,6 +107,39 @@ svg,
 path
   transition: .2s
 
+table
+  width: 100%
+  border-collapse: collapse
+  table-layout: fixed
+
+  thead
+    tr
+      background: #A7D78B
+
+    th,
+    td
+      padding: 12px 10px
+      font-size: 14px
+
+  tr
+    background: #FFFFFF
+
+    &:nth-child(even)
+      background: #F5F5F5
+
+  th,
+  td
+    width: 100%
+    padding: 13px 10px
+    color: $dark
+    font-size: 12px
+    font-weight: 500
+    text-align: left
+    box-sizing: border-box
+
+  th
+    font-weight: 550
+
 
 .container
   width: 100%
@@ -241,7 +274,7 @@ path
   border: 1px solid $main
   box-sizing: border-box
   white-space: nowrap
-  transition: .2s
+  transition: .4s
   cursor: pointer
 
   .icon
@@ -251,7 +284,7 @@ path
 
     path
       stroke: $main
-      transition: .2s
+      transition: .4s
 
   &:hover,
   &:focus

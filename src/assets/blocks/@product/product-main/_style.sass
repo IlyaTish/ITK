@@ -20,6 +20,7 @@
     z-index: 3
 
   &__cont
+    margin: 0 0 80px
     display: grid
     grid-gap: 30px
     grid-template-columns: 1fr 1fr
@@ -31,11 +32,13 @@
 
   &__img-cont
     display: flex
+    max-height: 544px
     padding: 40px
     align-items: center
     justify-content: center
     background: #FFFFFF
     border: 1px solid #F6F6F6
+    box-sizing: border-box
 
   &__img
     width: auto
@@ -44,7 +47,7 @@
     max-height: 100%
 
   &__txt-cont
-    max-height: 384px
+    max-height: 470px
     overflow: hidden
 
   &__txt
@@ -57,6 +60,7 @@
     align-items: center
     margin: 14px 0 0
     font-size: 12px
+    cursor: pointer
 
     .icon
       width: 11px
@@ -65,11 +69,36 @@
       top: 1px
       position: relative
 
+    &:hover
+      .icon
+        path
+          stroke: $main
+
+  &__btn-prev,
+  &__btn-next
+    width: 40px
+    height: 80px
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    top: unset
+    left: unset
+    right: unset
+    position: unset
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+    border-radius: 0
+    transition: .2s
+
+    &:hover
+      background: lighten($main, 50%)
+
+  &__btn-prev
+    display: none
+
   &__btn-cont
     margin: 50px 0 0
-
-  .swiper-slide
-    width: 100% !important
 
   .btn
     width: 100%
@@ -79,3 +108,133 @@
 
     &:last-child
       margin: 0
+
+.product-images
+  overflow: hidden
+
+  &__bottom
+    display: flex
+    align-items: center
+
+  &__actions
+    margin: 0 0 0 auto
+    display: flex
+
+  &__action-btn
+    width: 80px
+    height: 80px
+    margin: 0 14px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+    box-sizing: border-box
+    transition: .2s
+    cursor: pointer
+
+    &:hover,
+    &:focus
+      background: lighten($main, 50%)
+
+    &:focus
+      background: #FFFFFF
+      border: 1px solid lighten(#333333, 50%)
+
+    .icon.degree
+      width: 34px
+
+      path
+        fill: #444642
+
+    &:last-child
+      margin: 0
+
+.product-main-swiper
+  margin: 0 0 14px
+
+  .swiper-slide
+    width: 100% !important
+
+.product-thumbnails-wrapper
+  display: flex
+
+.product-thumbnails
+  max-width: 190px
+  margin: 0 !important
+
+  &__thumbnail
+    width: 80px
+    height: 80px
+    display: flex
+    padding: 10px
+    align-items: center
+    justify-content: center
+    background: #FFFFFF
+    border: 1px solid #F6F6F6
+    box-sizing: border-box
+
+  &__img
+    width: auto
+    height: auto
+    max-width: 100%
+    max-height: 100%
+
+  .swiper-slide-next
+    position: relative
+
+    &:before
+      width: 100%
+      height: 100%
+      content: ''
+      display: block
+      top: 0
+      left: 0
+      position: absolute
+      background: #FFFFFF
+      transition: .2s
+      opacity: .5
+
+.product-main-tabs
+  position: relative
+
+  &:before
+    width: 100%
+    height: 3px
+    content: ''
+    display: block
+    left: 0
+    bottom: 0
+    position: absolute
+    background: #F6F6F6
+
+  &__item
+    display: inline-block
+    padding: 24px 16px
+    position: relative
+    color: #D1D3D4
+    font-size: 14px
+    font-weight: 550
+    transition: .2s
+    cursor: pointer
+
+    &:before
+      width: 100%
+      height: 3px
+      content: ''
+      display: block
+      left: 0
+      bottom: 0
+      position: absolute
+      background: $main
+      transition: .2s
+      opacity: 0
+
+  &__item.active
+    color: #000000
+
+    &:before
+      opacity: 1
+
+  .swiper-slide
+    width: auto !important

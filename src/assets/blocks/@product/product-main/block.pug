@@ -28,8 +28,8 @@ section.product-main
 
   .container
     .product-main__cont
-      .product-main__images
-        .product-main-swiper.swiper-contaier
+      .product-images
+        .product-main-swiper.swiper-container
           .swiper-wrapper
             .swiper-slide
               .product-main__img-cont
@@ -40,6 +40,36 @@ section.product-main
             .swiper-slide
               .product-main__img-cont
                 img.product-main__img(src='assets/img/@product/product-main/pic.jpg')
+
+        .product-images__bottom
+          .product-thumbnails-wrapper
+            .product-thumbnails.swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .product-thumbnails__thumbnail
+                    img.product-thumbnails__img(src='assets/img/@product/product-main/pic.jpg')
+                .swiper-slide
+                  .product-thumbnails__thumbnail
+                    img.product-thumbnails__img(src='assets/img/@product/product-main/pic.jpg')
+                .swiper-slide
+                  .product-thumbnails__thumbnail
+                    img.product-thumbnails__img(src='assets/img/@product/product-main/pic.jpg')
+                .swiper-slide
+                  .product-thumbnails__thumbnail
+                    img.product-thumbnails__img(src='assets/img/@product/product-main/pic.jpg')
+
+            .swiper-button-prev.product-main__btn-prev
+              include /common/icons/arrow.svg
+
+            .swiper-button-next.product-main__btn-next
+              include /common/icons/arrow.svg
+
+          .product-images__actions
+            button.product-images__action-btn
+              include ./../icons/video.svg
+            button.product-images__action-btn
+              include ./../icons/360-degree.svg
+
 
       .product-main__content
         .product-main__txt-cont
@@ -78,3 +108,19 @@ section.product-main
 
           a.btn.btn--filled(href='#')
             span.btn__txt Где купить?
+
+
+    .product-main-tabs.swiper-container
+      .swiper-wrapper
+        .swiper-slide
+          span.product-main-tabs__item Продукт
+        .swiper-slide
+          span.product-main-tabs__item.active Особенности конструкции
+        .swiper-slide
+          span.product-main-tabs__item Характеристики
+        .swiper-slide
+          span.product-main-tabs__item Документация
+        .swiper-slide
+          span.product-main-tabs__item Совместно применяемые изделия
+        .swiper-slide
+          span.product-main-tabs__item Близкая по параметрам продукция
