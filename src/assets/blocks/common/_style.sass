@@ -50,17 +50,35 @@ h2
   @media (max-width: 991px)
     font-size: 28px
 
+  @media (max-width: 767px)
+    font-size: 26px
+
+  @media (max-width: 590px)
+    font-size: 24px
+
 h3
   font-size: 28px
 
   @media (max-width: 991px)
     font-size: 26px
 
+  @media (max-width: 767px)
+    font-size: 24px
+
+  @media (max-width: 590px)
+    font-size: 22px
+
 h4
   font-size: 24px
 
   @media (max-width: 991px)
     font-size: 22px
+
+  @media (max-width: 767px)
+    font-size: 20px
+
+  @media (max-width: 590px)
+    font-size: 18px
 
 h5
   font-size: 20px
@@ -148,6 +166,14 @@ table
 
   th
     font-weight: 550
+
+@media (max-width: 767px)
+  .table-wrapper
+    overflow-x: scroll
+    overflow-y: hidden
+
+  table
+    min-width: 710px
 
 
 .container
@@ -680,3 +706,11 @@ textarea
   .select-box__cont
     &:after
       transform: rotate(180deg)
+
+::-webkit-scrollbar
+  width: 6px
+  height: 4px
+
+::-webkit-scrollbar-thumb
+  background-color: #B9BCBC
+  border-radius: 20px

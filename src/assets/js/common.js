@@ -10,6 +10,8 @@ ready(() => {
   //= require @index/news/script.js
 
   //= require @product/script.js
+  //= require @product/product-main/script.js
+
   //= require @catalog/script.js
 
   //= require @solutions/production-swiper/script.js

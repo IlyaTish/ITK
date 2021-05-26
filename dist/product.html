@@ -53,7 +53,7 @@
         </div>
       </header>
       <main class="content product-page inner-page">
-        <section class="product-main">
+        <section class="product-main" id="product">
                     <div class="container">
                       <div class="breadcrumbs">
                         <ul class="breadcrumbs__list">
@@ -141,17 +141,19 @@
             </div>
             <div class="product-main-tabs swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><span class="product-main-tabs__item">Продукт</span></div>
-                <div class="swiper-slide"><span class="product-main-tabs__item active">Особенности конструкции</span></div>
-                <div class="swiper-slide"><span class="product-main-tabs__item">Характеристики</span></div>
-                <div class="swiper-slide"><span class="product-main-tabs__item">Документация</span></div>
-                <div class="swiper-slide"><span class="product-main-tabs__item">Совместно применяемые изделия</span></div>
-                <div class="swiper-slide"><span class="product-main-tabs__item">Близкая по параметрам продукция</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item" data-link-to="#product">Продукт</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item active" data-link-to="#features">Особенности конструкции</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item" data-link-to="#table">Характеристики</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item" data-link-to="#documentation">Документация</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item" data-link-to="#addition-products">Совместно применяемые изделия</span></div>
+                <div class="swiper-slide"><span class="product-main-tabs__item" data-link-to="#similar-products">Близкая по параметрам продукция</span></div>
               </div>
+              <div class="swiper-button-prev product-main-tabs__btn-prev"><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+              <div class="swiper-button-next product-main-tabs__btn-next"><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
             </div>
           </div>
         </section>
-        <section class="product-features">
+        <section class="product-features" id="features">
           <div class="container">
             <div class="product-features__head">
               <h2 class="product-features__title">Особенности конструкции</h2>
@@ -214,260 +216,270 @@
             </div>
           </div>
         </section>
-        <div class="product-table">
+        <div class="product-table" id="table">
           <div class="container">
             <h2 class="product-table__title">Характеристики</h2><span class="product-table__subtitle">Технические характеристики</span>
             <div class="product-table__cont">
               <div class="product-table__wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Параметр</th>
-                      <th>Значение</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Категория:</td>
-                      <td>5E</td>
-                    </tr>
-                    <tr>
-                      <td>Тип патч-панели:</td>
-                      <td>STP</td>
-                    </tr>
-                    <tr>
-                      <td>Количество портов:</td>
-                      <td>12</td>
-                    </tr>
-                    <tr>
-                      <td>Тип соединителя или разъема:</td>
-                      <td>RJ45 8(8)</td>
-                    </tr>
-                    <tr>
-                      <td>Тип заделки контактов модулей IDC:</td>
-                      <td>Dual</td>
-                    </tr>
-                    <tr>
-                      <td>Размер AWG:</td>
-                      <td>22...24</td>
-                    </tr>
-                    <tr>
-                      <td>Номер цвета RAL:</td>
-                      <td>9005</td>
-                    </tr>
-                    <tr>
-                      <td>Тип монтажа:крепление</td>
-                      <td>10-дюймовое крепление</td>
-                    </tr>
-                    <tr>
-                      <td>Макс сила тока:</td>
-                      <td>1.5 А</td>
-                    </tr>
-                    <tr>
-                      <td>Напряжение:</td>
-                      <td>48 В</td>
-                    </tr>
-                    <tr>
-                      <td>Контактное сопротивление:</td>
-                      <td>20 мОм</td>
-                    </tr>
-                    <tr>
-                      <td>Сопротивление изоляции:</td>
-                      <td>500 мОм</td>
-                    </tr>
-                    <tr>
-                      <td>Температура эксплуатации:</td>
-                      <td>0…+60 °C</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Категория:</td>
+                        <td>5E</td>
+                      </tr>
+                      <tr>
+                        <td>Тип патч-панели:</td>
+                        <td>STP</td>
+                      </tr>
+                      <tr>
+                        <td>Количество портов:</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>Тип соединителя или разъема:</td>
+                        <td>RJ45 8(8)</td>
+                      </tr>
+                      <tr>
+                        <td>Тип заделки контактов модулей IDC:</td>
+                        <td>Dual</td>
+                      </tr>
+                      <tr>
+                        <td>Размер AWG:</td>
+                        <td>22...24</td>
+                      </tr>
+                      <tr>
+                        <td>Номер цвета RAL:</td>
+                        <td>9005</td>
+                      </tr>
+                      <tr>
+                        <td>Тип монтажа:крепление</td>
+                        <td>10-дюймовое крепление</td>
+                      </tr>
+                      <tr>
+                        <td>Макс сила тока:</td>
+                        <td>1.5 А</td>
+                      </tr>
+                      <tr>
+                        <td>Напряжение:</td>
+                        <td>48 В</td>
+                      </tr>
+                      <tr>
+                        <td>Контактное сопротивление:</td>
+                        <td>20 мОм</td>
+                      </tr>
+                      <tr>
+                        <td>Сопротивление изоляции:</td>
+                        <td>500 мОм</td>
+                      </tr>
+                      <tr>
+                        <td>Температура эксплуатации:</td>
+                        <td>0…+60 °C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="product-table__wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Параметр</th>
-                      <th>Значение</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Подходит для количества коннекторов:</td>
-                      <td>12</td>
-                    </tr>
-                    <tr>
-                      <td>Количество модулей в высоту:</td>
-                      <td>1.0</td>
-                    </tr>
-                    <tr>
-                      <td>Цвет:</td>
-                      <td>Черный</td>
-                    </tr>
-                    <tr>
-                      <td>Высота:</td>
-                      <td>44.5 мм</td>
-                    </tr>
-                    <tr>
-                      <td>Ширина:</td>
-                      <td>254.0 мм</td>
-                    </tr>
-                    <tr>
-                      <td>Глубина:</td>
-                      <td>100.0 мм</td>
-                    </tr>
-                    <tr>
-                      <td>Маркировка:</td>
-                      <td>Цифровая и цветовая</td>
-                    </tr>
-                    <tr>
-                      <td>Толщина металла:</td>
-                      <td>1.6 мм</td>
-                    </tr>
-                    <tr>
-                      <td>Материал контактов:</td>
-                      <td>Бронза с позолотой</td>
-                    </tr>
-                    <tr>
-                      <td>Материал корпуса:</td>
-                      <td>Металл</td>
-                    </tr>
-                    <tr>
-                      <td>Полоса пропускания:</td>
-                      <td>100 МГц</td>
-                    </tr>
-                    <tr>
-                      <td>Диаметр проводника:</td>
-                      <td>0,51...0,64 мм</td>
-                    </tr>
-                    <tr>
-                      <td>Усилие удержания разъема:</td>
-                      <td>50 Н</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Подходит для количества коннекторов:</td>
+                        <td>12</td>
+                      </tr>
+                      <tr>
+                        <td>Количество модулей в высоту:</td>
+                        <td>1.0</td>
+                      </tr>
+                      <tr>
+                        <td>Цвет:</td>
+                        <td>Черный</td>
+                      </tr>
+                      <tr>
+                        <td>Высота:</td>
+                        <td>44.5 мм</td>
+                      </tr>
+                      <tr>
+                        <td>Ширина:</td>
+                        <td>254.0 мм</td>
+                      </tr>
+                      <tr>
+                        <td>Глубина:</td>
+                        <td>100.0 мм</td>
+                      </tr>
+                      <tr>
+                        <td>Маркировка:</td>
+                        <td>Цифровая и цветовая</td>
+                      </tr>
+                      <tr>
+                        <td>Толщина металла:</td>
+                        <td>1.6 мм</td>
+                      </tr>
+                      <tr>
+                        <td>Материал контактов:</td>
+                        <td>Бронза с позолотой</td>
+                      </tr>
+                      <tr>
+                        <td>Материал корпуса:</td>
+                        <td>Металл</td>
+                      </tr>
+                      <tr>
+                        <td>Полоса пропускания:</td>
+                        <td>100 МГц</td>
+                      </tr>
+                      <tr>
+                        <td>Диаметр проводника:</td>
+                        <td>0,51...0,64 мм</td>
+                      </tr>
+                      <tr>
+                        <td>Усилие удержания разъема:</td>
+                        <td>50 Н</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
             <div class="product-table__cont">
               <div class="product-table__wrapper"><span class="product-table__subtitle">Эксплуатационные параметры</span>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Параметр</th>
-                      <th>Значение</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Срок службы, Лет:</td>
-                      <td>не менее 15</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Гарантийный срок, Лет:</td>
-                      <td>1</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Срок службы, Лет:</td>
+                        <td>не менее 15</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Гарантийный срок, Лет:</td>
+                        <td>1</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div class="product-table__wrapper"><span class="product-table__subtitle">Комплектация</span>
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Параметр</th>
-                      <th>Значение</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Дверь передняя с рамой</td>
-                      <td>1 шт.</td>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td>Крыша</td>
-                      <td>1 шт.</td>
-                      <td></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Параметр</th>
+                        <th>Значение</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Дверь передняя с рамой</td>
+                        <td>1 шт.</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>Крыша</td>
+                        <td>1 шт.</td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div><span class="product-table__subtitle">Логистические параметры</span>
             <div class="product-table__cont">
               <div class="product-table__wrapper">
-                <table>
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Индивидуальная</th>
-                      <th>Групповая</th>
-                      <th>Транспортная</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Количество</td>
-                      <td>шт</td>
-                      <td>-</td>
-                      <td>шт</td>
-                    </tr>
-                    <tr>
-                      <td>Единицы измерения</td>
-                      <td>1</td>
-                      <td>-</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td>Тип упаковки</td>
-                      <td>КОРОБКА/БОКС</td>
-                      <td>-</td>
-                      <td>КОРОБКА/БОКС</td>
-                    </tr>
-                    <tr>
-                      <td>Материал упаковки</td>
-                      <td>КАРТОН</td>
-                      <td>-</td>
-                      <td>КАРТОН</td>
-                    </tr>
-                    <tr>
-                      <td>Штрихкод</td>
-                      <td>4606056767513</td>
-                      <td>-</td>
-                      <td>4606056767513</td>
-                    </tr>
-                    <tr>
-                      <td>Вес брутто, кг</td>
-                      <td>0.82</td>
-                      <td>-</td>
-                      <td>8.7</td>
-                    </tr>
-                    <tr>
-                      <td>l, см</td>
-                      <td>27.5</td>
-                      <td>-</td>
-                      <td>30</td>
-                    </tr>
-                    <tr>
-                      <td>b, см</td>
-                      <td>1</td>
-                      <td>-</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td>h, см</td>
-                      <td>5.8</td>
-                      <td>-</td>
-                      <td>32</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Индивидуальная</th>
+                        <th>Групповая</th>
+                        <th>Транспортная</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Количество</td>
+                        <td>шт</td>
+                        <td>-</td>
+                        <td>шт</td>
+                      </tr>
+                      <tr>
+                        <td>Единицы измерения</td>
+                        <td>1</td>
+                        <td>-</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>Тип упаковки</td>
+                        <td>КОРОБКА/БОКС</td>
+                        <td>-</td>
+                        <td>КОРОБКА/БОКС</td>
+                      </tr>
+                      <tr>
+                        <td>Материал упаковки</td>
+                        <td>КАРТОН</td>
+                        <td>-</td>
+                        <td>КАРТОН</td>
+                      </tr>
+                      <tr>
+                        <td>Штрихкод</td>
+                        <td>4606056767513</td>
+                        <td>-</td>
+                        <td>4606056767513</td>
+                      </tr>
+                      <tr>
+                        <td>Вес брутто, кг</td>
+                        <td>0.82</td>
+                        <td>-</td>
+                        <td>8.7</td>
+                      </tr>
+                      <tr>
+                        <td>l, см</td>
+                        <td>27.5</td>
+                        <td>-</td>
+                        <td>30</td>
+                      </tr>
+                      <tr>
+                        <td>b, см</td>
+                        <td>1</td>
+                        <td>-</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>h, см</td>
+                        <td>5.8</td>
+                        <td>-</td>
+                        <td>32</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <section class="product-documentation">
+        <section class="product-documentation" id="documentation">
           <div class="container">
             <h2 class="product-documentation__title">Документация</h2>
             <div class="product-documentation-swiper swiper-container">
@@ -518,7 +530,7 @@
             </div>
           </div>
         </section>
-        <section class="addition-products">
+        <section class="addition-products" id="addition-products">
           <div class="container">
             <div class="addition-products__head">
               <h2 class="addition-products__title">Близкая по&nbsp;параметрам продукция</h2>
@@ -549,7 +561,7 @@
             </div>
           </div>
         </section>
-        <section class="similar-products">
+        <section class="similar-products" id="similar-products">
           <div class="container">
             <h2 class="similar-products__title">Близкая по&nbsp;параметрам продукция</h2>
             <div class="similar-products-swiper product-items-swiper swiper-container">

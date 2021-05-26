@@ -65,6 +65,9 @@
 
 @media (max-width: 590px)
   .product-main
+    &__cont
+      margin: 0 0 40px
+
     &__title
       font-size: 22px
 
@@ -122,3 +125,13 @@
     .swiper-slide-next
       &:before
         display: none
+
+
+@media (max-width: 479px)
+  .product-main-tabs
+    &:after
+      display: none
+
+    &__btn-prev,
+    &__btn-next
+      display: none

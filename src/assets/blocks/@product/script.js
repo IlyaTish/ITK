@@ -16,7 +16,6 @@
       loop: false,
       slidesPerView: 'auto',
       watchSlidesVisibility: true,
-      virtualTranslate: true,
       navigation: {
         nextEl: '.product-main__btn-next',
         prevEl: '.product-main__btn-prev'
@@ -47,8 +46,10 @@
     });
 
     const productTabsSwiper = new Swiper(productTabsSwiperEl, {
+      freeMode: true,
       slidesPerView: 'auto',
       watchOverflow: true,
+      slidesOffsetAfter: 40,
       mousewheel: {
         forceToAxis: true
       },
@@ -84,7 +85,7 @@
 
       const productItemsSwiper = new Swiper('.s-' + index, {
         direction: 'horizontal',
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         allowTouchMove: true,
         watchOverflow: true,
@@ -97,7 +98,13 @@
         },
         breakpoints: {
           1199: {
-            slidesPerView: 4,
+            slidesPerView: 4
+          },
+          880: {
+            slidesPerView: 3
+          },
+          590: {
+            slidesPerView: 2
           }
         }
       })
