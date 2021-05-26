@@ -1,6 +1,8 @@
 // -------- Variables --------
 
-const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+const viewportWidth = window.innerWidth || document.documentElement.clientWidth,
+      tabs          = document.querySelectorAll('.tabs__item'),
+      contentItems  = document.querySelectorAll('.tab-content');
 
 
 
@@ -98,6 +100,46 @@ const initSelect = () => {
 }
 
 
+/* Tabs init */
+
+const tabsInit = () => {
+  let tabCurData = null;
+
+  [].forEach.call(tabs, (tab, index) => {
+    tab.addEventListener('click', e => {
+      const data = tab.getAttribute('data-area');
+
+      // Remove active class
+
+      [].forEach.call(tabs, tab =>
+        tab.classList.remove('active'));
+
+      // Add active class
+
+      tab.classList.add('active');
+      tabCurData = data;
+
+      [].forEach.call(contentItems, (item, index) => {
+        const data = item.getAttribute('data-area');
+
+        // if (item.hasAttribute('data-area'))
+        //   item.classList.remove('active');
+
+        // If data-type attributes matches add active class
+
+        if (data === tabCurData) {
+          item.classList.add('transition');
+          item.classList.remove('hidden')
+        } else {
+          item.classList.add('transition');
+          item.classList.add('hidden')
+        }
+      })
+    })
+  })
+}
+
+
 const initAccordeon = () => {
   [].forEach.call(document.querySelectorAll('.item'), item => {
     const head    = item.querySelector('.head'),
@@ -178,3 +220,4 @@ const initAccordeon = () => {
 initSelect();
 initSwiper();
 initAccordeon();
+tabsInit();

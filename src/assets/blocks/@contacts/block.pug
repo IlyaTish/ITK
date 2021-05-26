@@ -19,19 +19,19 @@ section.contacts
       .swiper-container.tabs
         .swiper-wrapper
           .swiper-slide
-            .tabs__item.active
+            .tabs__item.active(data-area='main-office')
               span.tabs__txt Центральный офис в&nbsp;России
               include /common/icons/arrow.svg
           .swiper-slide
-            .tabs__item
+            .tabs__item(data-area='russia-office')
               span.tabs__txt Представительства в&nbsp;России
               include /common/icons/arrow.svg
           .swiper-slide
-            .tabs__item
+            .tabs__item(data-area='russia-office')
               span.tabs__txt Представительства в&nbsp;Украине
               include /common/icons/arrow.svg
           .swiper-slide
-            .tabs__item
+            .tabs__item(data-area='russia-office')
               span.tabs__txt Представительства в&nbsp;Казахстане
               include /common/icons/arrow.svg
 
@@ -63,4 +63,7 @@ section.contacts
                 span.btn__txt Отправить
 
       .contacts__content
-        include ./contacts-representations/block
+        .tab-content.active(data-area='main-office')
+          include ./contacts-main/block
+        .tab-content.hidden(data-area='russia-office')
+          include ./contacts-representations/block
