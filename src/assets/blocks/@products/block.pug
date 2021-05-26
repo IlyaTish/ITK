@@ -1,4 +1,4 @@
-section.catalog
+section.catalog.products
   //- Include Breadcrumbs ('.breadcrumbs')
   include /common/blocks/breadcrumbs/block
 
@@ -30,12 +30,12 @@ section.catalog
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span.btn__txt Главная страница
+        span.btn__txt <span class='edited'>Главная страница</span>
 
       .catalog-nav
         button.btn.btn--filled
           include ./icons/file.svg
-          span.btn__txt Скачать полный каталог
+          span.btn__txt Скачать <span class='edited'>полный</span> каталог
 
 
     .catalog__cont
