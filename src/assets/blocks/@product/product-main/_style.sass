@@ -32,7 +32,7 @@
 
   &__img-cont
     display: flex
-    max-height: 544px
+    height: 544px
     padding: 40px
     align-items: center
     justify-content: center
@@ -88,6 +88,7 @@
     position: unset
     background: #FFFFFF
     border: 1px solid #F6F6F6
+    box-sizing: border-box
     border-radius: 0
     transition: .2s
 
@@ -159,9 +160,13 @@
 .product-thumbnails-wrapper
   display: flex
 
+  .swiper-button-disabled
+    opacity: 1 !important
+
 .product-thumbnails
   max-width: 190px
-  margin: 0 !important
+  margin-left: 0
+  margin-right: 0
 
   &__thumbnail
     width: 80px

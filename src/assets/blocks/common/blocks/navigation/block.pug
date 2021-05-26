@@ -1,28 +1,30 @@
-mixin navigation(columnClass, showMoreBtn)
+mixin navigation(columnClass, navItems, showMoreBtn)
   .navigation
     .container
       .navigation__cont(class=''+ columnClass +'')
-        .navigation-items
-          .navigation-items__item
-            span.navigation__txt <span>Показано:</span> <b>1-5</b> (всего <b>215</b>)
-          .navigation-items__item
-            span.navigation__txt Показывать по:
-            .select-box.selectable
-              span.select-box__cont 5
-              ul.select-box__dropdown(style='display: none')
-                li.active
-                  span.checkbox__txt 5
-                li
-                  span.checkbox__txt 10
-                li
-                  span.checkbox__txt 15
-                li
-                  span.checkbox__txt 20
-                li
-                  span.checkbox__txt 25
+        if navItems
+          .navigation-items
+            .navigation-items__item
+              span.navigation__txt <span>Показано:</span> <b>1-5</b> (всего <b>215</b>)
+            .navigation-items__item
+              span.navigation__txt Показывать по:
+              .select-box.selectable
+                span.select-box__cont 5
+                ul.select-box__dropdown(style='display: none')
+                  li.active
+                    span.checkbox__txt 5
+                  li
+                    span.checkbox__txt 10
+                  li
+                    span.checkbox__txt 15
+                  li
+                    span.checkbox__txt 20
+                  li
+                    span.checkbox__txt 25
 
-        .showmore-btn
-          span.showmore-btn__txt Показать еще
+        if showMoreBtn
+          .showmore-btn
+            span.showmore-btn__txt Показать еще
 
         .navigation-btns
           button.navigation-btns__btn.navigation-btns__btn--prev

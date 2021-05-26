@@ -1,0 +1,124 @@
+@media (max-width: 1199px)
+  .product-head
+    padding: 0 0 30px
+
+  .product-main
+    &__title
+      font-size: 26px
+
+    &__content
+      display: flex
+      flex-direction: column
+
+    &__txt-cont
+      max-height: 300px
+      overflow: hidden
+
+    &__btn-cont
+      margin-top: auto
+
+    &__btn-prev,
+    &__btn-next
+      width: 30px
+      height: 60px
+
+  .product-thumbnails
+    max-width: 145px
+
+    &__thumbnail
+      width: 60px
+      height: 60px
+
+  .product-images
+    &__action-btn
+      width: 60px
+      height: 60px
+
+      .icon
+        max-width: 40px
+
+
+@media (max-width: 940px)
+  .product-head
+    background: #FFFFFF
+
+    &:before
+      display: none
+
+  .product-main
+    &__cont
+      grid-template-columns: 1fr
+
+    &__img-cont
+      height: 80vw
+      max-height: 500px
+
+    &__txt-cont
+      max-height: 200px
+
+    &__txt
+      padding: 0
+
+    &__link-more
+      margin: 14px 0 40px
+
+
+@media (max-width: 590px)
+  .product-main
+    &__title
+      font-size: 22px
+
+    &__btn-prev,
+    &__btn-next
+      top: 0
+      position: absolute
+
+    &__btn-next
+      right: 0
+
+    .btn
+      white-space: break-spaces
+
+  .product-images
+    &__bottom
+      flex-wrap: wrap
+      position: relative
+
+      &:before
+        width: 100%
+        height: 60px
+        content: ''
+        display: block
+        top: 0
+        right: -2px
+        position: absolute
+        background: linear-gradient(to left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%)
+        pointer-events: none
+        z-index: 3
+
+    &__actions
+      width: 100%
+      margin: 0
+
+  .product-thumbnails-wrapper
+    display: block
+    margin: 0 0 10px
+
+  .product-thumbnails
+    max-width: 100%
+    margin-left: auto
+    margin-right: auto
+
+    &__thumbnail:has(div.swiper-slide-active)
+      border: 1px solid #E5E5E5
+
+    .swiper-slide
+      max-width: 60px
+      margin: 0 10px 0 0
+
+      &:last-of-type
+        margin: 0
+
+    .swiper-slide-next
+      &:before
+        display: none

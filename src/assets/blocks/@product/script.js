@@ -13,13 +13,19 @@
 
   const initSwiper = () => {
     const productThumbnails = new Swiper(productThumbnailsEL, {
-      loop: true,
-      slidesPerView: 2,
+      loop: false,
+      slidesPerView: 'auto',
       watchSlidesVisibility: true,
-      watchSlidesProgress: true,
+      virtualTranslate: true,
       navigation: {
         nextEl: '.product-main__btn-next',
         prevEl: '.product-main__btn-prev'
+      },
+      breakpoints: {
+        590: {
+          loop: true,
+          slidesPerView: 2
+        }
       }
     });
 

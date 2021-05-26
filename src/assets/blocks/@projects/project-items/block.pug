@@ -1,0 +1,136 @@
+.project-items-head
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Navigation block ('.nav')
+  include /common/blocks/navigation/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Контакты',
+      class: 'active'
+    }
+  ])
+
+  .container
+    h1 Реализованные проекты
+
+
+section.project-items
+  .container
+    .filters
+      .filter-item
+        .select-box
+          span.select-box__cont Направление
+          ul.select-box__dropdown(style='display: none')
+            li.active
+              span.checkbox__txt металлические лотки
+            li
+              span.checkbox__txt телекоммуникационные шкафы и их комплектующие, UTP-кабель, информационные розетки
+            li
+              span.checkbox__txt кабеленесущие системы, светотехника LEDEL
+
+      .filter-item
+        .select-box
+          span.select-box__cont Отрасль
+          ul.select-box__dropdown(style='display: none')
+            li.active
+              span.checkbox__txt металлические лотки
+            li
+              span.checkbox__txt телекоммуникационные шкафы и их комплектующие, UTP-кабель, информационные розетки
+            li
+              span.checkbox__txt кабеленесущие системы, светотехника LEDEL
+
+    .project-item
+      span.project-item__title Бизнес-подразделение &laquo;ЕвразХолдинга&raquo; в&nbsp;г. Новокузнецке
+
+      .project-item__cont
+        .project-item__col-1
+          img.project-item__img-main(src='assets/img/@projects/project-items/pic-main-01.jpg')
+
+        .project-item__col-2
+          .project-item__img-cont
+            img.project-item__img(src='assets/img/@projects/project-items/pic-01.jpg')
+
+          .project-item__info
+            ul.project-item-list
+              li.project-item-list__item
+                span.project-item__txt <b>Город: </b>
+                span.project-item__txt Новокузнецк
+
+              li.project-item-list__item
+                span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
+
+              li.project-item-list__item
+                span.project-item__txt <b>Год установки: </b>
+                span.project-item__txt 2018
+
+              li.project-item-list__item
+                span.project-item__txt <b>Поставщики продукции: </b>
+                span.project-item__txt компания &laquo;Русский Свет&raquo;
+
+
+    .project-item
+      span.project-item__title Бизнес-подразделение &laquo;ЕвразХолдинга&raquo; в&nbsp;г. Новокузнецке
+
+      .project-item__cont
+        .project-item__col-1
+          img.project-item__img-main(src='assets/img/@projects/project-items/pic-main-02.jpg')
+
+        .project-item__col-2
+          .project-item__img-cont
+            img.project-item__img(src='assets/img/@projects/project-items/pic-02.jpg')
+
+          .project-item__info
+            ul.project-item-list
+              li.project-item-list__item
+                span.project-item__txt <b>Город: </b>
+                span.project-item__txt Новокузнецк
+
+              li.project-item-list__item
+                span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
+
+              li.project-item-list__item
+                span.project-item__txt <b>Год установки: </b>
+                span.project-item__txt 2018
+
+              li.project-item-list__item
+                span.project-item__txt <b>Поставщики продукции: </b>
+                span.project-item__txt компания &laquo;Русский Свет&raquo;
+
+
+    .project-item
+      span.project-item__title Бизнес-подразделение &laquo;ЕвразХолдинга&raquo; в&nbsp;г. Новокузнецке
+
+      .project-item__cont
+        .project-item__col-1
+          img.project-item__img-main(src='assets/img/@projects/project-items/pic-main-03.jpg')
+
+        .project-item__col-2
+          .project-item__img-cont
+            img.project-item__img(src='assets/img/@projects/project-items/pic-03.jpg')
+
+          .project-item__info
+            ul.project-item-list
+              li.project-item-list__item
+                span.project-item__txt <b>Город: </b>
+                span.project-item__txt Новокузнецк
+
+              li.project-item-list__item
+                span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
+
+              li.project-item-list__item
+                span.project-item__txt <b>Год установки: </b>
+                span.project-item__txt 2018
+
+              li.project-item-list__item
+                span.project-item__txt <b>Поставщики продукции: </b>
+                span.project-item__txt компания &laquo;Русский Свет&raquo;
+
+    +navigation('', false, false)

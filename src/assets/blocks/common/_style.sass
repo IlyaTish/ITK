@@ -416,129 +416,6 @@ table
 
 
 
-/* Select  */
-
-.select
-  display: inline-block
-  margin: 0
-  padding: 0 20px 0 0
-  border: none
-  color: $dark
-  -moz-appearance: none
-  -webkit-appearance: none
-  appearance: none
-  background-color: transparent
-  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTS40Ny45N2EuNzUuNzUgMCAwMTEuMDYgMEw3IDYuNDQgMTIuNDcuOTdhLjc1Ljc1IDAgMTExLjA2IDEuMDZsLTYgNmEuNzUuNzUgMCAwMS0xLjA2IDBsLTYtNmEuNzUuNzUgMCAwMTAtMS4wNnoiIGZpbGw9IiMwMDM0NTgiLz48L3N2Zz4=')
-  background-repeat: no-repeat, repeat
-  background-position: 100% center
-  background-size: 12px
-  box-sizing: border-box
-  outline: none
-  cursor: pointer
-  transition: .2s
-
-  &:hover
-    opacity: .7
-
-  &:focus
-    color: #000000
-
-  &::-ms-expand
-    display: none
-
-  option
-    color: #000000
-    font-weight: normal
-
-  *[dir='rtl'] .select, :root:lang(ar) .select, :root:lang(iw) .select
-    background-position: left .7em top 50%, 0 0
-    padding: .6em .8em .5em 1.4em
-
-.select-box
-  display: inline-block
-  position: relative
-  z-index: 999
-
-  li
-    padding: 9px 20px
-    font-size: 12px
-    position: relative
-    background: #FFFFFF
-    transition: .2s
-    cursor: pointer
-
-    &:hover
-      background: darken(#FFFFFF, 2%)
-
-  li.active
-    color: $main
-    font-weight: 550
-    background: darken(#FFFFFF, 2%)
-
-  li[disabled]
-    padding: 6px 30px
-    background: darken(#FFFFFF, 3%)
-
-    &:hover
-      color: inherit
-
-  &__cont
-    width: 100%
-    height: 100%
-    display: flex
-    align-items: center
-    justify-content: center
-    color: #444642
-    font-size: 12px
-    font-weight: 500
-    line-height: 12px
-    text-align: center
-    cursor: pointer
-    border-radius: 3px
-    background: none
-    box-sizing: border-box
-    position: relative
-    z-index: 4
-
-    &:after
-      width: 12px
-      height: 12px
-      margin: 0 0 0 auto
-      content: ''
-      display: block
-      bottom: 1px
-      position: relative
-      background-size: 12px
-      background-position: center center
-      background-repeat: no-repeat
-      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTYwIj48cGF0aCBkPSJNNDgwIDM0NC4xODFMMjY4Ljg2OSAxMzEuODg5Yy0xNS43NTYtMTUuODU5LTQxLjMtMTUuODU5LTU3LjA1NCAwLTE1Ljc1NCAxNS44NTctMTUuNzU0IDQxLjU3IDAgNTcuNDMxbDIzNy42MzIgMjM4LjkzN2M4LjM5NSA4LjQ1MSAxOS41NjIgMTIuMjU0IDMwLjU1MyAxMS42OTggMTAuOTkzLjU1NiAyMi4xNTktMy4yNDcgMzAuNTU1LTExLjY5OEw3NDguMTg2IDE4OS4zMmMxNS43NTYtMTUuODYgMTUuNzU2LTQxLjU3MSAwLTU3LjQzMXMtNDEuMjk5LTE1Ljg1OS01Ny4wNTEgMEw0ODAgMzQ0LjE4MXoiLz48L3N2Zz4=')
-      transition: .1s
-
-  &__dropdown
-    display: none
-    width: 100%
-    min-width: 220px
-    margin: 0
-    padding: 8px 0
-    top: 100%
-    left: 0
-    position: absolute
-    list-style: none
-    background: #FFFFFF
-    box-sizing: border-box
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15)
-    z-index: 3
-
-  &__dropdown.active
-    display: block !important
-
-.select-box.active
-  .select-box__cont
-    &:after
-      transform: rotate(180deg)
-
-
-
 /* Checkbox */
 
 .checkbox,
@@ -671,3 +548,126 @@ textarea
 
 ::placeholder
   color: #AAAAAA
+
+
+
+/* Select  */
+
+.select
+  display: inline-block
+  margin: 0
+  padding: 0 20px 0 0
+  border: none
+  color: $dark
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  background-color: transparent
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTS40Ny45N2EuNzUuNzUgMCAwMTEuMDYgMEw3IDYuNDQgMTIuNDcuOTdhLjc1Ljc1IDAgMTExLjA2IDEuMDZsLTYgNmEuNzUuNzUgMCAwMS0xLjA2IDBsLTYtNmEuNzUuNzUgMCAwMTAtMS4wNnoiIGZpbGw9IiMwMDM0NTgiLz48L3N2Zz4=')
+  background-repeat: no-repeat, repeat
+  background-position: 100% center
+  background-size: 12px
+  box-sizing: border-box
+  outline: none
+  cursor: pointer
+  transition: .2s
+
+  &:hover
+    opacity: .7
+
+  &:focus
+    color: #000000
+
+  &::-ms-expand
+    display: none
+
+  option
+    color: #000000
+    font-weight: normal
+
+  *[dir='rtl'] .select, :root:lang(ar) .select, :root:lang(iw) .select
+    background-position: left .7em top 50%, 0 0
+    padding: .6em .8em .5em 1.4em
+
+.select-box
+  display: inline-block
+  position: relative
+  z-index: 999
+
+  li
+    padding: 9px 20px
+    font-size: 12px
+    position: relative
+    background: #FFFFFF
+    transition: .2s
+    cursor: pointer
+
+    &:hover
+      background: darken(#FFFFFF, 2%)
+
+  li.active
+    color: $main
+    font-weight: 550
+    background: darken(#FFFFFF, 2%)
+
+  li[disabled]
+    padding: 6px 30px
+    background: darken(#FFFFFF, 3%)
+
+    &:hover
+      color: inherit
+
+  &__cont
+    width: 100%
+    height: 100%
+    padding: 13px 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #444642
+    font-size: 12px
+    font-weight: 500
+    line-height: 12px
+    text-align: center
+    cursor: pointer
+    background: none
+    box-sizing: border-box
+    position: relative
+    z-index: 4
+
+    &:after
+      width: 12px
+      height: 12px
+      margin: 0 0 0 auto
+      content: ''
+      display: block
+      bottom: 1px
+      position: relative
+      background-size: 12px
+      background-position: center center
+      background-repeat: no-repeat
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NjAiIGhlaWdodD0iNTYwIj48cGF0aCBkPSJNNDgwIDM0NC4xODFMMjY4Ljg2OSAxMzEuODg5Yy0xNS43NTYtMTUuODU5LTQxLjMtMTUuODU5LTU3LjA1NCAwLTE1Ljc1NCAxNS44NTctMTUuNzU0IDQxLjU3IDAgNTcuNDMxbDIzNy42MzIgMjM4LjkzN2M4LjM5NSA4LjQ1MSAxOS41NjIgMTIuMjU0IDMwLjU1MyAxMS42OTggMTAuOTkzLjU1NiAyMi4xNTktMy4yNDcgMzAuNTU1LTExLjY5OEw3NDguMTg2IDE4OS4zMmMxNS43NTYtMTUuODYgMTUuNzU2LTQxLjU3MSAwLTU3LjQzMXMtNDEuMjk5LTE1Ljg1OS01Ny4wNTEgMEw0ODAgMzQ0LjE4MXoiLz48L3N2Zz4=')
+      transition: .1s
+
+  &__dropdown
+    display: none
+    width: 100%
+    min-width: 220px
+    margin: 0
+    padding: 8px 0
+    top: 100%
+    left: 0
+    position: absolute
+    list-style: none
+    background: #FFFFFF
+    box-sizing: border-box
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15)
+    z-index: 3
+
+  &__dropdown.active
+    display: block !important
+
+.select-box.active
+  .select-box__cont
+    &:after
+      transform: rotate(180deg)

@@ -1,0 +1,75 @@
+.project-items-head
+  margin: 0 0 30px
+  padding: 30px 0 30px
+  background: #FAFAFA
+
+.project-item
+  margin: 0 0 50px
+
+  &__title
+    display: block
+    padding: 0 0 30px
+    color: $dark
+    font-size: 20px
+    font-weight: 550
+    position: relative
+
+    &:before
+      width: 190px
+      height: 5px
+      content: ''
+      display: block
+      background: $main
+      left: 0
+      bottom: 0
+      position: absolute
+
+  &__cont
+    display: grid
+    grid-template-columns: 2fr 284px
+
+  &__col-2
+    width: 100%
+    height: 100%
+    max-width: 284px
+    flex: 284px 0 0
+    display: flex
+    flex-flow: column
+    align-items: flex-end
+
+  &__img-main
+    width: 100%
+
+  &__img-cont
+    width: 284px
+    height: 214px
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &__info
+    height: inherit
+    min-width: 570px
+    padding: 24px
+    background: $main
+    box-sizing: border-box
+
+  &__txt
+    color: #FFFFFF
+    font-size: 14px
+
+    b
+      font-weight: 550
+
+.project-item-list
+  margin: 0
+  padding: 0
+
+  &__item
+    margin: 0 0 10px
+    list-style: none
+
+    &:Last-child
+      margin: 0

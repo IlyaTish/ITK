@@ -1,7 +1,11 @@
+.product-page
+  padding: 30px 0 0
+
 .product-item
   width: 100%
   max-width: 252px
   min-height: 400px
+  display: block
   border: 1px solid #F6F6F6
 
   &__img-cont
@@ -32,4 +36,9 @@
     text-overflow: ellipsis
     -webkit-line-clamp: 3
     -webkit-box-orient: vertical
+    transition: .2s
     overflow: hidden
+
+  &:hover
+    .product-item__title
+      color: $main

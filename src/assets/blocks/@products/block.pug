@@ -1,34 +1,20 @@
 section.catalog
-  include ./data.pug
-
   //- Include Breadcrumbs ('.breadcrumbs')
   include /common/blocks/breadcrumbs/block
-
-  //- Include Product-item ('.product-item')
-  include ./product-item/block
-
-  //- Navigation block ('.nav')
-  include /common/blocks/navigation/block
 
   +breadcrumbs([
     {
       txt: 'Главная'
     },
     {
-      txt: 'Продукция'
-    },
-    {
-      txt: 'Шкафы монтажные'
-    },
-    {
-      txt: 'Шкафы серверные',
+      txt: 'Продукция',
       class: 'active'
     }
   ])
 
 
   .container
-    h1.catalog__title Шкафы серверные
+    h1.catalog__title Каталог продукции
 
     .catalog-head
       a.btn.btn--back
@@ -44,33 +30,12 @@ section.catalog
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span.btn__txt Шкафы монтажные
-
-      .settings-menu.item
-        button.settings-menu-btn.btn.btn--filled.head
-          include ./icons/settings.svg
-          span.settings-menu-btn__txt.btn__txt Параметры
-
-        .settings-menu__content.content.collapsed
-          .settings-menu__cont
-
+        span.btn__txt Главная страница
 
       .catalog-nav
-        .select-box.selectable
-          span.select-box__cont Артикул
-
-          ul.select-box__dropdown(style='display: none')
-            li.active
-              span.checkbox__txt Цена &#8593;
-            li
-              span.checkbox__txt Цена &#8595;
-            li
-              span.checkbox__txt Артикул
-
-        span.catalog-nav__btn
-          include ./icons/layout-btn-02.svg
-        span.catalog-nav__btn.active
-          include ./icons/layout-btn-01.svg
+        button.btn.btn--filled
+          include ./icons/file.svg
+          span.btn__txt Скачать полный каталог
 
 
     .catalog__cont
@@ -239,87 +204,4 @@ section.catalog
             path(d='M4 12h16M14 6l6 6-6 6')
 
       .catalog__content
-        .catalog__grid
-          for item in ITEMS
-            +item(item)
-
-        +navigation('navigation__cont--column', true, true)
-
-
-      .catalog-filters
-        a.btn.btn--filled(href='#')
-          span.btn__txt Конфигуратор <br>и&nbsp;подбор аксессуаров
-
-        .catalog-filters__list
-          span.catalog-filters__title Подбор по&nbsp;параметрам
-
-          .catalog-filter.item
-            span.catalog-filter__title.head Ширина, мм
-
-            .catalog-filter__content.content.collapsed
-              .catalog-filter__options
-                label.checkbox
-                  input(type='checkbox' checked)
-                  .checkbox__elem
-                  span.checkbox__txt 600 <span class='txt-gray'>(3)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 800 <span class='txt-gray'>(27)</span>
-
-          .catalog-filter.item
-            span.catalog-filter__title.head Высота, мм
-
-            .catalog-filter__content.content.collapsed
-              .catalog-filter__options
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 1210 <span class='txt-gray'>(3)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 1610 <span class='txt-gray'>(6)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 2010 <span class='txt-gray'>(3)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 2025 <span class='txt-gray'>(15)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 2290 <span class='txt-gray'>(3)</span>
-
-          .catalog-filter.item
-            span.catalog-filter__title.head Глубина, мм
-
-            .catalog-filter__content.content.collapsed
-              .catalog-filter__options
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 1000 <span class='txt-gray'>(24)</span>
-
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 1200 <span class='txt-gray'>(6)</span>
-
-          .catalog-filter.item
-            span.catalog-filter__title.head Количество модулей в&nbsp;высоту
-
-            .catalog-filter__content.content.collapsed
-              .catalog-filter__options
-                label.checkbox
-                  input(type='checkbox')
-                  .checkbox__elem
-                  span.checkbox__txt 600 <span class='txt-gray'>(3)</span>
-
+        include /@products/products-catalog/block

@@ -22,16 +22,18 @@ const catalogScript = (() => {
   // Teleport onResize function
 
   const catalogTeleport = () => {
-    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (document.querySelector('.catalog-page')) {
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
-    if ((viewportWidth < 1199) && (flag === 1)) {
-      flag = 0;
-      teleportEach(elementsToTeleport, containersSmallerScreen)
-    }
+      if ((viewportWidth < 1199) && (flag === 1)) {
+        flag = 0;
+        teleportEach(elementsToTeleport, containersSmallerScreen)
+      }
 
-    if ((viewportWidth > 1199) && (flag === 0)) {
-      flag = 1;
-      teleportEach(elementsToTeleport, containersDefault)
+      if ((viewportWidth > 1199) && (flag === 0)) {
+        flag = 1;
+        teleportEach(elementsToTeleport, containersDefault)
+      }
     }
   }
 
