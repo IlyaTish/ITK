@@ -1,17 +1,15 @@
 ![logo](https://user-images.githubusercontent.com/29680214/119835840-dee39600-bf09-11eb-86fc-0baec7efbd6d.png)
 
-<strong>ITK</strong> — Полный спектр продукции для IT-технологий
+> <strong>ITK</strong> — Полный спектр продукции для IT-технологий  
 
----
-
-### Запуск проекта (команды yarn/npm)
+Запуск проекта (команды yarn/npm)
+--------------------------------
 
 1. `yarn install`
 2. `gulp`
 
----
-
-### Ссылки на страницы
+Ссылки на страницы
+------------------
 
 - [Главная страница](https://ilyatish.github.io/ITK)  
 - [Каталог](https://ilyatish.github.io/ITK/catalog)  
