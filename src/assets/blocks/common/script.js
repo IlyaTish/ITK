@@ -4,6 +4,8 @@ const viewportWidth = window.innerWidth || document.documentElement.clientWidth,
       tabs          = document.querySelectorAll('.tabs__item'),
       contentItems  = document.querySelectorAll('.tab-content');
 
+let innerTabs = undefined;
+
 
 
 // -------- Functions --------
@@ -21,7 +23,25 @@ const initSwiper = () => {
     slidesPerView: 'auto',
     autoplay: false,
     watchOverflow: true,
-  })
+  });
+
+  if (viewportWidth < 1200 && innerTabs == undefined) {
+    innerTabs = new Swiper('.inner-page .tabs', {
+      freeMode: true,
+      direction: 'horizontal',
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      mousewheel: {
+        forceToAxis: true
+      }
+    })
+  } else if (viewportWidth > 1199 && innerTabs != undefined) {
+    innerTabs.destroy();
+    innerTabs = undefined;
+
+    document.querySelector('.inner-page .tabs .swiper-wrapper').removeAttribute('style');
+    document.querySelector('.inner-page .tabs .swiper-slide').removeAttribute('style')
+  }
 }
 
 
@@ -119,22 +139,26 @@ const tabsInit = () => {
       tab.classList.add('active');
       tabCurData = data;
 
-      [].forEach.call(contentItems, (item, index) => {
+      [].forEach.call(contentItems, item => {
         const data = item.getAttribute('data-area');
-
-        // if (item.hasAttribute('data-area'))
-        //   item.classList.remove('active');
 
         // If data-type attributes matches add active class
 
         if (data === tabCurData) {
           item.classList.add('transition');
+          item.clientWidth;
           item.classList.remove('hidden')
         } else {
           item.classList.add('transition');
           item.classList.add('hidden')
         }
       })
+    })
+  });
+
+  [].forEach.call(contentItems, item => {
+    item.addEventListener('transitionend', e => {
+      item.classList.remove('transition')
     })
   })
 }

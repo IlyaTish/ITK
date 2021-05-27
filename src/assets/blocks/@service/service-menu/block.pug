@@ -1,0 +1,66 @@
+
+section.service
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Include Feedback ('.feedback')
+  include /common/blocks/feedback/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Сервис и поддержка',
+      class: 'active'
+    }
+  ])
+
+  .container
+    h1.service__title Сервис и поддержка
+
+    .inner-page__grid
+      .swiper-container.tabs
+        .swiper-wrapper
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Каталоги и&nbsp;буклеты
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Программное обеспечение и&nbsp;конфигураторы
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Техническая документация
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt FAQ
+              include /common/icons/arrow.svg
+
+      +feedback(false, 'Техподдержка')
+
+      .inner-page__content
+        .tab-content.active
+          .service-menu
+            .service-menu__grid
+              a.service-menu-item.item-1(href='#')
+                img.service-menu-item__bg(src='assets/img/@service/service-menu/pic-01.jpg')
+                .service-menu-item__list
+                  span.service-menu-item__name Программное обеспечение и&nbsp;конфигураторы
+
+              a.service-menu-item.item-2(href='#')
+                img.service-menu-item__bg(src='assets/img/@service/service-menu/pic-02.jpg')
+                .service-menu-item__list
+                  span.service-menu-item__name Каталоги и&nbsp;брошюры
+
+              a.service-menu-item.item-3(href='#')
+                img.service-menu-item__bg(src='assets/img/@service/service-menu/pic-03.jpg')
+                .service-menu-item__list
+                  span.service-menu-item__name FAQ
+
+              a.service-menu-item.item-4(href='#')
+                img.service-menu-item__bg(src='assets/img/@service/service-menu/pic-04.jpg')
+                .service-menu-item__list
+                  span.service-menu-item__name Техническая документация

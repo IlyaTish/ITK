@@ -2,6 +2,9 @@ section.contacts
   //- Include Breadcrumbs ('.breadcrumbs')
   include /common/blocks/breadcrumbs/block
 
+  //- Include Feedback ('.feedback')
+  include /common/blocks/feedback/block
+
   +breadcrumbs([
     {
       txt: 'Главная'
@@ -15,7 +18,7 @@ section.contacts
   .container
     h1.contacts__title Контакты
 
-    .contacts__grid
+    .inner-page__grid
       .swiper-container.tabs
         .swiper-wrapper
           .swiper-slide
@@ -35,34 +38,9 @@ section.contacts
               span.tabs__txt Представительства в&nbsp;Казахстане
               include /common/icons/arrow.svg
 
-      .contacts-feedback
-        span.contacts-feedback__title Напишите нам
+      +feedback(true, 'Напишите нам')
 
-        .contacts-feedback__form
-          .contacts-feedback__row
-            .contacts-feedback__col-1
-              .input-wrapper
-                input.input(type='text' placeholder='Ваше имя')
-
-              .input-wrapper
-                input.input(type='text' placeholder='Электронная почта')
-
-            .contacts-feedback__col-2
-              .input-wrapper
-                textarea.textarea(placeholder='Сообщение')
-
-          .contacts-feedback__row-bottom
-            .contacts-feedback__col-1
-              label.checkbox
-                input(type='checkbox')
-                .checkbox__elem
-                span.checkbox__txt Даю согласие с условиями <a href='#'>политики конфиденциальности</a>
-
-            .contacts-feedback__col-2
-              button.btn
-                span.btn__txt Отправить
-
-      .contacts__content
+      .inner-page__content
         .tab-content.active(data-area='main-office')
           include ./contacts-main/block
         .tab-content.hidden(data-area='russia-office')

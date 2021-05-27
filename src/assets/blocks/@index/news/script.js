@@ -1,4 +1,10 @@
 (() => {
+  // -------- Variables --------
+
+  const news = document.querySelector('.news');
+
+
+
   // -------- Functions --------
 
   const initSwiper = () => {
@@ -22,7 +28,21 @@
           slidesPerView: 3
         }
       }
-    })
+    });
+
+    if (document.querySelector('.news')) {
+      const tabsItem = news.querySelectorAll('.tabs__item');
+
+      tabsItem.forEach(item => {
+        item.addEventListener('click', e => {
+          setTimeout(() => {
+            newsSwiper.forEach(swiper => {
+              swiper.update()
+            })
+          })
+        })
+      })
+    }
   }
 
 

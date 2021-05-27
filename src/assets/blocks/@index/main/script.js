@@ -12,6 +12,7 @@
       autoHeight: true,
       slidesPerView: 1,
       autoplay: false,
+      allowTouchMove: false,
       watchOverflow: true,
       navigation: {
         nextEl: '.main__btn-next',
@@ -40,7 +41,7 @@
 
     if (document.querySelector('.main-swiper')) {
       setTimeout(() => {
-        mainSwiper.update();
+        mainSwiper.update()
       }, 100)
     }
   }

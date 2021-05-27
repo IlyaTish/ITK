@@ -1,33 +1,4 @@
 @media (max-width: 1199px)
-  .contacts
-    &__grid
-      grid-template-rows: minmax(auto, min-content) auto auto
-      grid-template-areas: 'tabs tabs tabs tabs tabs tabs tabs' 'content content content content content content content' 'feedback feedback feedback feedback feedback feedback feedback'
-
-    &__content
-      margin: 0 0 40px
-
-  .tabs
-    .swiper-wrapper
-      flex-wrap: nowrap
-
-    .swiper-slide
-      width: auto !important
-
-    &__item
-      padding: 12px 14px
-      color: #C0BfBF
-
-      .icon
-        display: none
-
-  .contacts-feedback
-    &__row,
-    &__row-bottom
-      display: grid
-      grid-gap: 30px
-      grid-template-columns: 1.5fr 2fr
-
   .contacts-map
     height: 200px
 
@@ -35,17 +6,3 @@
 @media (max-width: 991px)
   .contacts-map
     height: 240px
-
-
-@media (max-width: 640px)
-  .contacts-feedback
-    &__row,
-    &__row-bottom
-      display: block
-      grid-gap: unset
-
-
-@media (max-width: 479px)
-  .contacts-feedback
-    .btn
-      min-width: 100%

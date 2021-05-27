@@ -3,55 +3,107 @@ section.news
     .tabs-swiper.tabs.swiper-container
       .swiper-wrapper
         .swiper-slide
-          span.tabs__btn.active Новости ITK
+          span.tabs__item.active(data-area='news-itk') Новости ITK
         .swiper-slide
-          span.tabs__btn Новости отрасли
+          span.tabs__item(data-area='news-industry') Новости отрасли
 
-    .news-swiper.swiper-container
-      .swiper-wrapper
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+    .tab-content(data-area='news-itk')
+      .news-swiper.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
 
-        .swiper-slide
-          .news-swiper__item
-            span.news-swiper__date 16 июня 2020
-            a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
 
-      .news-swiper__nav-cont
-        .swiper-button-prev.news__btn-prev
-          include /common/icons/arrow.svg
+        .news-swiper__nav-cont
+          .swiper-button-prev.news__btn-prev
+            include /common/icons/arrow.svg
 
-        .swiper-button-next.news__btn-next
-          include /common/icons/arrow.svg
+          .swiper-button-next.news__btn-next
+            include /common/icons/arrow.svg
+
+
+    .tab-content.hidden(data-area='news-industry')
+      .news-swiper.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новости ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новый вебинар ITK&nbsp;&mdash; 9&nbsp;июня в&nbsp;12:00 (мск) расскажем о&nbsp;кабеле вит
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новая акция ITK &laquo;Яблочное лето&raquo;&nbsp;&mdash; выиграйте iPhone&nbsp;XR!
+
+          .swiper-slide
+            .news-swiper__item
+              span.news-swiper__date 16 июня 2020
+              a.news-swiper__title(href='#') Новые вебинары ITK&nbsp;&mdash; все об&nbsp;оптическом кабеле и&nbsp;монтаже СКС
+
+        .news-swiper__nav-cont
+          .swiper-button-prev.news__btn-prev
+            include /common/icons/arrow.svg
+
+          .swiper-button-next.news__btn-next
+            include /common/icons/arrow.svg

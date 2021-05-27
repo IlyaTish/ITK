@@ -1,0 +1,128 @@
+section.service
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Include Feedback ('.feedback')
+  include /common/blocks/feedback/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Сервис и поддержка'
+    },
+    {
+      txt: 'Каталоги и буклеты',
+      class: 'active'
+    }
+  ])
+
+  .container
+    h1.service__title Каталоги и&nbsp;буклеты
+
+    .inner-page__grid
+      .swiper-container.tabs
+        .swiper-wrapper
+          .swiper-slide
+            a.tabs__item.active(href='#')
+              span.tabs__txt Каталоги и&nbsp;буклеты
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Программное обеспечение и&nbsp;конфигураторы
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Техническая документация
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt FAQ
+              include /common/icons/arrow.svg
+
+      +feedback(false, 'Техподдержка')
+
+      .inner-page__content
+        .tab-content.active
+          .service-catalog
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-01.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Каталог продукции ITK
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/laptop.svg
+                  span Интерактивный каталог
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-02.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Буклет &laquo;Больницы, школы, детские сады&raquo;
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-03.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Буклет &laquo;Коммерческое строительство&raquo;
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-04.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Буклет &laquo;Нетфегазовое и&nbsp;промышленное строительство&raquo;
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-05.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Буклет &laquo;Социальное и&nbsp;жилищное строительство&raquo;
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-06.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Буклет &laquo;Каталог проектных решений&raquo;
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF
+
+            .service-catalog__item
+              a.service-catalog__img-cont(href='#')
+                img.service-catalog__img(src='assets/img/@service/service-catalog/pic-07.jpg')
+
+              .service-catalog__content
+                span.service-catalog__txt Решения для ЦОД ITK by&nbsp;ZPAS
+                a.service-catalog__link(href='#')
+                  .service-catalog__icon-cont
+                    include /common/icons/document.svg
+                  span Смотреть&nbsp;PDF

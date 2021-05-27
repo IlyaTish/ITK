@@ -201,6 +201,41 @@ table
 .inner-page
   padding: 30px 0 40px
 
+  &__grid
+    display: grid
+    grid-gap: 0 30px
+    grid-auto-columns: .9fr .9fr 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: minmax(150px, min-content) auto
+    grid-template-areas: 'tabs tabs content content content content content' 'feedback feedback content content content content content'
+
+  &__content
+    grid-area: content
+
+  .tabs
+    grid-area: tabs
+
+  @media (max-width: 1199px)
+    &__grid
+      grid-template-rows: minmax(auto, min-content) auto auto
+      grid-template-areas: 'tabs tabs tabs tabs tabs tabs tabs' 'content content content content content content content' 'feedback feedback feedback feedback feedback feedback feedback'
+
+    &__content
+      margin: 0 0 40px
+
+    .tabs
+      .swiper-wrapper
+        flex-wrap: nowrap
+
+      .swiper-slide
+        width: auto !important
+
+      &__item
+        padding: 12px 14px
+        color: #C0BfBF
+
+        .icon
+          display: none
+
 .top-index
   z-index: 99999
 
@@ -391,6 +426,7 @@ table
     align-items: center
     padding: 12px 0
     position: relative
+    color: #000000
     font-size: 14px
     font-weight: 500
     line-height: 20px
@@ -412,6 +448,7 @@ table
     .icon
       width: 6px
       height: auto
+      flex: 6px 0 0
       display: block
       margin: 0 0 0 auto
       transform: rotate(180deg)
@@ -436,11 +473,6 @@ table
 
 .tab-content
   display: block
-  height: auto
-
-.tab-content.hidden
-  display: none
-  height: 0
 
 
 

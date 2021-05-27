@@ -7,16 +7,6 @@
   &__title
     margin: 0 0 20px
 
-  &__grid
-    display: grid
-    grid-gap: 0 30px
-    grid-auto-columns: .9fr .9fr 1fr 1fr 1fr 1fr 1fr
-    grid-template-rows: minmax(150px, min-content) auto
-    grid-template-areas: 'tabs tabs content content content content content' 'feedback feedback content content content content content'
-
-  &__content
-    grid-area: content
-
   &__txt
     margin: 0 0 20px
 
@@ -95,44 +85,3 @@
     height: auto
     flex: 14px 0 0
     margin: 0 16px 0 0
-
-.tabs
-  grid-area: tabs
-
-.contacts-feedback
-  height: intrinsic
-  height: -moz-max-content
-  height: -webkit-max-content
-  padding: 30px
-  background: #FFFFFF
-  grid-area: feedback
-  box-sizing: border-box
-  border: 1px solid rgb(246, 246, 246)
-
-  &__col-1,
-  &__col-2
-    width: 100%
-
-  &__title
-    display: block
-    margin: 0 0 10px
-    font-size: 16px
-    font-weight: 550
-
-  .input-wrapper
-    margin: 0 0 16px
-
-  input,
-  textarea
-    &::placeholder
-      color: #CAC9C9
-
-  .checkbox
-    margin: 0 0 20px
-
-  .btn
-    justify-content: center
-    color: #FFFFFF
-    font-weight: 500
-    text-align: center
-    background: $main

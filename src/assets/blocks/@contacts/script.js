@@ -1,10 +1,4 @@
 (() => {
-  // -------- Variables --------
-
-  let contactsTabs = undefined;
-
-
-
   // -------- Functions --------
 
   const mapInit = () => {
@@ -39,32 +33,8 @@
   }
 
 
-  const initSwiper = () => {
-    const screenWidth = window.innerWidth || document.documentElement.clientWidth;
-
-    if (screenWidth < 1200 && contactsTabs == undefined) {
-      contactsTabs = new Swiper('.contacts-tabs', {
-        direction: 'horizontal',
-        slidesPerView: 'auto',
-        spaceBetween: 0,
-        mousewheel: {
-          forceToAxis: true
-        }
-      })
-    } else if (screenWidth > 1199 && contactsTabs != undefined) {
-      contactsTabs.destroy();
-      contactsTabs = undefined;
-
-      document.querySelector('.contacts-tabs .swiper-wrapper').removeAttribute('style');
-      document.querySelector('.contacts-tabs .swiper-slide').removeAttribute('style')
-    }
-  }
-
-
 
   // -------- Functions execution --------
-
-  initSwiper();
 
   if (document.querySelector('#map'))
     ymaps.ready(mapInit);

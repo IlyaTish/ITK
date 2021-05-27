@@ -1,6 +1,9 @@
 .news
   padding: 94px 0
 
+  .container
+    overflow: hidden
+
   .tabs-swiper
     margin: 0 0 34px
     position: relative
@@ -19,12 +22,13 @@
       position: absolute
       background: #F5F5F5
 
-    &__btn
+    &__item
       display: inline-block
       padding: 15px 0
       color: #C0BFBF
       font-size: 30px
       font-weight: 550
+      line-height: unset
       position: relative
       transition: .2s
       cursor: pointer
@@ -40,13 +44,22 @@
         background: $main
         opacity: 0
 
-    &__btn.active
+    &__item.active
       color: $dark
 
       &:before
         opacity: 1
 
+    .tab-content
+      opacity: 1
+
+    .tab-content.hidden
+      display: block
+      opacity: 0
+
 .news-swiper
+  min-height: 185px
+
   &__item
     max-width: 240px
 

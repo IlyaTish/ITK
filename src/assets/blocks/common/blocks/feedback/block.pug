@@ -1,0 +1,39 @@
+mixin feedback(contactsTemplate, title)
+  .feedback
+    span.feedback__title= title
+
+    if contactsTemplate
+      .feedback__form
+        .feedback__row
+          .feedback__col-1
+            .input-wrapper
+              input.input(type='text' placeholder='Ваше имя')
+
+            .input-wrapper
+              input.input(type='text' placeholder='Электронная почта')
+
+          .feedback__col-2
+            .input-wrapper
+              textarea.textarea(placeholder='Сообщение')
+
+        .feedback__row-bottom
+          .feedback__col-1
+            label.checkbox
+              input(type='checkbox')
+              .checkbox__elem
+              span.checkbox__txt Даю согласие с условиями <a href='#'>политики конфиденциальности</a>
+
+          .feedback__col-2
+            button.btn.btn--filled
+              span.btn__txt Отправить
+
+    else
+      .feedback__grid
+        a.feedback__phone(href='#') +7 (495) 542-22-24
+        <br>
+        a.feedback__link(href='mailto=info@itk-group.ru')
+          include /common/icons/email.svg
+          span info@itk-group.ru
+        <br>
+        a.btn(href='#')
+          span.btn__txt Написать нам

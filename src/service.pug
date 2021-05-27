@@ -1,0 +1,15 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /common/blocks/header/block
+
+
+  - const page = 'service-page'
+
+  main(class='content '+ page +' inner-page')
+    include /@service/service-menu/block
+
+
+  //- Footer block ('.footer')
+  include /common/blocks/footer/block
