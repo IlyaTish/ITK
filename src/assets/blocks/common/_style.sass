@@ -24,7 +24,8 @@ h1,
 h2,
 h3,
 h4,
-h5
+h5,
+h6
   margin: 0
   color: $dark
   font-size: 30px
@@ -108,9 +109,16 @@ a
   &:hover
     color: $main
 
-ul.list
+.list
   margin: 0
   padding: 0
+
+  &__title
+    display: block
+    margin: 0 0 24px
+    color: $dark
+    font-size: 16px
+    font-weight: 550
 
   li
     display: flex
@@ -166,6 +174,16 @@ table
 
   th
     font-weight: 550
+
+  td.align-right
+    text-align: right
+
+  td.width-03
+    width: 70%
+
+.table
+  &--border
+    border-bottom: 1px solid #D1D3D4
 
 @media (max-width: 767px)
   .table-wrapper

@@ -1,0 +1,31 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /common/blocks/header/block
+
+
+  - const page = 'service-page'
+
+  main(class='content '+ page +' inner-page')
+    //- Include Breadcrumbs ('.breadcrumbs')
+    include /common/blocks/breadcrumbs/block
+
+    +breadcrumbs([
+      {
+        txt: 'Главная'
+      },
+      {
+        txt: 'Новости'
+      },
+      {
+        txt: 'Заголовок H1. Montserrat, Bold, 36px',
+        class: 'active'
+      }
+    ])
+
+    include /@simplepage/block
+
+
+  //- Footer block ('.footer')
+  include /common/blocks/footer/block

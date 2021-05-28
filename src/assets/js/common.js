@@ -19,6 +19,8 @@ ready(() => {
 
   //= require @contacts/script.js
 
+  //= require @simplepage/script.js
+
   window.onresize = () =>
     catalogScript.catalogTeleport()
 })
