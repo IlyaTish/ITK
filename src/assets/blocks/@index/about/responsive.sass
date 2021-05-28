@@ -1,7 +1,51 @@
-@media (max-width: 991px)
+@media (max-width: 1199px)
   .about
     &__content
       padding: 60px 0 0
+
+  .about-bottom
+    display: grid
+    grid-template-columns: 1fr 1fr
+    position: relative
+
+    &__img-cont
+      width: 100%
+
+    &__img
+      width: 100%
+
+    &__p
+      max-width: 340px
+      padding: 0 0 0 40px
+
+
+@media (max-width: 991px)
+  .about-numbers
+    margin: 30px 0 0
+    padding: 0 0 80px
+
+    &:before
+      top: -30px
+      height: calc(100% + 30px)
+
+    &__row
+      grid-gap: 30px
+      grid-template-columns: 1fr
+
+      &:before
+        display: none
+
+    &__txt
+      border-bottom: 1px solid #C0CDCF
+
+    &__number
+      left: unset
+      position: unset
+
+  .about-bottom
+    &__p
+      top: unset
+      position: unset
 
 
 @media (max-width: 767px)
@@ -22,3 +66,19 @@
       &__txt
         span
           display: none
+
+  .about-numbers
+    &__number
+      font-size: 48px
+
+  .about-bottom
+    grid-template-columns: 1fr
+
+    &__img-cont
+      order: 2
+
+    &__p
+      max-width: 100%
+      margin: 0 0 30px
+      padding: 30px 0 0
+      order: 1

@@ -27,21 +27,21 @@ section.about
       .about-numbers__row
         .about-numbers__col
           span.about-numbers__number 5
-        .about-numbers__col
-          span.about-numbers__number 34&nbsp;000
-        .about-numbers__col
-          span.about-numbers__number 10&nbsp;лет
-
-      .about-numbers__row.about-numbers__row--row-2
-        .about-numbers__col
           p.about-numbers__txt Логистических центров <br>на&nbsp;территории России
         .about-numbers__col
+          span.about-numbers__number 34&nbsp;000
           p.about-numbers__txt Квадратных метров складских <br>помещений класса &laquo;А&raquo;
         .about-numbers__col
+          span.about-numbers__number 10&nbsp;лет
           p.about-numbers__txt Расширеная гарантия <br>на&nbsp;всю продукцию ITK<sup class="reg">&reg;</sup>
 
     .about-bottom
       .about-bottom__img-cont
-        img.about-bottom__img(src='assets/img/@index/about/pic-02.jpg')
+        picture
+          source(
+            srcset='assets/img/@index/about/pic-02-small.jpg'
+            media='(max-width: 991px)'
+          )
+          img.about-bottom__img(src='assets/img/@index/about/pic-02.jpg')
 
       p.about-bottom__p Вся продукция ITK<sup class="reg">&reg;</sup> соответствует российским и&nbsp;мировым стандартам. Независимо от&nbsp;места производства, она проходит тщательный контроль качества в&nbsp;соответствии со&nbsp;всеми требованиями международных стандартов.<br>При широком ассортименте готовых решений продукция ITK<sup class="reg">&reg;</sup> имеет идеальное для российского рынка соотношение высокого качества и&nbsp;доступной цены.

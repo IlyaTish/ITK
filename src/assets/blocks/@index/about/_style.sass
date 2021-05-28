@@ -1,4 +1,6 @@
 .about
+  padding: 0 0 94px
+
   &__cont
     min-height: 504px
     display: grid
@@ -42,11 +44,20 @@
     background: #F5F5F5
 
   &__row
-    padding: 0 0 10px
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     position: relative
     z-index: 3
+
+    &:before
+      width: 100vw
+      height: 1px
+      content: ''
+      display: block
+      left: 0
+      bottom: 0
+      position: absolute
+      background: #C0CDCF
 
     &--row-2
       padding: 0
@@ -57,20 +68,17 @@
         padding: 0 24px 22px 24px
         border-left: 1px solid #C0CDCF
 
-      &:before
-        width: 100vw
-        height: 1px
-        content: ''
-        display: block
-        left: 0
-        bottom: 0
-        position: absolute
-        background: #C0CDCF
-
   &__number
     display: block
+    margin: 0 0 10px
     color: $main
     font-size: 64px
+    left: -16px
+    position: relative
+
+  &__txt
+    padding: 0 0 30px 30px
+    border-left: 1px solid #C0CDCF
 
 .about-bottom
   display: flex
