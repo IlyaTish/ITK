@@ -1,0 +1,61 @@
+@media (max-width: 1199px)
+  .projects-head
+    grid-template-columns: 2fr 1fr
+
+  .projects-nav
+    align-items: flex-end
+    flex-direction: column
+
+    .swiper__nav-cont
+      margin: 0 0 20px
+
+  .projects-item
+    grid-template-columns: 2fr 284px
+
+    &__grid
+      grid-template-columns: 1fr
+
+    &__area-2,
+    &__area-4
+      display: none
+
+
+@media (max-width: 991px)
+  .projects-head
+    grid-template-columns: 1fr
+
+  .projects-nav
+    display: none
+
+
+@media (max-width: 767px)
+  .projects
+    &__title
+      margin: 0 0 30px
+
+    .swiper-tab
+      padding: 0 16px 20px
+
+      &:before
+        height: 3px
+
+    .btn
+      &--small
+        margin: 30px 0 0
+        display: flex
+
+        .icon
+          margin: 0 0 0 auto
+
+  .projects-item
+    grid-template-columns: 1fr
+
+    &__area-1
+      display: none
+
+    &__area-3
+      width: 100%
+
+    &__info
+      width: 100%
+      min-width: 100%
