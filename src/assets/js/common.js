@@ -8,6 +8,7 @@ ready(() => {
 
   //= require @index/main/script.js
   //= require @index/news/script.js
+  //= require @index/projects/script.js
 
   //= require @product/script.js
   //= require @product/product-main/script.js

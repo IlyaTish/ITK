@@ -3,66 +3,137 @@ section.projects
     h2.projects__title Реализованные проекты
 
     .projects-head
-      .swiper-container
+      .projects-thumbnails.swiper-container
         .swiper-wrapper
           .swiper-slide
             .swiper-tab Бизнес-<br>подразделение &laquo;ЕвразХолдинга&raquo; <br>в&nbsp;г. Новокузнецке
           .swiper-slide
-            .swiper-tab Офисное здание &laquo;Ростелеком&raquo;, <br>г. Санкт-Петербург
+            .swiper-tab Офисное здание &laquo;Ростелеком&raquo;, г. Санкт-Петербург
           .swiper-slide
-            .swiper-tab ТЦ&nbsp;&laquo;Эль Рио&raquo; <br>г. Самара
+            .swiper-tab ТЦ&nbsp;&laquo;Эль Рио&raquo; г. Самара
 
-      .projects-grid
-        .swiper-container
-          .swiper-wrapper
-            .swiper-slide
-              .projects-item
-                .projects-item__main-img
-                  img.projects-item__img-main(src='assets/img/@index/pic-01.jpg')
+      .projects-nav
+        .swiper__nav-cont
+          .swiper-button-prev.projects-thumbnails__btn-prev
+            include /common/icons/arrow.svg
+          .swiper-button-next.projects-thumbnails__btn-next
+            include /common/icons/arrow.svg
 
-                .projects-item__grid
-                  .projects-item__area-1
-                    img.projects-item__img(src='assets/img/@index/pic-02.jpg')
+        a.btn(href='#')
+          span.btn__txt Все проекты
+          svg.icon(
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+            fill='none'
+            stroke='#000'
+            stroke-width='2'
+            stroke-linecap='round'
+            stroke-linejoin='round'
+          )
+            path(d='M4 12h16M14 6l6 6-6 6')
 
-                  .projects-item__area-2
-                    img.projects-item__img(src='assets/img/@index/pic-03.jpg')
+    .projects-grid
+      .projects-swiper.swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            .projects-item
+              .projects-item__main-img
+                img.projects-item__img-main(src='assets/img/@projects/project-items/pic-main-01.jpg')
 
-                  .projects-item__area-3
-                    img.projects-item__img(src='assets/img/@index/pic-04.jpg')
+              .projects-item__grid
+                .projects-item__area-1
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-01.jpg')
 
-                  .projects-item__area-4
+                .projects-item__area-2
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-04.jpg')
 
-            .swiper-slide
-              .projects-item
-                .projects-item__main-img
-                  img.projects-item__img-main(src='assets/img/@index/pic-01.jpg')
+                .projects-item__area-3
+                  .projects-item__info
+                    ul.project-item-list
+                      li.project-item-list__item
+                        span.project-item__txt <b>Город: </b>
+                        span.project-item__txt Новокузнецк
 
-                .projects-item__grid
-                  .projects-item__area-1
-                    img.projects-item__img(src='assets/img/@index/pic-02.jpg')
+                      li.project-item-list__item
+                        span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                        span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
 
-                  .projects-item__area-2
-                    img.projects-item__img(src='assets/img/@index/pic-03.jpg')
+                      li.project-item-list__item
+                        span.project-item__txt <b>Год установки: </b>
+                        span.project-item__txt 2018
 
-                  .projects-item__area-3
-                    img.projects-item__img(src='assets/img/@index/pic-04.jpg')
+                      li.project-item-list__item
+                        span.project-item__txt <b>Поставщики продукции: </b>
+                        span.project-item__txt компания &laquo;Русский Свет&raquo;
 
-                  .projects-item__area-4
+                .projects-item__area-4
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-05.jpg')
 
-            .swiper-slide
-              .projects-item
-                .projects-item__main-img
-                  img.projects-item__img-main(src='assets/img/@index/pic-01.jpg')
+          .swiper-slide
+            .projects-item
+              .projects-item__main-img
+                img.projects-item__img-main(src='assets/img/@projects/project-items/pic-main-02.jpg')
 
-                .projects-item__grid
-                  .projects-item__area-1
-                    img.projects-item__img(src='assets/img/@index/pic-02.jpg')
+              .projects-item__grid
+                .projects-item__area-1
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-01.jpg')
 
-                  .projects-item__area-2
-                    img.projects-item__img(src='assets/img/@index/pic-03.jpg')
+                .projects-item__area-2
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-04.jpg')
 
-                  .projects-item__area-3
-                    img.projects-item__img(src='assets/img/@index/pic-04.jpg')
+                .projects-item__area-3
+                  .projects-item__info
+                    ul.project-item-list
+                      li.project-item-list__item
+                        span.project-item__txt <b>Город: </b>
+                        span.project-item__txt Новокузнецк
 
-                  .projects-item__area-4
+                      li.project-item-list__item
+                        span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                        span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
 
+                      li.project-item-list__item
+                        span.project-item__txt <b>Год установки: </b>
+                        span.project-item__txt 2018
+
+                      li.project-item-list__item
+                        span.project-item__txt <b>Поставщики продукции: </b>
+                        span.project-item__txt компания &laquo;Русский Свет&raquo;
+
+                .projects-item__area-4
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-05.jpg')
+
+          .swiper-slide
+            .projects-item
+              img.projects-item__img-main(src='assets/img/@projects/project-items/pic-main-03.jpg')
+
+              .projects-item__grid
+                .projects-item__area-1
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-01.jpg')
+
+                .projects-item__area-2
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-04.jpg')
+
+                .projects-item__area-3
+                  .projects-item__info
+                    ul.project-item-list
+                      li.project-item-list__item
+                        span.project-item__txt <b>Город: </b>
+                        span.project-item__txt Новокузнецк
+
+                      li.project-item-list__item
+                        span.project-item__txt <b>ТМ&nbsp;ITK<sup class="reg">&reg;</sup>: </b>
+                        span.project-item__txt телекоммуникационные шкафы и&nbsp;их&nbsp;комплектующие, UTP-кабель, информационные розетки
+
+                      li.project-item-list__item
+                        span.project-item__txt <b>Год установки: </b>
+                        span.project-item__txt 2018
+
+                      li.project-item-list__item
+                        span.project-item__txt <b>Поставщики продукции: </b>
+                        span.project-item__txt компания &laquo;Русский Свет&raquo;
+
+                .projects-item__area-4
+                  img.projects-item__img(src='assets/img/@projects/project-items/pic-05.jpg')
