@@ -1,5 +1,5 @@
 doctype html
-html
+html(lang='ru')
   head
     meta(charset='utf-8')
     meta(name='viewport', content='initial-scale=1.0, width=device-width')
@@ -15,8 +15,11 @@ html
     .wrapper
       block content
 
-  script(
-    src='https://api-maps.yandex.ru/2.1/?apikey=76251305-4b9e-44ca-8140-500a5b14fd0a&lang=ru_RU'
-    type='text/javascript'
-  )
-  script(src='assets/js/all.min.js')
+    script(
+      src='https://api-maps.yandex.ru/2.1/?apikey=76251305-4b9e-44ca-8140-500a5b14fd0a&lang=ru_RU'
+      type='text/javascript'
+    )
+    script(
+      src='assets/js/all.min.js'
+      type='text/javascript'
+    )
