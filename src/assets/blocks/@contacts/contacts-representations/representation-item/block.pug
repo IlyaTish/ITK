@@ -8,12 +8,12 @@ mixin item(item)
           include /@contacts/icons/map-marker.svg
         span.representations-item__txt= item.address
 
-      a.representations-item__info(href='tel:'+ '+' + item.phone_1 +'')
+      a.representations-item__info(href='tel:'+ item.phone_1_link +'')
         .representations-item__icon-cont
           include /@contacts/icons/phone.svg
         span.representations-item__txt= item.phone_1
 
-      a.representations-item__info(href='tel:'+ '+' + item.phone_2 +'')
+      a.representations-item__info(href='tel:'+ item.phone_2_link +'')
         .representations-item__icon-cont
           include /@contacts/icons/smartphone.svg
         span.representations-item__txt= item.phone_2
