@@ -1,7 +1,10 @@
 mixin item(item)
   .product-item
     .product-item__img-cont
-      img.product-item__img(src=''+ item.image +'')
+      img.product-item__img(
+        src=''+ item.image +''
+        alt=''+ item.description +''
+      )
     .product-item__content
       p.product-item__txt= item.description
       .product-item__parameters
