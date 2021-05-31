@@ -3,7 +3,6 @@
 
   const productSwiperEl      = document.querySelector('.product-main-swiper'),
         productThumbnailsEL  = document.querySelector('.product-thumbnails'),
-        productTabsSwiperEl  = document.querySelector('.product-main-tabs'),
         productItemsSwiperEl = document.querySelectorAll('.product-items-swiper'),
         productDocumentationSwiperEl = document.querySelector('.product-documentation-swiper')
 
@@ -42,20 +41,6 @@
       },
       thumbs: {
         swiper: productThumbnails
-      }
-    });
-
-    const productTabsSwiper = new Swiper(productTabsSwiperEl, {
-      freeMode: true,
-      slidesPerView: 'auto',
-      watchOverflow: true,
-      slidesOffsetAfter: 40,
-      mousewheel: {
-        forceToAxis: true
-      },
-      navigation: {
-        nextEl: '.product-main-tabs__btn-next',
-        prevEl: '.product-main-tabs__btn-prev'
       }
     });
 

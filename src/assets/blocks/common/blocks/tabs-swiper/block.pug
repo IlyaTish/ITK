@@ -1,0 +1,12 @@
+mixin tabs-swiper(items)
+  .tabs-swiper.tabs-swiper--horizontal.swiper-container
+    .swiper-wrapper
+      for item in items
+        .swiper-slide
+          span.tabs-swiper__item(class=''+ item.class ? item.class : '' +'' data-link-to='#'+ item.link +'')= item.txt
+
+    .swiper-button-prev.tabs-swiper__btn-prev
+      include /common/icons/arrow.svg
+
+    .swiper-button-next.tabs-swiper__btn-next
+      include /common/icons/arrow.svg

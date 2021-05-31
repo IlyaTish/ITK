@@ -2,6 +2,9 @@ section#product.product-main
   //- Include Breadcrumbs ('.breadcrumbs')
   include /common/blocks/breadcrumbs/block
 
+  //- Include Tabs-swiper ('.tabs-swiper')
+  include /common/blocks/tabs-swiper/block
+
   +breadcrumbs([
     {
       txt: 'Главная'
@@ -110,23 +113,30 @@ section#product.product-main
             span.btn__txt Где купить?
 
 
-    .product-main-tabs.swiper-container
-      .swiper-wrapper
-        .swiper-slide
-          span.product-main-tabs__item(data-link-to='#product') Продукт
-        .swiper-slide
-          span.product-main-tabs__item.active(data-link-to='#features') Особенности конструкции
-        .swiper-slide
-          span.product-main-tabs__item(data-link-to='#table') Характеристики
-        .swiper-slide
-          span.product-main-tabs__item(data-link-to='#documentation') Документация
-        .swiper-slide
-          span.product-main-tabs__item(data-link-to='#addition-products') Совместно применяемые изделия
-        .swiper-slide
-          span.product-main-tabs__item(data-link-to='#similar-products') Близкая по параметрам продукция
-
-      .swiper-button-prev.product-main-tabs__btn-prev
-        include /common/icons/arrow.svg
-
-      .swiper-button-next.product-main-tabs__btn-next
-        include /common/icons/arrow.svg
+    +tabs-swiper([
+      {
+        link: 'product',
+        txt: 'Продукт',
+        class: 'active'
+      },
+      {
+        link: 'features',
+        txt: 'Особенности конструкции'
+      },
+      {
+        link: 'table',
+        txt: 'Характеристики'
+      },
+      {
+        link: 'documentation',
+        txt: 'Документация'
+      },
+      {
+        link: 'addition-products',
+        txt: 'Совместно применяемые изделия'
+      },
+      {
+        link: 'similar-products',
+        txt: 'Близкая по параметрам продукция'
+      }
+    ])

@@ -1,0 +1,114 @@
+.where-page
+  padding: 0
+
+.where
+  &__head
+    padding: 30px 0
+    background: #FAFAFA
+
+  .tabs-swiper
+    &__btn-next
+      display: none
+
+  .filters
+    margin: 0 0 30px
+    pointer-events: auto
+
+.map-layout
+  position: relative
+
+  &__cont
+    width: 100%
+    padding: 30px 0
+    top: 0
+    left: 0
+    pointer-events: none
+    position: absolute
+    box-sizing: border-box
+    z-index: 3
+
+  .btn
+    margin: 0 0 30px
+    pointer-events: auto
+
+    .icon
+      margin: 0 10px 0 0
+
+      path
+        fill: #FFFFFF
+
+.map-info
+  width: 100%
+  max-width: 360px
+  max-height: 600px
+  padding: 30px
+  background: #FFFFFF
+  border: 1px solid #D1D3D4
+  box-sizing: border-box
+  position: relative
+  overflow-x: hidden
+  overflow-y: scroll
+  pointer-events: auto
+  z-index: 3
+
+  &::-webkit-scrollbar
+    width: 4px
+
+.map-info-item
+  margin: 0 0 30px
+  box-sizing: border-box
+  border-bottom: 1px solid #E5E5E5
+
+  &__title
+    display: block
+    font-size: 14px
+    font-weight: 500
+
+  &__list
+    margin: 0
+    padding: 20px 0 30px
+
+  &__list-item
+    display: flex
+    align-items: center
+    margin: 0 0 10px
+    font-size: 12px
+    list-style: none
+
+    a
+      color: #000000
+
+    a.link
+      color: $main
+      text-decoration: underline
+
+      &:hover
+        color: darken($main, 10%)
+
+    &:last-of-type
+      margin: 0
+
+  &__icon-cont
+    width: 14px
+    height: 12px
+    flex: 14px 0 0
+    margin: 0 10px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+
+    .icon
+      width: auto
+      height: auto
+      max-width: 100%
+      max-height: 100%
+      fill: $main
+
+  &:last-of-type
+    margin: 0
+
+#map-main
+  width: 100%
+  min-height: 870px
+  position: relative
+  z-index: 1

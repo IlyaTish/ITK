@@ -6,12 +6,13 @@
 ready(() => {
   // -------- Exports --------
 
+  //= require common/blocks/tabs-swiper/script.js
+
   //= require @index/main/script.js
   //= require @index/news/script.js
   //= require @index/projects/script.js
 
   //= require @product/script.js
-  //= require @product/product-main/script.js
 
   //= require @catalog/script.js
 
@@ -21,6 +22,8 @@ ready(() => {
   //= require @contacts/script.js
 
   //= require @simplepage/script.js
+
+  //= require @where/script.js
 
   window.onresize = () =>
     catalogScript.catalogTeleport()

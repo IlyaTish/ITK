@@ -1,0 +1,214 @@
+section.where
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Include Tabs-swiper ('.tabs-swiper')
+  include /common/blocks/tabs-swiper/block
+
+
+  .where__head
+    +breadcrumbs([
+      {
+        txt: 'Главная'
+      },
+      {
+        txt: 'Где купить',
+        class: 'active'
+      }
+    ])
+
+    .container
+      h1.where__title Где купить?
+
+  .container
+    +tabs-swiper([
+      {
+        link: '',
+        txt: 'Офис продаж',
+        class: 'active'
+      },
+      {
+        link: '',
+        txt: 'Интернет-магазин'
+      },
+      {
+        link: '',
+        txt: 'Розничный магазин'
+      },
+      {
+        link: '',
+        txt: 'Проектирование'
+      },
+      {
+        link: '',
+        txt: 'Монтаж'
+      },
+      {
+        link: '',
+        txt: 'Сервис'
+      },
+      {
+        link: '',
+        txt: 'Все'
+      }
+    ])
+
+  .map-layout
+    .map-layout__cont
+      .container
+        .filters
+          .filter-item
+            .select-box.selectable
+              span.select-box__cont Россия
+              ul.select-box__dropdown(style='display: none')
+                li.active
+                  span.checkbox__txt Россия
+                li
+                  span.checkbox__txt Украина
+                li
+                  span.checkbox__txt Казахстан
+
+          .filter-item
+            .select-box.selectable
+              span.select-box__cont Московская область
+              ul.select-box__dropdown(style='display: none')
+                li.active
+                  span.checkbox__txt Московская область
+                li
+                  span.checkbox__txt Московская область
+                li
+                  span.checkbox__txt Московская область
+
+          .filter-item
+            .select-box.selectable
+              span.select-box__cont Все города
+              ul.select-box__dropdown(style='display: none')
+                li.active
+                  span.checkbox__txt Все города
+                li
+                  span.checkbox__txt Москва
+                li
+                  span.checkbox__txt Санкт-Петербург
+                li
+                  span.checkbox__txt Нижний Новгород
+                li
+                  span.checkbox__txt Казань
+
+        a.btn.btn--filled(href='#')
+          include /common/icons/place.svg
+          span.btn__txt Рядом с&nbsp;вашим текущим положением
+
+        .map-info
+          .map-info-item
+            span.map-info-item__title AC Group
+            ul.map-info-item__list
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/map-marker.svg
+                span.map-info-item__txt ул.Гайдара 164 оф 313
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/disk.svg
+                span.map-info-item__txt ул.Гайдара 164 оф 313
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/clock.svg
+                span.map-info-item__txt 9-18
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/phone.svg
+                a.map-info-item__txt(href='tel:87273930735') 8 727 393 07 35
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/cursor.svg
+                a.map-info-item__txt.link(href='http://www.acgroup.kz') http://www.acgroup.kz
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/mail.svg
+                a.map-info-item__txt(href='mailto:info@acgroup.kz') info@acgroup.kz
+
+          .map-info-item
+            span.map-info-item__title Русский Свет (Филиал, Зеленоград)
+            ul.map-info-item__list
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/map-marker.svg
+                span.map-info-item__txt Зеленоград, Сосновая аллея, д. 4, стр. 2
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/phone.svg
+                a.map-info-item__txt(href='tel:+7(499)426-36-09') +7 (499) 426-36-09
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/cursor.svg
+                a.map-info-item__txt.link(href='http://russvet.ru/')  http://russvet.ru/
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/mail.svg
+                a.map-info-item__txt(href='mailto:direct@zelenograd.russvet.ru') direct@zelenograd.russvet.ru
+
+          .map-info-item
+            span.map-info-item__title СТ-ГРУПП Офис продаж г. Москва
+            ul.map-info-item__list
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/map-marker.svg
+                span.map-info-item__txt Москва, ул. Зенитчиков, дв. 11
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/phone.svg
+                a.map-info-item__txt(href='tel:+7(800)555-66-89') +7 (800) 555-66-89
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/cursor.svg
+                a.map-info-item__txt.link(href='http://www.st-grp.com')  http://www.st-grp.com
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/mail.svg
+                a.map-info-item__txt(href='mailto:i@ntech-s.ru') i@ntech-s.ru
+
+          .map-info-item
+            span.map-info-item__title AC Group
+            ul.map-info-item__list
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/map-marker.svg
+                span.map-info-item__txt ул.Гайдара 164 оф 313
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/disk.svg
+                span.map-info-item__txt ул.Гайдара 164 оф 313
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/clock.svg
+                span.map-info-item__txt 9-18
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/phone.svg
+                a.map-info-item__txt(href='tel:87273930735') 8 727 393 07 35
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/cursor.svg
+                a.map-info-item__txt.link(href='http://www.acgroup.kz') http://www.acgroup.kz
+
+              li.map-info-item__list-item
+                .map-info-item__icon-cont
+                  include /common/icons/mail.svg
+                a.map-info-item__txt(href='mailto:info@acgroup.kz') info@acgroup.kz
+
+    #map-main.map
