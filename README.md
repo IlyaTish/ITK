@@ -23,3 +23,4 @@
 - [Каталоги и буклеты](https://ilyatish.github.io/ITK/service-catalog)  
 - [Страница статьи](https://ilyatish.github.io/ITK/article)  
 - [Шаблон страницы](https://ilyatish.github.io/ITK/simplepage)
+- [Где купить](https://ilyatish.github.io/ITK/where)
