@@ -36,6 +36,7 @@
   display: grid
   grid-gap: 30px
   grid-template-areas: 'item-1 item-1 item-1 item-1 item-2 item-2 item-3' 'item-4 item-4 item-5 item-5 item-5 item-5 item-3'
+  transition: .2s
 
   &__item
     height: 285px
@@ -46,6 +47,18 @@
     &:hover
       .production-grid__item-bg
         transform: scale(1.1)
+
+      .production-grid__list
+        width: 100% !important
+        height: 100% !important
+        margin-top: 0 !important
+
+        li
+          display: flex
+          opacity: 1
+
+        &:before
+          opacity: .9
 
   &__item-bg
     width: 100%
@@ -59,30 +72,79 @@
     z-index: 1
 
   &__item.item-1
+    width: 530px
     grid-area: item-1
 
   &__item.item-2
+    width: 282px
     grid-area: item-2
 
   &__item.item-3
+    width: 274px
     height: 100%
     grid-area: item-3
 
   &__item.item-4
+    width: 282px
     grid-area: item-4
 
   &__item.item-5
+    width: 530px
     grid-area: item-5
 
   &__list
     width: intrinsic
     width: -moz-max-content
     width: -webkit-max-content
+    display: block
+    margin: 0
     margin-top: auto
+    padding: 0 !important
     color: #FFFFFF
+    bottom: 0
+    left: 0
+    position: absolute
     background: $main
-    position: relative
+    transition: margin-top .5s, width ease-in-out .5s, height ease-in-out .5s
+    box-sizing: border-box
+    overflow-x: hidden
+    overflow-y: scroll
     z-index: 3
+
+    &::-webkit-scrollbar
+      width: 4px
+      background: $main
+
+    li
+      display: none
+      padding: 6px 20px
+      align-items: center
+      list-style: none
+      position: relative
+      transition: opacity 1.5s ease-in-out, padding 1.5s ease-in-out
+      opacity: 0
+      z-index: 3
+
+      a
+        color: #FFFFFF
+        font-size: 14px
+        font-weight: 400
+
+        &:hover
+          padding: 0 0 0 6px
+          color: #FFFFFF
+          text-decoration: underline
+
+      .icon
+        width: 11px
+        height: auto
+        margin: 0 8px 0 0
+
+        path
+          stroke: #FFFFFF
+
+      &:first-of-type
+        padding: 0 20px 6px
 
   &__name
     display: block
@@ -90,3 +152,6 @@
     font-size: 16px
     font-weight: 550
     line-height: 24px
+    white-space: break-spaces
+    position: relative
+    z-index: 3

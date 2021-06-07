@@ -172,6 +172,8 @@ const initAccordeon = () => {
     head.addEventListener('click', e => {
       const collection = e.path;
 
+      e.preventDefault();
+
       collection.forEach(e => {
         if (e === item) item.classList.add('active')
       });
@@ -195,9 +197,6 @@ const initAccordeon = () => {
           )
         }
       }
-
-
-      e.preventDefault();
 
       if (content.classList.contains('collapsed')) {
         // show

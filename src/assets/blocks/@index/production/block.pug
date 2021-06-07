@@ -1,3 +1,7 @@
+//- Include production-grid-list ('.production-grid__list')
+include ./blocks/production-grid-list/block
+
+
 section.production
   .container
     .production-head
@@ -23,13 +27,11 @@ section.production
     .production-grid
       .production-grid__item.item-1
         img.production-grid__item-bg(src='assets/img/@index/production/bg-01.jpg' alt='Шкафы монтажные')
-        .production-grid__list
-          span.production-grid__name Шкафы монтажные
+        +list('Шкафы монтажные')
 
       .production-grid__item.item-2
         img.production-grid__item-bg(src='assets/img/@index/production/bg-02.jpg' alt='Компоненты СКС медные')
-        .production-grid__list
-          span.production-grid__name Компоненты <br>СКС медные
+        +list('Компоненты \nСКС медные')
 
       .production-grid__item.item-3
         picture
@@ -38,16 +40,12 @@ section.production
             media='(max-width: 991px)'
           )
           img.production-grid__item-bg(src='assets/img/@index/production/bg-03.jpg' alt='Электропитание и мониторинг')
-
-        .production-grid__list
-          span.production-grid__name Электропитание и <br>мониторинг
+        +list('Электропитание и \nмониторинг')
 
       .production-grid__item.item-4
         img.production-grid__item-bg(src='assets/img/@index/production/bg-04.jpg' alt='Компоненты СКС медные')
-        .production-grid__list
-          span.production-grid__name Компоненты <br>СКС медные
+        +list('Компоненты \nСКС оптические')
 
       .production-grid__item.item-5
         img.production-grid__item-bg(src='assets/img/@index/production/bg-05.jpg' alt='LAN-кабель и инструменты')
-        .production-grid__list
-          span.production-grid__name LAN-кабель и инструменты
+        +list('LAN-кабель и инструменты')
