@@ -13,7 +13,7 @@
 
 - [Главная страница](https://ilyatish.github.io/ITK)  
 - [Каталог](https://ilyatish.github.io/ITK/catalog)  
-- [Каталога продукции](https://ilyatish.github.io/ITK/products)  
+- [Каталог продукции](https://ilyatish.github.io/ITK/products)  
 - [Страница продукта](https://ilyatish.github.io/ITK/product)  
 - [Пресс центр](https://ilyatish.github.io/ITK/presscenter)  
 - [Реализованные проекты](https://ilyatish.github.io/ITK/projects)  
