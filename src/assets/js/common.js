@@ -6,6 +6,7 @@
 ready(() => {
   // -------- Exports --------
 
+  //= require common/blocks/burger-menu/script.js
   //= require common/blocks/tabs-swiper/script.js
 
   //= require @index/main/script.js

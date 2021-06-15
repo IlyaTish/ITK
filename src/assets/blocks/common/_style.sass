@@ -152,7 +152,7 @@ a
 
 svg,
 path
-  transition: fill .2s, stroke .2s
+  transition: fill .2s, stroke .2s, transform .2s
 
 table
   width: 100%
@@ -650,8 +650,16 @@ textarea,
   width: 100%
   position: relative
 
+  &__title
+    display: block
+    margin: 0 0 10px
+    font-weight: 550
+
   input
     padding: 13px 40px 13px 16px
+
+    &::placeholder
+      color: #C1C2C2
 
   &:after
     width: 40px
@@ -683,9 +691,8 @@ textarea
   min-height: 120px
   border-radius: 0
 
-
 ::placeholder
-  color: #AAAAAA
+  color: #C1C2C2
 
 
 
