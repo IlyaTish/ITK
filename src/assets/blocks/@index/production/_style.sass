@@ -118,23 +118,31 @@
     li
       display: none
       padding: 6px 20px
+      align-items: baseline
+      color: #FFFFFF
+      font-size: 14px
+      font-weight: 400
       list-style: none
       position: relative
-      transition: opacity 1.5s ease-in-out, padding 1.5s ease-in-out
+      transition: opacity 1.5s ease-in-out, padding 1.5s ease-in-out, padding .2s
       opacity: 0
       z-index: 3
 
+      &:hover
+        padding: 6px 20px 6px 25px
+        color: #FFFFFF
+
+      &:last-of-type
+        padding: 6px 20px 20px 20px
+
       a
-        display: flex
-        align-items: baseline
         color: #FFFFFF
         font-size: 14px
         font-weight: 400
 
-        &:hover
-          padding: 0 0 0 6px
-          color: #FFFFFF
-          text-decoration: underline
+      span
+        display: inline
+        background-image: linear-gradient(#FFFFFF, #FFFFFF)
 
       .icon
         width: 11px
@@ -157,3 +165,7 @@
     white-space: break-spaces
     position: relative
     z-index: 3
+
+  &__icon-cont
+    display: inline-block
+    height: 100%

@@ -109,6 +109,18 @@ a
   &:hover
     color: $main
 
+.link
+  display: inline
+  background-image: linear-gradient($main, $main)
+  background-position-x: 0
+  background-position-y: bottom
+  background-size: 0 1px
+  background-repeat: no-repeat
+
+  &:hover
+    background-size: 100% 1px
+    transition: .5s
+
 .list
   margin: 0
   padding: 0

@@ -9,6 +9,7 @@
 
   const initSwiper = () => {
     const mainSwiper = new Swiper(mainSwiperEl, {
+      speed: 600,
       autoHeight: true,
       slidesPerView: 1,
       autoplay: false,

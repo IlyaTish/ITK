@@ -2,7 +2,7 @@ mixin list(title)
   ul.production-grid__list
     span.production-grid__name= title
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -15,10 +15,11 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Витая пара внутренней прокладки
+      a(href='#')
+        span.link Витая пара внутренней прокладки
 
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -31,10 +32,11 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Витая пара внешней прокладки
+      a(href='#')
+        span.link Витая пара внешней прокладки
 
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -47,10 +49,11 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Витая пара ШПД
+      a(href='#')
+        span.link Витая пара ШПД
 
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -63,10 +66,11 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Кабели коаксиальные
+      a(href='#')
+        span.link Кабели коаксиальные
 
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -79,10 +83,11 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Разъемы для кабеля
+      a(href='#')
+        span.link Разъемы для кабеля
 
     li.production-grid__list-item
-      a(href='#')
+      .production-grid__icon-cont
         svg.icon(
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -95,4 +100,5 @@ mixin list(title)
           stroke-linejoin='round'
         )
           path(d='M4 12h16M14 6l6 6-6 6')
-        span Инструменты и тестеры для витой пары
+      a(href='#')
+        span.link Инструменты и тестеры для витой пары
