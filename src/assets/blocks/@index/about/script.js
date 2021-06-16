@@ -38,8 +38,6 @@
             data  = +counter.innerText,
             time  = value / speed;
 
-        console.log(data);
-
         if (data < value) {
           counter.innerText = Math.ceil(data + time);
           setTimeout(animate, 1);
