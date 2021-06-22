@@ -73,6 +73,25 @@
     color: $black
     font-size: 14px
 
+  &--bottom
+    width: 100%
+
+    .header-nav
+      &__list
+        height: 100%
+        padding: 0
+        align-items: center
+
+      &__item
+        height: 100%
+        display: flex
+        align-items: center
+
+      &__link
+        display: inline-block
+        color: #FFFFFF
+        background-image: linear-gradient(#FFFFFF, #FFFFFF)
+
 .logo
   display: flex
   align-items: center
@@ -90,15 +109,70 @@
   &__cont
     display: flex
 
+  &__wrapper
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 0 180px 0 30px
+    position: relative
+
+  .search-area
+    width: 62px
+    height: 100%
+    display: flex
+    top: 0
+    right: 0
+    position: absolute
+    background: $main
+    transition: width .5s
+
+    &__btn-close
+      width: 40px
+      height: 100%
+      display: flex
+      flex: 40px 0 0
+      align-items: center
+      justify-content: center
+
+      .icon
+        height: 100%
+        flex: 20px 0 0
+        top: 1px
+        position: relative
+        opacity: 0
+        transition: opacity .5s
+
+        g
+          filter: none
+
+  .search-area.active
+    width: 100%
+
+    .search
+      width: 100%
+
+    .search-area__btn-close
+      .icon
+        opacity: 1
+
   .search
-    height: auto
+    width: 62px
+    height: 100%
+    position: relative
+    z-index: 3
 
     &__input
+      width: 100%
       height: 100%
       padding: 10px 16px 10px 40px
       color: #FFFFFF
+      font-size: 14px
       background: transparent
       border: none
+
+      &::placeholder
+        color: #FFFFFF
+        opacity: .6
 
     &:after
       left: 0

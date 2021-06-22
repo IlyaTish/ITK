@@ -36,5 +36,22 @@ header.header
             span.bar-line
           span.catalog-btn__txt Продукция
 
-        .search
-          input.search__input(type='search' placeholder='Поиск по сайту')
+        .header-bottom__wrapper
+          nav.header-nav.header-nav--bottom
+            ul.header-nav__list
+              li.header-nav__item
+                a.header-nav__link.link(href='#') Решения
+              li.header-nav__item
+                a.header-nav__link.link(href='#') Сервис и поддержка
+              li.header-nav__item
+                a.header-nav__link.link(href='#') Полезная информация
+              li.header-nav__item
+                a.header-nav__link.link(href='#') Обучение
+              li.header-nav__item
+                a.header-nav__link.link(href='#') Партнерам
+
+          .search-area
+            .search
+              input.search__input(type='search' placeholder='Поиск по сайту')
+            .search-area__btn-close
+              include /common/icons/close.svg

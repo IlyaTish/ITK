@@ -1,17 +1,16 @@
 const headerScript = (() => {
   // -------- Variables --------
 
-  const burgerBtn     = document.querySelector('.burger-btn'),
-        burgerMenu    = document.querySelector('.burger-menu'),
-
-        headerNav     = document.querySelector('.header-nav'),
+  const headerNav     = document.querySelector('.header-nav'),
         headerNavList = document.querySelector('.header-nav__list'),
         headerNavLink = document.querySelectorAll('.header-nav__link'),
         header        = document.querySelector('.header'),
         headerHeight  = header.clientHeight,
 
         targets       = document.querySelector('.header'),
-        tooltipMenu   = document.querySelector('.tooltip-menu');
+        searchArea    = header.querySelector('.search-area'),
+        search        = header.querySelector('.search'),
+        btnClose      = header.querySelector('.search-area__btn-close');
 
   let flag = 1;
 
@@ -37,46 +36,27 @@ const headerScript = (() => {
     }
   }
 
+  /* Search btn */
 
-  /* Burger menu */
-
-  const initBurgerMenu = () => {
-    burgerBtn.addEventListener('click', e => {
-      burgerBtn.classList.toggle('active');
-      burgerMenu.classList.toggle('active');
-
-      burgerMenu.classList.contains('active') ?
-      burgerMenu.style.top = `${ headerHeight }px` :
-      burgerMenu.style.top = `0px`;
-
-      if (burgerMenu.classList.contains('hidden')) {
-        // show
-        burgerMenu.classList.add('transition');
-        burgerMenu.clientWidth;
-        burgerMenu.classList.remove('hidden');
-      } else {
-        // hide
-        burgerMenu.classList.add('transition');
-        burgerMenu.classList.add('hidden')
-      }
+  const initSearchAnimation = () => {
+    search.addEventListener('click', () => {
+      searchArea.classList.add('active')
     });
 
-    burgerMenu.addEventListener('transitionend', () =>
-      burgerMenu.classList.remove('transition')
-    )
+    btnClose.addEventListener('click', () =>
+      searchArea.classList.remove('active')
+    );
   }
 
 
 
   // -------- Execution of functions --------
 
-  viewportWidth < 991 ?
-    appendElem(headerNavList, burgerMenu) :
-    appendElem(headerNavList, headerNav);
+  // viewportWidth < 991 ?
+  //   appendElem(headerNavList, burgerMenu) :
+  //   appendElem(headerNavList, headerNav);
 
-  initBurgerMenu();
-
-  burgerMenu.style.top = `${ headerHeight }px`;
+  initSearchAnimation();
 
   return {
     headerTeleport: headerTeleport

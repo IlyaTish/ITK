@@ -42,11 +42,23 @@
 
       btnClose.addEventListener('click', e => closeBurgerMenu());
 
-      burgerMenu.addEventListener('transitionend', () =>
-        burgerMenu.classList.remove('transition')
-      )
+      setTimeout(() => {
+        burgerMenu.addEventListener('transitionend', () =>
+          burgerMenu.classList.remove('transition')
+        )
+      }, 100)
     }
   }
+
+  setTimeout(() => {
+    burgerMenu.addEventListener('transitionend', () =>
+      burgerMenu.classList.remove('transition')
+    )
+  }, 100)
+
+  burgerMenu.addEventListener('transitionend', () =>
+    burgerMenu.classList.remove('transition')
+  )
 
 
 
