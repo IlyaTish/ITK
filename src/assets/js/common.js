@@ -29,6 +29,7 @@ ready(() => {
 
   //= require @where/script.js
 
-  window.onresize = () =>
+  window.onresize = () => {
     catalogScript.catalogTeleport()
+  }
 })

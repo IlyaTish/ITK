@@ -36,7 +36,7 @@ const headerScript = (() => {
     }
   }
 
-  /* Search btn */
+  /* Search btn animation */
 
   const initSearchAnimation = () => {
     search.addEventListener('click', () => {
@@ -51,10 +51,6 @@ const headerScript = (() => {
 
 
   // -------- Execution of functions --------
-
-  // viewportWidth < 991 ?
-  //   appendElem(headerNavList, burgerMenu) :
-  //   appendElem(headerNavList, headerNav);
 
   initSearchAnimation();
 

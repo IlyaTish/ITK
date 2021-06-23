@@ -1,0 +1,37 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /common/blocks/header/block
+
+  //- Burger-menu block ('.burger-menu')
+  include /common/blocks/burger-menu/block
+
+
+  - const page = 'project-article-page'
+
+  main(class='content '+ page +' inner-page')
+    //- Include Breadcrumbs ('.breadcrumbs')
+    include /common/blocks/breadcrumbs/block
+
+    +breadcrumbs([
+      {
+        txt: 'Главная'
+      },
+      {
+        txt: 'Реализованные проекты'
+      },
+      {
+        txt: 'Комплекс Baku White City',
+        class: 'active'
+      }
+    ])
+
+    include /@project-article/project-article-head/block
+
+    //- Projects block ('.projects')
+    include /@index/projects/block
+
+
+  //- Footer block ('.footer')
+  include /common/blocks/footer/block
