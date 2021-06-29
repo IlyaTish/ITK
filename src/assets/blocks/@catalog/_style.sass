@@ -153,11 +153,11 @@
     font-weight: 550
 
   .tabs
-    &__item
-      .icon
-        right: 2px
-        position: relative
-        transform: rotate(-90deg)
+    .icon
+      height: auto
+      right: 2px
+      position: relative
+      transform: rotate(-90deg)
 
   .btn
     min-width: auto
@@ -203,11 +203,24 @@
     list-style: none
 
     .head
-      display: block
+      width: 100%
+      display: flex
       padding: 8px 20px
       background: #FFFFFF
       border: 1px solid #F6F6F6
+      box-sizing: border-box
       cursor: pointer
+
+      span
+        display: inline-block
+        margin: 0 auto 0 0
+
+    .icon
+      width: 6px
+      max-width: 6px
+      height: auto
+      right: 2px
+      position: relative
 
     ul
       margin: 0
@@ -223,6 +236,13 @@
 
     &:hover
       color: $main
+
+  &__item.active
+    .icon
+      transform: rotate(90deg)
+
+      path
+        stroke: $main
 
 .catalog-sidebar,
 .catalog-filters
