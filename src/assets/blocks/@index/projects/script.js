@@ -69,26 +69,28 @@
 
   // -------- Functions execution --------
 
-  initSwiper();
+  if (document.querySelector('.projects')) {
+    initSwiper();
 
-  thumbnailsBorderInit(
-    wrapper,
-    thumbnailsBorder
-  );
-
-  swiperBtnPrev.addEventListener('click', () => {
-    console.log('Click prev');
     thumbnailsBorderInit(
       wrapper,
       thumbnailsBorder
-    )
-  });
+    );
 
-  swiperBtnNext.addEventListener('click', () => {
-    console.log('Click next');
-    thumbnailsBorderInit(
-      wrapper,
-      thumbnailsBorder
-    )
-  })
+    swiperBtnPrev.addEventListener('click', () => {
+      console.log('Click prev');
+      thumbnailsBorderInit(
+        wrapper,
+        thumbnailsBorder
+      )
+    });
+
+    swiperBtnNext.addEventListener('click', () => {
+      console.log('Click next');
+      thumbnailsBorderInit(
+        wrapper,
+        thumbnailsBorder
+      )
+    })
+  }
 })();

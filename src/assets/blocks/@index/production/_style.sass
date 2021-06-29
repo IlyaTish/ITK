@@ -35,7 +35,7 @@
 .production-grid
   display: grid
   grid-gap: 30px
-  grid-template-areas: 'item-1 item-1 item-1 item-1 item-2 item-2 item-3' 'item-4 item-4 item-5 item-5 item-5 item-5 item-3'
+  grid-template-areas: 'item-1 item-1 item-1 item-1 item-2 item-2 item-2' 'item-4 item-4 item-4 item-5 item-5 item-5 item-5' 'item-3 item-3 item-3 item-3 item-6 item-6 item-6'
   transition: .2s
 
   &__item
@@ -72,25 +72,23 @@
     z-index: 1
 
   &__item.item-1
-    width: 530px
     grid-area: item-1
 
   &__item.item-2
-    width: 282px
     grid-area: item-2
 
   &__item.item-3
-    width: 274px
     height: 100%
     grid-area: item-3
 
   &__item.item-4
-    width: 282px
     grid-area: item-4
 
   &__item.item-5
-    width: 530px
     grid-area: item-5
+
+  &__item.item-6
+    grid-area: item-6
 
   &__list
     width: intrinsic
@@ -159,6 +157,10 @@
 
       &:first-of-type
         padding: 0 20px 6px
+
+        &:hover
+          padding: 0 20px 6px 25px
+          color: #FFFFFF
 
   &__name
     display: block

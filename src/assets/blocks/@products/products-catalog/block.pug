@@ -13,7 +13,12 @@ include /@index/production/blocks/production-grid-list/block
       +list('Компоненты \nСКС медные')
 
     .production-grid__item.item-3
-      img.production-grid__item-bg(src='assets/img/@index/production/bg-03-dop.jpg' alt='Электропитание и мониторинг')
+      picture
+        source(
+          srcset='assets/img/@index/production/bg-03-dop.jpg'
+          media='(max-width: 991px)'
+        )
+        img.production-grid__item-bg(src='assets/img/@index/production/bg-06.jpg' alt='Электропитание и мониторинг')
       +list('Электропитание и \nмониторинг')
 
     .production-grid__item.item-4
@@ -23,3 +28,7 @@ include /@index/production/blocks/production-grid-list/block
     .production-grid__item.item-5
       img.production-grid__item-bg(src='assets/img/@index/production/bg-05.jpg' alt='LAN-кабель и инструменты')
       +list('LAN-кабель и инструменты')
+
+    .production-grid__item.item-6
+      img.production-grid__item-bg(src='assets/img/@index/production/bg-07.jpg' alt='Комплексные \nрешения для ЦОД')
+      +list('Комплексные решения для ЦОД')
