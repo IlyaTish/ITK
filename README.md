@@ -17,6 +17,7 @@
 - [Страница продукта](https://ilyatish.github.io/ITK/product)  
 - [Пресс центр](https://ilyatish.github.io/ITK/presscenter)  
 - [Реализованные проекты](https://ilyatish.github.io/ITK/projects)  
+- [Страница проекта](https://ilyatish.github.io/ITK/project-article)  
 - [Контакты](https://ilyatish.github.io/ITK/contacts)  
 - [Решения](https://ilyatish.github.io/ITK/solutions)  
 - [Сервис и поддержка](https://ilyatish.github.io/ITK/service)  
