@@ -1,16 +1,19 @@
 mixin item(item)
   .product-item
-    .product-item__img-cont
-      img.product-item__img(
-        src=''+ item.image +''
-        alt=''+ item.description +''
-      )
-    .product-item__content
-      p.product-item__txt= item.description
-      .product-item__parameters
-        span.product-item__parameters-title.product-item__txt-gray= item.parameters_title
-        .product-item__parameters-cont
-          span.product-item__parameter.product-item__txt-gray= item.parameter_1
-          span.product-item__parameter.product-item__txt-gray= item.parameter_2
-          span.product-item__parameter.product-item__txt-gray= item.parameter_3
-          span.product-item__parameter.product-item__txt-gray= item.parameter_4
+    .product-item__wrapper
+      .product-item__img-cont
+        img.product-item__img(
+          src=''+ item.image +''
+          alt=''+ item.description +''
+        )
+      .product-item__content
+        p.product-item__txt= item.description
+        .product-item__parameters
+          span.product-item__parameters-title.product-item__txt-gray= item.parameters_title
+          .product-item__parameters-cont
+            span.product-item__parameter.product-item__txt-gray= item.parameter_1
+            span.product-item__parameter.product-item__txt-gray= item.parameter_2
+            span.product-item__parameter.product-item__txt-gray= item.parameter_3
+            span.product-item__parameter.product-item__txt-gray= item.parameter_4
+        a.btn(href='#')
+          span.btn__txt Быстрый просмотр

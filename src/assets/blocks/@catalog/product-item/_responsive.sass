@@ -1,8 +1,9 @@
 @media (max-width: 479px)
   .catalog
     .product-item
-      display: flex
-      padding: 16px 16px 16px 0
+      &__wrapper
+        display: flex
+        padding: 16px 16px 16px 0
 
       &__img-cont
         height: 140px
@@ -13,11 +14,15 @@
         text-align: left
         -webkit-line-clamp: 6
 
+      .btn
+        display: none
+
     &__grid
       &--layout-2
         .product-item
-          display: flex
-          padding: 16px 16px 16px 0
+          &__wrapper
+            display: flex
+            padding: 16px 16px 16px 0
 
           &__parameters
             display: none
