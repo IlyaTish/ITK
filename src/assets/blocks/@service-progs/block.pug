@@ -1,0 +1,165 @@
+section.service
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Include Feedback ('.feedback')
+  include /common/blocks/feedback/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Сервис и поддержка'
+    },
+    {
+      txt: 'Программное обеспечение и конфигураторы',
+      class: 'active'
+    }
+  ])
+
+  .container
+    h1.service__title Программное обеспечение и&nbsp;конфигураторы
+
+    .inner-page__grid
+      .swiper-container.tabs
+        .swiper-wrapper
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Каталоги и&nbsp;брошюры
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item.active(href='#')
+              span.tabs__txt Программное обеспечение и&nbsp;конфигураторы
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt Техническая документация
+              include /common/icons/arrow.svg
+          .swiper-slide
+            a.tabs__item(href='#')
+              span.tabs__txt FAQ
+              include /common/icons/arrow.svg
+
+      +feedback(false, 'Техподдержка')
+
+      .inner-page__content
+        .tab-content.active
+          .configurators
+            h2.configurators__title Конфигураторы
+            .configurators__grid
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/server.svg
+                  .configurators-item__title Конфигуратор шкафов
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/power.svg
+                  .configurators-item__title Конфигуратор аксессуаров и&nbsp;PDU для шкафов
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/broken-cable.svg
+                  .configurators-item__title Конфигуратор оптических шнуров
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/lan.svg
+                  .configurators-item__title Онлайн подбор аксессуаров к&nbsp;LAN-кабелю ITK
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/servers.svg
+                  .configurators-item__title Тендерный калькулятор ITK
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+              a.configurators-item(href='#')
+                .configurators-item__cont
+                  .configurators-item__icon-cont
+                    include ./icons/server-01.svg
+                  .configurators-item__title Конфигуратор оптического кросса
+                .configurators-item__arrow
+                  svg.icon(
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='24'
+                    height='24'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='#000'
+                    stroke-width='2'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  )
+                    path(d='M4 12h16M14 6l6 6-6 6')
+
+          include ./service-table/block.pug

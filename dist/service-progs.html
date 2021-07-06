@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Base pug template for lightning fast html-coding">
+    <meta name="keywords" content="">
+    <title>ITK - Полный спектр продукции для IT-технологий</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__cont"><a class="logo" href="#"><svg class='logo-svg' version='1.1' xmlns='http://www.w3.org/2000/svg' x='0' y='0' viewBox='0 0 243 110' xml:space='preserve'><path class='logo-svg__elem-2' d='M0 40h29v69.7H0zM0 0h29v30H0zM70 40h29v70H70z' fill='#2D4345' /><path class='logo-svg__elem-1' fill='#67AE3e' d='M40 0h89v30H40z'/><path class='logo-svg__elem-2' fill='#2D4345' d='M243 0h-35l-28 40h-10V0h-30v110h30V70h10l28 40h35l-39-55z'/></svg></a>
+            <div class="header__content">
+              <div class="header-top"><a class="header-top__link header__email" href="#"><span>Написать письмо</span><svg class='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/></svg></a><a class="header-top__link header__phone" href="#">+7 (495) 542-22-24</a></div>
+              <nav class="header-nav">
+                <ul class="header-nav__list">
+                  <li class="header-nav__item"><a class="header-nav__link link" href="#">О торговой марке</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link link" href="#">Релизованные проекты</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link link" href="#">Пресс центр</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link link" href="#">Где купить</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link link" href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header-bottom__cont">
+              <button class="search-btn"><svg class='icon' width='57' height='57' viewBox='0 0 57 57' fill='none' xmlns='http://www.w3.org/2000/svg'>
+<g clip-path='url(#clip0)'>
+<path d='M55.1464 51.887L41.5884 37.786C45.0744 33.642 46.9844 28.428 46.9844 23C46.9844 10.318 36.6664 0 23.9844 0C11.3024 0 0.984375 10.318 0.984375 23C0.984375 35.682 11.3024 46 23.9844 46C28.7454 46 33.2824 44.564 37.1614 41.838L50.8224 56.046C51.3934 56.639 52.1614 56.966 52.9844 56.966C53.7634 56.966 54.5024 56.669 55.0634 56.129C56.2554 54.982 56.2934 53.08 55.1464 51.887ZM23.9844 6C33.3584 6 40.9844 13.626 40.9844 23C40.9844 32.374 33.3584 40 23.9844 40C14.6104 40 6.98438 32.374 6.98438 23C6.98438 13.626 14.6104 6 23.9844 6Z' fill='#B5B8B9'/>
+</g>
+<defs>
+<clipPath id='clip0'>
+<rect width='56.966' height='56.966' fill='white'/>
+</clipPath>
+</defs>
+</svg>
+
+              </button><a class="catalog-btn" href="#"><span class="burger-btn"><span class="bar-line"></span></span><span class="catalog-btn__txt">Продукция</span></a>
+              <div class="header-bottom__wrapper">
+                <nav class="header-nav header-nav--bottom">
+                  <ul class="header-nav__list">
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#">Решения</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#">Сервис и поддержка</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#">Полезная информация</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#">Обучение</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link link" href="#">Партнерам</a></li>
+                  </ul>
+                </nav>
+                <div class="search-area">
+                  <div class="search">
+                    <input class="search__input" type="search" placeholder="Поиск по сайту">
+                  </div>
+                  <div class="search-area__btn-close"><svg width='20' height='20' class='icon' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d)' fill-rule='evenodd' clip-rule='evenodd' fill='#fff'><path d='M3.822 2.169l-.647.646a.463.463 0 000 .658l12.384 12.39a.464.464 0 00.658 0l.645-.646a.463.463 0 000-.658L4.48 2.169a.463.463 0 00-.658 0z'/><path d='M3.254 2.257a.872.872 0 011.234-.003l12.254 12.189a.873.873 0 01-1.23 1.238L3.256 3.492a.873.873 0 01-.003-1.235z'/><path d='M16.745 2.257a.873.873 0 01-.003 1.235L4.488 15.681a.872.872 0 11-1.23-1.238L15.51 2.253a.872.872 0 011.234.004z'/></g><defs><filter id='filter0_d' x='0' y='0' width='20' height='20' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/><feOffset dy='1'/><feGaussianBlur stdDeviation='1.5'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.47 0'/><feBlend in2='BackgroundImageFix' result='effect1_dropShadow'/><feBlend in='SourceGraphic' in2='effect1_dropShadow' result='shape'/></filter></defs></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="burger-menu hidden">
+        <div class="burger-menu__wrapper">
+          <div class="burger-menu-bg"></div>
+          <div class="btn-close"><svg width='20' height='20' class='icon' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d)' fill-rule='evenodd' clip-rule='evenodd' fill='#fff'><path d='M3.822 2.169l-.647.646a.463.463 0 000 .658l12.384 12.39a.464.464 0 00.658 0l.645-.646a.463.463 0 000-.658L4.48 2.169a.463.463 0 00-.658 0z'/><path d='M3.254 2.257a.872.872 0 011.234-.003l12.254 12.189a.873.873 0 01-1.23 1.238L3.256 3.492a.873.873 0 01-.003-1.235z'/><path d='M16.745 2.257a.873.873 0 01-.003 1.235L4.488 15.681a.872.872 0 11-1.23-1.238L15.51 2.253a.872.872 0 011.234.004z'/></g><defs><filter id='filter0_d' x='0' y='0' width='20' height='20' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/><feOffset dy='1'/><feGaussianBlur stdDeviation='1.5'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.47 0'/><feBlend in2='BackgroundImageFix' result='effect1_dropShadow'/><feBlend in='SourceGraphic' in2='effect1_dropShadow' result='shape'/></filter></defs></svg></div>
+          <div class="burger-menu__cont">
+            <div class="burger-menu__search"><span class="search__title">Каталог ITK</span>
+              <div class="search">
+                <input class="search__input" type="search" placeholder="Поиск по каталогу">
+              </div>
+            </div>
+            <ul class="catalog-menu tabs">
+              <li class="catalog-menu__item item">
+                <div class="tabs__item head"><span class="tabs__txt">Шкафы монтажные</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+                <div class="catalog-menu-inner content collapsed">
+                  <ul class="catalog-menu-inner__list">
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы серверные</span>
+                      <ul class="content collapsed">
+                        <li>Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Стойки открытые</span>
+                      <ul class="content collapsed">
+                        <li>Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы настенные</span>
+                      <ul class="content collapsed">
+                        <li>Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы уличные</span>
+                      <ul class="content collapsed">
+                        <li>Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Комплектующие и аксессуары для шкафов и стоек</span>
+                      <ul class="content collapsed">
+                        <li>Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog-menu__item item">
+                <div class="tabs__item head"><span class="tabs__txt">LAN-кабель и&nbsp;инструменты</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+                <div class="catalog-menu-inner content collapsed">
+                  <ul class="catalog-menu-inner__list">
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog-menu__item item">
+                <div class="tabs__item head"><span class="tabs__txt">Компоненты СКС медные</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+                <div class="catalog-menu-inner content collapsed">
+                  <ul class="catalog-menu-inner__list">
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog-menu__item item">
+                <div class="tabs__item head"><span class="tabs__txt">Компоненты СКС оптические</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+                <div class="catalog-menu-inner content collapsed">
+                  <ul class="catalog-menu-inner__list">
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="catalog-menu__item item">
+                <div class="tabs__item head"><span class="tabs__txt">Электропитание и&nbsp;мониторинг</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></div>
+                <div class="catalog-menu-inner content collapsed">
+                  <ul class="catalog-menu-inner__list">
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog-menu-inner__item item"><span class="head">Шкафы сетевые напольные</span>
+                      <ul class="content collapsed">
+                        <li><a href="#">Шкафы LINEA S&nbsp;старой модификации (3&nbsp;местами)</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul><a class="btn" href="#"><span class="btn__txt">Прайс-лист</span>
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h16M14 6l6 6-6 6"></path>
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <main class="content service-progs-page inner-page">
+        <section class="service">
+                    <div class="container">
+                      <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                          <li class="breadcrumbs__item"><a class="breadcrumbs__link undefined" href="#">Главная</a><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></li>
+                          <li class="breadcrumbs__item"><a class="breadcrumbs__link undefined" href="#">Сервис и поддержка</a><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></li>
+                          <li class="breadcrumbs__item"><a class="breadcrumbs__link active" href="#">Программное обеспечение и конфигураторы</a><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></li>
+                        </ul>
+                      </div>
+                    </div>
+          <div class="container">
+            <h1 class="service__title">Программное обеспечение и&nbsp;конфигураторы</h1>
+            <div class="inner-page__grid">
+              <div class="swiper-container tabs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><a class="tabs__item" href="#"><span class="tabs__txt">Каталоги и&nbsp;брошюры</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></a></div>
+                  <div class="swiper-slide"><a class="tabs__item active" href="#"><span class="tabs__txt">Программное обеспечение и&nbsp;конфигураторы</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></a></div>
+                  <div class="swiper-slide"><a class="tabs__item" href="#"><span class="tabs__txt">Техническая документация</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></a></div>
+                  <div class="swiper-slide"><a class="tabs__item" href="#"><span class="tabs__txt">FAQ</span><svg class='icon' width='12' height='18' viewBox='0 0 12 18' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10 16.37L2 9l8-7.369' stroke='#000' stroke-width='2' stroke-linecap='square'/></svg></a></div>
+                </div>
+              </div>
+                        <div class="feedback"><span class="feedback__title">Техподдержка</span>
+                          <div class="feedback__grid"><a class="feedback__phone" href="#">+7 (495) 542-22-24</a><br><a class="feedback__link" href="mailto=info@itk-group.ru"><svg class='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/></svg><span>info@itk-group.ru</span></a><br><a class="btn" href="#"><span class="btn__txt">Написать нам</span></a></div>
+                        </div>
+              <div class="inner-page__content">
+                <div class="tab-content active">
+                  <div class="configurators">
+                    <h2 class="configurators__title">Конфигураторы</h2>
+                    <div class="configurators__grid"><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><path d='M480 85.333H32c-17.673 0-32 14.327-32 32V224c0 17.673 14.327 32 32 32h448c17.673 0 32-14.327 32-32V117.333c0-17.673-14.327-32-32-32zM490.667 224c0 5.891-4.776 10.667-10.667 10.667H32c-5.891 0-10.667-4.776-10.667-10.667V117.333c0-5.891 4.776-10.667 10.667-10.667h448c5.891 0 10.667 4.776 10.667 10.667V224zM480 277.333H32c-17.673 0-32 14.327-32 32V416c0 17.673 14.327 32 32 32h448c17.673 0 32-14.327 32-32V309.333c0-17.673-14.327-32-32-32zM490.667 416c0 5.891-4.776 10.667-10.667 10.667H32c-5.891 0-10.667-4.776-10.667-10.667V309.333c0-5.891 4.776-10.667 10.667-10.667h448c5.891 0 10.667 4.776 10.667 10.667V416zM437.333 469.333v21.333H74.667v-21.333H53.333v32C53.333 507.224 58.109 512 64 512h384c5.891 0 10.667-4.776 10.667-10.667v-32h-21.334z' fill='#67ae3e' data-original='#000000' xmlns='http://www.w3.org/2000/svg'/><path fill='#67ae3e' data-original='#000000' d='M42.667 245.333H64V288H42.667zM448 245.333h21.333V288H448zM458.667 42.667h-32v-32C426.667 4.776 421.891 0 416 0H96c-5.891 0-10.667 4.776-10.667 10.667v32h-32c-5.891 0-10.667 4.776-10.667 10.667V96c0 5.891 4.776 10.667 10.667 10.667h405.333c5.891 0 10.667-4.776 10.667-10.667V53.333c0-5.891-4.775-10.666-10.666-10.666zM448 85.333H64V64h32c5.891 0 10.667-4.776 10.667-10.667v-32h298.667v32C405.333 59.224 410.109 64 416 64h32v21.333z' xmlns='http://www.w3.org/2000/svg'/><path fill='#67ae3e' data-original='#000000' d='M128 42.667h256V64H128zM53.333 128h21.333v85.333H53.333zM394.667 320H416v85.333h-21.333zM96 128h21.333v42.667H96zM138.667 128H160v42.667h-21.333zM96 192h21.333v21.333H96zM437.333 330.667h21.333V352h-21.333zM437.333 373.333h21.333v21.333h-21.333zM138.667 192H160v21.333h-21.333zM448 128H192c-5.891 0-10.667 4.776-10.667 10.667v64c0 5.891 4.776 10.667 10.667 10.667h256c5.891 0 10.667-4.776 10.667-10.667v-64c0-5.891-4.776-10.667-10.667-10.667zm-10.667 64H202.667v-42.667h234.667V192zM266.667 341.333V320H64c-5.891 0-10.667 4.776-10.667 10.667v64c0 5.891 4.776 10.667 10.667 10.667h202.667V384h-192v-42.667h192zM330.667 320C307.103 320 288 339.103 288 362.667s19.103 42.667 42.667 42.667 42.667-19.103 42.667-42.667S354.231 320 330.667 320zm0 64c-11.782 0-21.333-9.551-21.333-21.333s9.551-21.333 21.333-21.333c11.782 0 21.333 9.551 21.333 21.333S342.449 384 330.667 384z' xmlns='http://www.w3.org/2000/svg'/></svg></div>
+                          <div class="configurators-item__title">Конфигуратор шкафов</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><path d='M416.667 0H95.333C42.766 0 0 42.767 0 95.334v321.332C0 469.233 42.766 512 95.333 512h321.334C469.234 512 512 469.233 512 416.666V95.334C512 42.767 469.234 0 416.667 0zM482 416.666C482 452.691 452.692 482 416.667 482H95.333C59.308 482 30 452.691 30 416.666V95.334C30 59.309 59.308 30 95.333 30h321.334C452.692 30 482 59.309 482 95.334v321.332z' fill='#67ae3e' data-original='#000000' xmlns='http://www.w3.org/2000/svg'/><path d='M362.414 137.053c-6.172-5.524-15.656-5.001-21.181 1.171-5.526 6.172-5.001 15.655 1.171 21.181C369.855 183.98 385.6 219.187 385.6 256c0 71.461-58.138 129.6-129.6 129.6S126.399 327.462 126.399 256c0-36.814 15.746-72.023 43.199-96.6 6.172-5.525 6.697-15.008 1.171-21.181-5.525-6.173-15.009-6.697-21.181-1.171C115.786 167.309 96.399 210.665 96.399 256c0 88.003 71.597 159.6 159.601 159.6 88.003 0 159.6-71.596 159.6-159.6 0-45.334-19.386-88.689-53.186-118.947z' fill='#67ae3e' data-original='#000000' xmlns='http://www.w3.org/2000/svg'/><path d='M256 96.4c-8.284 0-15 6.716-15 15v163.012c0 8.284 6.716 15 15 15s15-6.716 15-15V111.4c0-8.284-6.716-15-15-15z' fill='#67ae3e' data-original='#000000' xmlns='http://www.w3.org/2000/svg'/></svg></div>
+                          <div class="configurators-item__title">Конфигуратор аксессуаров и&nbsp;PDU для шкафов</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><g fill='#67ae3e' xmlns='http://www.w3.org/2000/svg'><path d='M394.667 213.333h-63.99c-5.885 0-10.667 4.771-10.667 10.667l-.003 10.667H288a10.66 10.66 0 00-10.667 10.667A10.66 10.66 0 00288 256.001h32.003L320 266.667c0 2.823 1.125 5.542 3.125 7.542s4.708 3.125 7.542 3.125h64c29.406 0 53.333 23.927 53.333 53.333S424.073 384 394.667 384h-384C4.771 384 0 388.771 0 394.667s4.771 10.667 10.667 10.667h384c41.167 0 74.667-33.5 74.667-74.667S435.833 256 394.667 256h-53.333l.01-21.333h53.323c52.938 0 96 43.063 96 96s-43.063 96-96 96h-384A10.66 10.66 0 000 437.333 10.66 10.66 0 0010.667 448h384C459.365 448 512 395.365 512 330.667s-52.635-117.334-117.333-117.334z' data-original='#000000'/><path d='M501.333 106.667h-384c-41.167 0-74.667 33.5-74.667 74.667s33.5 74.667 74.667 74.667h53.333l.01 21.333h-53.344c-52.938 0-96-43.063-96-96s43.063-96 96-96h384a10.66 10.66 0 0010.667-10.667A10.66 10.66 0 00501.333 64h-384C52.635 64 0 116.635 0 181.333s52.635 117.333 117.333 117.333h64.01c2.833 0 5.542-1.125 7.542-3.125s3.125-4.719 3.125-7.542l-.003-10.667H224a10.66 10.66 0 0010.667-10.667A10.66 10.66 0 00224 255.998h-31.997L192 245.333c0-5.896-4.781-10.667-10.667-10.667h-64C87.927 234.667 64 210.74 64 181.333S87.927 128 117.333 128h384A10.66 10.66 0 00512 117.333a10.66 10.66 0 00-10.667-10.666zM245.333 341.333c0 5.896 4.771 10.667 10.667 10.667s10.667-4.771 10.667-10.667V320c0-5.896-4.771-10.667-10.667-10.667s-10.667 4.771-10.667 10.667v21.333zM309.333 341.333c2.729 0 5.458-1.042 7.542-3.125 4.167-4.167 4.167-10.917 0-15.083l-21.333-21.333c-4.167-4.167-10.917-4.167-15.083 0-4.167 4.167-4.167 10.917 0 15.083l21.333 21.333a10.628 10.628 0 007.541 3.125zM210.208 338.208l21.333-21.333c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-21.333 21.333c-4.167 4.167-4.167 10.917 0 15.083a10.634 10.634 0 007.542 3.125c2.729 0 5.458-1.041 7.541-3.125z' data-original='#000000'/><path d='M256 213.333a10.66 10.66 0 0010.667-10.667v-21.333c0-5.896-4.771-10.667-10.667-10.667s-10.667 4.771-10.667 10.667v21.333A10.66 10.66 0 00256 213.333zM288 224c2.729 0 5.458-1.042 7.542-3.125l21.333-21.333c4.167-4.167 4.167-10.917 0-15.083-4.167-4.167-10.917-4.167-15.083 0l-21.333 21.333c-4.167 4.167-4.167 10.917 0 15.083A10.632 10.632 0 00288 224zM195.125 184.458c-4.167 4.167-4.167 10.917 0 15.083l21.333 21.333c2.083 2.083 4.813 3.125 7.542 3.125s5.458-1.042 7.542-3.125c4.167-4.167 4.167-10.917 0-15.083l-21.333-21.333c-4.167-4.166-10.917-4.166-15.084 0z' data-original='#000000'/></g></svg></div>
+                          <div class="configurators-item__title">Конфигуратор оптических шнуров</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 480 480'><g fill='#67ae3e'><path xmlns='http://www.w3.org/2000/svg' d='M301.766 291.963l-13.813 8.074c15.435 26.492 6.471 60.481-20.022 75.916A55.51 55.51 0 01240 383.5v16c39.497-.009 71.509-32.035 71.5-71.532a71.52 71.52 0 00-9.734-36.005zM285.043 272.47A71.656 71.656 0 00240 256.5v16a54.864 54.864 0 0134.957 12.39z' data-original='#000000'/><path xmlns='http://www.w3.org/2000/svg' d='M240 224c-57.438 0-104 46.562-104 104s46.562 104 104 104 104-46.562 104-104c-.065-57.411-46.589-103.935-104-104zm0 192c-48.601 0-88-39.399-88-88s39.399-88 88-88 88 39.399 88 88c-.055 48.578-39.422 87.945-88 88zM48 40h16v16H48z' data-original='#000000'/><path xmlns='http://www.w3.org/2000/svg' d='M472 80h-8V24a8 8 0 00-8-8h-64a8 8 0 00-8 8v56h-8a8 8 0 00-8 8v80a7.955 7.955 0 00.851 3.575h-.006L400 233.889V376c-.025 22.081-17.919 39.975-40 40h-16.4a135.402 135.402 0 0032.4-88c0-74.99-61.01-136-136-136s-136 61.01-136 136a135.402 135.402 0 0032.4 88H120c-22.081-.025-39.975-17.919-40-40V233.889l31.155-62.311h-.006A7.954 7.954 0 00112 168V88a8 8 0 00-8-8h-8V24a8 8 0 00-8-8H24a8 8 0 00-8 8v56H8a8 8 0 00-8 8v80a7.955 7.955 0 00.851 3.575H.845L32 233.889V376c.055 48.578 39.422 87.945 88 88h240c48.578-.055 87.945-39.422 88-88V233.889l31.155-62.311h-.006A7.954 7.954 0 00480 168V88a8 8 0 00-8-8zm-72-48h48v48h-16V64h-16v16h-16zm32 64v16h-16V96zM32 32h48v48H64V64H48v16H32zm32 64v16H48V96zm-48 0h16v18c.008 7.729 6.271 13.992 14 14h20c7.729-.008 13.992-6.271 14-14V96h16v64H16zm12.944 96l-8-16h70.112l-8 16zm8 16h38.112l-8 16H44.944zM120 448c-39.746-.045-71.955-32.254-72-72V240h16v136c.035 30.914 25.086 55.965 56 56h32.471a136.536 136.536 0 0023.587 16zm0-120c0-66.274 53.726-120 120-120s120 53.726 120 120-53.726 120-120 120c-66.243-.075-119.925-53.757-120-120zm312 48c-.045 39.746-32.254 71.955-72 72h-56.058a136.536 136.536 0 0023.587-16H360c30.914-.035 55.965-25.086 56-56V240h16zm3.056-152h-22.112l-8-16h38.112zm16-32h-54.112l-8-16h70.112zM464 160h-80V96h16v18c.008 7.729 6.271 13.992 14 14h20c7.729-.008 13.992-6.271 14-14V96h16z' data-original='#000000'/><path xmlns='http://www.w3.org/2000/svg' d='M416 40h16v16h-16z' data-original='#000000'/></g></svg></div>
+                          <div class="configurators-item__title">Онлайн подбор аксессуаров к&nbsp;LAN-кабелю ITK</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><path d='M341.333 0H170.667c-11.782 0-21.333 9.551-21.333 21.333V64c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333V21.333C362.667 9.551 353.115 0 341.333 0zm0 64H170.667V21.333h170.667V64zM341.333 96H170.667c-11.782 0-21.333 9.551-21.333 21.333V160c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333v-42.667c0-11.782-9.552-21.333-21.334-21.333zm0 64H170.667v-42.667h170.667V160z' fill='#67ae3e' data-original='#000000' xmlns='http://www.w3.org/2000/svg'/><path fill='#67ae3e' data-original='#000000' d='M170.667 74.667H192v32h-21.333zM320 74.667h21.333v32H320zM192 128h128v21.333H192zM192 32h21.333v21.333H192zM298.667 32H320v21.333h-21.333zM213.333 330.667H42.667c-11.782 0-21.333 9.551-21.333 21.333v42.667c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333V352c0-11.782-9.552-21.333-21.334-21.333zm0 64H42.667V352h170.667v42.667zM213.333 426.667H42.667c-11.782 0-21.333 9.551-21.333 21.333v42.667c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333V448c0-11.782-9.552-21.333-21.334-21.333zm0 64H42.667V448h170.667v42.667z' xmlns='http://www.w3.org/2000/svg'/><path fill='#67ae3e' data-original='#000000' d='M42.667 405.333H64v32H42.667zM192 405.333h21.333v32H192zM64 458.667h128V480H64zM64 362.667h21.333V384H64zM170.667 362.667H192V384h-21.333zM469.333 330.667H298.667c-11.782 0-21.333 9.551-21.333 21.333v42.667c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333V352c0-11.782-9.552-21.333-21.334-21.333zm0 64H298.667V352h170.667v42.667zM469.333 426.667H298.667c-11.782 0-21.333 9.551-21.333 21.333v42.667c0 11.782 9.551 21.333 21.333 21.333h170.667c11.782 0 21.333-9.551 21.333-21.333V448c0-11.782-9.552-21.333-21.334-21.333zm0 64H298.667V448h170.667v42.667z' xmlns='http://www.w3.org/2000/svg'/><path fill='#67ae3e' data-original='#000000' d='M298.667 405.333H320v32h-21.333zM448 405.333h21.333v32H448zM320 458.667h128V480H320zM320 362.667h21.333V384H320zM426.667 362.667H448V384h-21.333zM245.333 202.667v42.667h-74.667a21.71 21.71 0 00-.884 0c-11.538.244-20.693 9.795-20.449 21.333v42.667h21.333v-42.667h74.667c.295.006.589.006.884 0 11.538-.244 20.693-9.795 20.449-21.333v-42.667h-21.333zM352 245.333h-64v21.333h64v42.667h21.333v-42.667a21.71 21.71 0 000-.884c-.244-11.537-9.795-20.693-21.333-20.449z' xmlns='http://www.w3.org/2000/svg'/></svg></div>
+                          <div class="configurators-item__title">Тендерный калькулятор ITK</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a><a class="configurators-item" href="#">
+                        <div class="configurators-item__cont">
+                          <div class="configurators-item__icon-cont"><svg class='icon' xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 480 480"><path d="M456 144c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H24C10.745 0 0 10.745 0 24v96c0 13.255 10.745 24 24 24h24v24H24c-13.255 0-24 10.745-24 24v96c0 13.255 10.745 24 24 24h24v24H24c-13.255 0-24 10.745-24 24v96c0 13.255 10.745 24 24 24h432c13.255 0 24-10.745 24-24v-96c0-13.255-10.745-24-24-24h-24v-24h24c13.255 0 24-10.745 24-24v-96c0-13.255-10.745-24-24-24h-24v-24h24zm0 208a8 8 0 018 8v96a8 8 0 01-8 8H24a8 8 0 01-8-8v-96a8 8 0 018-8h432zM64 336v-24h16v24H64zm32 0v-24h288v24H96zm304 0v-24h16v24h-16zm56-152a8 8 0 018 8v96a8 8 0 01-8 8H24a8 8 0 01-8-8v-96a8 8 0 018-8h432zM64 168v-24h16v24H64zm32 0v-24h288v24H96zm304 0v-24h16v24h-16zM24 128a8 8 0 01-8-8V24a8 8 0 018-8h432a8 8 0 018 8v96a8 8 0 01-8 8H24z" fill="#67ae3e" data-original="#000000" xmlns="http://www.w3.org/2000/svg"/><path d="M256 64H94.528C90.11 51.503 76.397 44.954 63.901 49.373S44.855 67.503 49.273 80 67.404 99.046 79.9 94.627A23.997 23.997 0 0094.528 80H256a8 8 0 000-16zM72 80a8 8 0 110-16 8 8 0 010 16zM352 32h16v16h-16zM384 32h16v16h-16zM416 32h16v16h-16zM320 32h16v16h-16zM288 32h16v16h-16zM352 64h16v16h-16zM384 64h16v16h-16zM416 64h16v16h-16zM320 64h16v16h-16zM288 64h16v16h-16zM352 96h16v16h-16zM384 96h16v16h-16zM416 96h16v16h-16zM320 96h16v16h-16zM288 96h16v16h-16zM256 232H94.528c-4.418-12.497-18.131-19.046-30.627-14.627S44.855 235.503 49.273 248s18.131 19.046 30.627 14.627A23.998 23.998 0 0094.527 248H256a8 8 0 000-16zM72 248a8 8 0 110-16 8 8 0 010 16zM352 200h16v16h-16zM384 200h16v16h-16zM416 200h16v16h-16zM320 200h16v16h-16zM288 200h16v16h-16zM352 232h16v16h-16zM384 232h16v16h-16zM416 232h16v16h-16zM320 232h16v16h-16zM288 232h16v16h-16zM352 264h16v16h-16zM384 264h16v16h-16zM416 264h16v16h-16zM320 264h16v16h-16zM288 264h16v16h-16zM256 400H94.528c-4.418-12.497-18.131-19.046-30.627-14.627S44.855 403.503 49.273 416s18.131 19.046 30.627 14.627A23.998 23.998 0 0094.527 416H256a8 8 0 000-16zM72 416a8 8 0 110-16 8 8 0 010 16zM352 368h16v16h-16zM384 368h16v16h-16zM416 368h16v16h-16zM320 368h16v16h-16zM288 368h16v16h-16zM352 400h16v16h-16zM384 400h16v16h-16zM416 400h16v16h-16zM320 400h16v16h-16zM288 400h16v16h-16zM352 432h16v16h-16zM384 432h16v16h-16zM416 432h16v16h-16zM320 432h16v16h-16zM288 432h16v16h-16z" fill="#67ae3e" data-original="#000000" xmlns="http://www.w3.org/2000/svg"/></svg></div>
+                          <div class="configurators-item__title">Конфигуратор оптического кросса</div>
+                        </div>
+                        <div class="configurators-item__arrow">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 12h16M14 6l6 6-6 6"></path>
+                          </svg>
+                        </div></a></div>
+                  </div>
+                  <div class="service-table">
+                    <h3 class="service-table__title">Базы оборудования для программ проектирования</h3>
+                    <div class="table-wrapper">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Наименование</th>
+                            <th>Формат</th>
+                            <th>ПО</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><a href="#">Оборудование ITK в&nbsp;формате&nbsp;2D</a></td>
+                            <td><a href="#">*.dwg</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autocad-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Динамические блоки металлических лотков и&nbsp;аксессуаров IEK</a></td>
+                            <td><a href="#">*.dwg</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autocad-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">База шкафов и&nbsp;аксессуаров ITK</a></td>
+                            <td><a href="#">*.sdf</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/nanocad-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">База шкафов и&nbsp;аксессуаров ITK</a></td>
+                            <td><a href="#">*.rfa</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autodesk-revit-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Библиотека трубы и&nbsp;аксессуары</a></td>
+                            <td><a href="#">Видеоинструкция</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autodesk-revit-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Библиотека кабельные лотки</a></td>
+                            <td><a href="#">Видеоинструкция</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autodesk-revit-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Медные, оптические компоненты и&nbsp;блоки PDU</a></td>
+                            <td><a href="#">*.step</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autodesk-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                          <tr>
+                            <td><a href="#">Шкафы ITK</a></td>
+                            <td><a href="#">*.step</a></td>
+                            <td><a href="#"><img src="assets/img/@service-progs/service-table/autodesk-logo.png">
+                                <div class="download-icon"><svg class='icon' width='538' height='537' viewBox='0 0 538 538' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M393.143 279.624c4.855-4.851 4.855-12.722 0-17.581-4.852-4.856-12.727-4.856-17.582 0l-94.163 94.162V106.018c0-6.887-5.586-12.473-12.472-12.473-6.891 0-12.473 5.586-12.473 12.473V356.08l-94.162-94.163a12.423 12.423 0 00-17.586 0 12.254 12.254 0 00-3.617 8.856 12.778 12.778 0 003.617 8.851L260.066 394.99a12.364 12.364 0 008.86 3.621 12.861 12.861 0 008.851-3.621l115.366-115.366z' fill='#000'/><path d='M537.07 268.152c.02-108.456-65.308-206.24-165.509-247.742C271.355-21.086 156.021 1.867 79.355 78.58c-104.702 104.702-104.702 274.449 0 379.147 104.693 104.697 274.441 104.697 379.142 0a266.437 266.437 0 0078.573-189.575zm-511.347 0c0-134.072 109.131-243.2 243.203-243.2s243.199 109.128 243.199 243.2-109.127 243.203-243.199 243.203S25.723 402.224 25.723 268.152z' fill='#000'/></svg></div></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__cont">
+            <div class="footer__col">
+              <div class="footer-social"><span class="footer__txt">Мы в социальных сетях</span>
+                <div class="footer-social__cont"><a class="footer-social__link" href="#"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='7.718' height='14.88' viewBox='0 0 7.718 14.88'><path d='M7.716.12A16.319 16.319 0 005.681.01a3.184 3.184 0 00-3.4 3.49v1.95H.005v2.64h2.276v6.77h2.732V8.09H7.28l.348-2.64H5.013V3.76a1.1 1.1 0 011.3-1.29h1.4V.12z' fill='#f5f5f5' fill-rule='evenodd'/></svg></a><a class="footer-social__link" href="#"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='13.719' height='13.72' viewBox='0 0 13.719 13.72'><path d='M9.141 6.85a2.286 2.286 0 11-2.286-2.29 2.285 2.285 0 012.286 2.29zm1.231 0a3.517 3.517 0 10-3.517 3.51 3.512 3.512 0 003.517-3.51zm.965-3.66a.822.822 0 10-.822.82.815.815 0 00.822-.82zM6.855 1.22a15.032 15.032 0 014.044.28 2.277 2.277 0 01.786.52 2.182 2.182 0 01.517.78 29.673 29.673 0 010 8.09 2.22 2.22 0 01-.517.79 2.119 2.119 0 01-.786.51 29.336 29.336 0 01-8.087 0 2.119 2.119 0 01-.786-.51 2.22 2.22 0 01-.517-.79 29.673 29.673 0 010-8.09 2.182 2.182 0 01.517-.78 2.277 2.277 0 01.786-.52 15.028 15.028 0 014.043-.28zm6.856 5.63c0-.95.009-1.89-.045-2.83A3.786 3.786 0 009.685.04c-.946-.06-1.883-.05-2.83-.05S4.972-.02 4.026.04A3.786 3.786 0 00.045 4.02C-.009 4.96 0 5.9 0 6.85s-.009 1.88.045 2.83a4.069 4.069 0 001.107 2.87 4.121 4.121 0 002.874 1.11c.946.05 1.883.04 2.829.04s1.884.01 2.83-.04a4.121 4.121 0 002.874-1.11 4.069 4.069 0 001.107-2.87c.054-.95.045-1.89.045-2.83z' fill='#f5f5f5' fill-rule='evenodd'/></svg></a><a class="footer-social__link" href="#"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='17.156' height='9.78' viewBox='0 0 17.156 9.78'><path d='M17.143.71s-.125-.36-.9-.26l-2.57.02a.573.573 0 00-.34.05.532.532 0 00-.223.28 16.493 16.493 0 01-.955 2.01c-1.143 1.94-1.607 2.05-1.794 1.93-.438-.28-.322-1.13-.322-1.74 0-1.89.286-2.67-.562-2.88A4.528 4.528 0 008.272.01a5.658 5.658 0 00-2.133.21c-.3.14-.518.46-.384.48a1.2 1.2 0 01.759.39 2.6 2.6 0 01.258 1.17c.1 2.22-.357 2.49-.357 2.49-.348.19-.955-.12-1.847-1.96a17.868 17.868 0 01-.92-1.91.664.664 0 00-.214-.29 1.007 1.007 0 00-.393-.16L.595.45a.641.641 0 00-.508.17.406.406 0 00-.009.44A23.7 23.7 0 004.166 7.8s1.991 2.08 4.249 1.94h1.026a.784.784 0 00.474-.2.69.69 0 00.133-.46c-.017-1.37.625-1.58.625-1.58.625-.19 1.428 1.33 2.285 1.92a1.89 1.89 0 001.143.35l2.285-.03a.628.628 0 00.634-1.01 7.561 7.561 0 00-1.705-1.98c-1.428-1.33-1.241-1.11.491-3.41 1.051-1.41 1.471-2.26 1.337-2.63z' fill='#f5f5f5' fill-rule='evenodd'/></svg></a><a class="footer-social__link" href="#"><svg class='icon' xmlns='http://www.w3.org/2000/svg' width='16' height='11.25' viewBox='0 0 16 11.25'><path d='M6.347 7.7V3.21l4.32 2.26zM7.998 0c-3.365 0-5.6.16-5.6.16A2.3 2.3 0 00.791.84a2.8 2.8 0 00-.633 1.59 21.635 21.635 0 00-.161 2.59v1.21a21.539 21.539 0 00.161 2.59 2.844 2.844 0 00.633 1.59 2.657 2.657 0 001.768.68s1.276.13 5.436.16c3.365 0 5.6-.17 5.6-.17a2.233 2.233 0 001.607-.67 2.844 2.844 0 00.633-1.59 21.539 21.539 0 00.161-2.59V5.02a21.635 21.635 0 00-.161-2.59 2.8 2.8 0 00-.633-1.59 2.3 2.3 0 00-1.607-.68S11.363 0 8 0z' fill='#f5f5f5' fill-rule='evenodd'/></svg></a></div>
+              </div>
+              <div class="footer-note">
+                <div class="footer-logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 243 110" xml:space="preserve"><style>.st0{fill:#fff}</style><path class="st0" d="M0 40h29v69.7H0zM0 0h29v30H0zM70 40h29v70H70z"/><path fill="#67ae3e" d="M40 0h89v30H40z"/><path class="st0" d="M243 0h-35l-28 40h-10V0h-30v110h30V70h10l28 40h35l-39-55z"/></svg></div><span class="footer-note__txt">ITK&copy; 2014-2020. <br>Все права защищены.</span>
+              </div>
+            </div>
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">О&nbsp;торговой марке</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Реализованные проекты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Пресс-центр</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Прайс-лист</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Где купить</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Контакты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">На&nbsp;сайт IEK GROUP</a></li>
+              </ul>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Продукция</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Сервис и&nbsp;поддержка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link link" href="#">Обучение</a></li>
+              </ul>
+            </nav>
+            <div class="footer-info">
+              <div class="footer-info__item"><span class="footer__txt">Центральный офис</span><a class="footer__phone" href="tel:+7(495)542-22-24">+7 (495) 542-22-24</a><br><a class="footer-info__link" href="mailto:info@itk-group.ru"><span>info@itk-group.ru</span><svg class='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/></svg></a></div>
+              <div class="footer-info__item footer-info__item--item-2"><span class="footer__txt">Техподдержка</span><a class="footer__phone" href="tel:+7(495)542-22-24">+7 (495) 542-22-24</a><br><a class="footer-info__link" href="mailto:info@itk-group.ru"><span>info@itk-group.ru</span><svg class='icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45C20.218 61 0 81.196 0 106v300c0 24.72 20.128 45 45 45h422c24.72 0 45-20.128 45-45V106c0-24.72-20.128-45-45-45zm-6.214 30L256.954 294.833 51.359 91h409.427zM30 399.788V112.069l144.479 143.24L30 399.788zM51.213 421l144.57-144.57 50.657 50.222c5.864 5.814 15.327 5.795 21.167-.046L317 277.213 460.787 421H51.213zM482 399.787L338.213 256 482 112.212v287.575z"/></svg></a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=76251305-4b9e-44ca-8140-500a5b14fd0a&amp;lang=ru_RU"></script>
+    <script src="assets/js/all.min.js"></script>
+  </body>
+</html>

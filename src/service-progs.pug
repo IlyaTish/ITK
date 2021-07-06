@@ -1,0 +1,18 @@
+extends template
+
+block content
+  //- Header block ('.header')
+  include /common/blocks/header/block
+
+  //- Burger-menu block ('.burger-menu')
+  include /common/blocks/burger-menu/block
+
+
+  - const page = 'service-progs-page'
+
+  main(class='content '+ page +' inner-page')
+    include /@service-progs/block
+
+
+  //- Footer block ('.footer')
+  include /common/blocks/footer/block
