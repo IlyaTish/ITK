@@ -21,6 +21,7 @@
 - [Контакты](https://ilyatish.github.io/ITK/contacts)  
 - [Решения](https://ilyatish.github.io/ITK/solutions)  
 - [Сервис и поддержка](https://ilyatish.github.io/ITK/service)  
+- [Программное обеспечение и конфигураторы](https://ilyatish.github.io/ITK/service-progs)  
 - [Каталоги и буклеты](https://ilyatish.github.io/ITK/service-catalog)  
 - [Страница статьи](https://ilyatish.github.io/ITK/article)  
 - [Шаблон страницы](https://ilyatish.github.io/ITK/simplepage)
