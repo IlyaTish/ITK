@@ -16,6 +16,7 @@
 - [Каталог продукции](https://ilyatish.github.io/ITK/products)  
 - [Страница продукта](https://ilyatish.github.io/ITK/product)  
 - [Пресс центр](https://ilyatish.github.io/ITK/presscenter)  
+- [Пресс центр (Новости)](https://ilyatish.github.io/ITK/presscenter-detail)  
 - [Реализованные проекты](https://ilyatish.github.io/ITK/projects)  
 - [Страница проекта](https://ilyatish.github.io/ITK/project-article)  
 - [Контакты](https://ilyatish.github.io/ITK/contacts)  
