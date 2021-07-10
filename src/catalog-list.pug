@@ -8,11 +8,11 @@ block content
   include /common/blocks/burger-menu/block
 
 
-  - const page = 'catalog-page'
+  - const page = 'catalog-list-page'
 
   main(class='content '+ page +' inner-page')
-    include /@catalog/block
-    include /@catalog/blocks/catalog-description/block
+    include /@catalog-list/block
+    include /@catalog-list/catalog-description/block
 
 
   //- Footer block ('.footer')

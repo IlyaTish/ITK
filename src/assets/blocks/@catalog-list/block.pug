@@ -1,0 +1,55 @@
+section.catalog
+  //- Include Breadcrumbs ('.breadcrumbs')
+  include /common/blocks/breadcrumbs/block
+
+  //- Include Product-item ('.product-item')
+  include /@catalog/blocks/product-item/block
+
+  //- Navigation block ('.nav')
+  include /common/blocks/navigation/block
+
+  +breadcrumbs([
+    {
+      txt: 'Главная'
+    },
+    {
+      txt: 'Продукция'
+    },
+    {
+      txt: 'Шкафы монтажные',
+      class: 'active'
+    }
+  ])
+
+
+  .container
+    h1.catalog__title Шкафы монтажные
+
+    .catalog-head
+      a.btn.btn--back
+        svg.icon(
+          xmlns='http://www.w3.org/2000/svg'
+          width='24'
+          height='24'
+          viewBox='0 0 24 24'
+          fill='none'
+          stroke='#000'
+          stroke-width='2'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        )
+          path(d='M4 12h16M14 6l6 6-6 6')
+        span.btn__txt <span class='edited'> Каталог продукции</span>
+
+      .catalog-nav
+        button.btn.btn--filled
+          include /common/icons/file.svg
+          span.btn__txt Скачать <span class='edited'>полный</span> каталог
+
+
+    .catalog__cont
+      include /@catalog/blocks/catalog-sidebar/block
+
+      .catalog__content
+        .catalog__grid
+          include ./catalog-items/block
